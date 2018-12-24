@@ -31,4 +31,6 @@ IV. Missing Sections
 9. smote.
 10. results from all of the above on all data.
 11. conclusion.
- 
+
+
+last update: 24.12.2018
