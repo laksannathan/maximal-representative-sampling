@@ -1,3 +1,6 @@
+
+ASK: am i allowed to publish the data in any form?? (e.g: on github for recreation)
+
 #out 
 
 The specific case where the probability of attribute values is different while the conditional distribution of the class variable given the attributes remains unchanged is a non-stationary environment known as covariate shift.
