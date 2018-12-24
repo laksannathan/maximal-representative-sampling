@@ -1,1 +1,1 @@
-# mrs
+# mrs-thesis is my bachelor thesis. the original repository was copied because i messed up my working directory and this was the easiest way.
