@@ -1,0 +1,34 @@
+
+I. Clean Project Structure
+
+1. move ./tex/fig to ./fig and adapt tex files.
+2. run all ipynb with data from ./data.
+3. remove unused csv-files in ./data.
+4. add files from ./data/too_large to .gitignore.
+5. write readme for new project structure.
+
+II. Preprocessing
+
+1. add resilience and political features.
+2. include demographic data
+
+III. Improvements
+
+1. do smote experiments with GESIS and sGESIS.
+2. improve algorithm design in latex.
+3. actually predict political participation.
+
+IV. Missing Sections
+
+1. related work.
+2. the problem of overfitting. 
+3. ida.
+4. survey mismatch.
+5. imbalanced data.
+6. feasibility of learning.
+7. pu learning.
+8. recovering model performance.
+9. smote.
+10. results from all of the above on all data.
+11. conclusion.
+ 

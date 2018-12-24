@@ -1,0 +1,40 @@
+\chapter{Terminology and Definitions}
+
+A well-defined learning problem involves a number of design choices, including selecting the type of training experience, the target function to be learned, a representation for this target function, and an algorithm to learn from the source of training experience [2]. In modelling a political participation process, a computer program is designed to approximate the likelihood of a person going to vote on election day. Ideally, for every instance with unknown political interest and willingness to perticipate, there is enough data of people of similiar demographics, socioeconomic status and psychological resilience to generalize from. This chapter defines key terminology and destinctions when learning from biased data. Basic design issues and approaches to supervised learning are covered, while conceptual elements of interest are introduced with regards to overfitting. The role of noise in the bias-variance decomposition will be analyzed and further broken down.
+
+\section{Sampling Bias}
+
+%[Something about Convencience Sampling and its effect on statistical analysis.] 
+
+Sampling bias is often referred to as selection bias or sample selection bias. I will stick to the more descriptive term sampling bias. It underlines the fact that the bias arises in how the data was sampled. Also, the use of the term becomes less ambiguous, because there exists another notion of selection bias in the context of model selection. This type of bias is usually referred to as bad generalization, where the performance of the selected hypothesis is overly optimistic.
+
+\section{The Problem of Overfitting}
+
+\subsection{Model and Hypothesis}
+
+The model in supervised learning usually refers to the mathematical structure of how to make predictions \(y_i\) given \(x_i\). The most common model is a linear regression model, where the prediction is given by a linear combination of weighted input features. The parameters, the weights of these features, are the undetermined part that need to be learned from data. Depending on the task, the prediction value can have different interpretations, i.e. regression or classiﬁcation. The categorical outcome, "did vote" or "did not vote", makes political participation a binary classiﬁcation problem [7]. In machine learning, the terms hypothesis and model are often used interchangeably. This paper uses the following convention [3] as the terminology to describe ideas and concepts is not standardized:
+
+\begin{itemize}
+\item The phrase single hypothesis refers to a single probability distribution or function. An example is the polynomial \(2x^2 + 3x + 1\).
+
+\item The word model refers to a set of probability distributions or family of functions with the same functional form. An example is the set of all quadratic functions.
+
+\item As a generic term, hypothesis refers to both single hypotheses and models.
+\end{itemize}
+
+With the deﬁnitions above, it is a hypothesis selection problem if both the degree of a polynomial and the corresponding parameters are of interest. The phrase single hypothesis refers to a single probability distribution or function. A machine learning model, the composite hypothesis, refers to a family of probability distributions or functions with the same functional form. An example is the set of all second-degree polynomials [9].
+
+\subsection{Bias and Variance Tradeoff}
+
+"Overﬁtting is the disease. Noise is the cause. Learning is led astray by ﬁtting the noise more than the actual signal"[6]. To avoid overﬁtting you might deliberately exclude certain factors, increase sample size, stop the analysis early, or simply pick less complex algorithms. Regularization puts a break where additional iterations of algorithms start to harm the performance. Validation is another way to see what will actually happen out-of-sample
+
+
+The minimum description length (MDL) principle, informally applied to all the sciences, is a formalization of Occam's Razor in which the best hypothesis for a given set of data is the one that leads to the best compression of the data. MDL procedures automatically and inherently protect against overﬁtting and can be used to estimate both the parameters and the structure of a model.
+To decide among competing explanation of data given limited observations, the lesser complex model should always be preferred. Any regularity in data can be used to compress it, i.e. fewer symbols needed to describe the data. Equating learning with ﬁnding regularities implies that a model can compress data more, the more it learns the underlying patterns. Because many algorithms add an MDL function of the model to the objective function of the training, MDL methods can be interpreted as searching for a model with good predictive performance on unseen data [4].
+
+By deﬁnition, statistical inference is taking the results of applying some sort of construct or model to speciﬁc data and then speculating that it would continue to perform well beyond the original observation range. Given a set of training samples \((x_i,y_i)\) ﬁnd a single hypothesis \(h\) that "fits the data well": \(y_i = h(x_i)\) for most \(i\). The equation is characterized by a trade-off between goodness-of-ﬁt and complexity of the hypothesis:
+
+\begin{itemize}
+\item if \(h\) is too simple, \(y_i = h(x_i)\) may not hold for many values of \(i\);
+\item if \(h\) is too complex, it fits the data very well but will not generalize well on unseen data.
+\end{itemize}

@@ -1,0 +1,94 @@
+#out 
+
+The specific case where the probability of attribute values is different while the conditional distribution of the class variable given the attributes remains unchanged is a non-stationary environment known as covariate shift.
+
+OCC - SVM
+
+
+trying to estimate a function f which is positive on S and negative on the complement.
+
+The algorithm is a natural extension of the support vector algorithm to the case of unlabelled data.
+(Estimating the Support of a High-Dimensional Distribution 
+November 1, 1999 ) John Platt
+
+The dataset that you use for training can contain all or mostly normal cases.
+
+Typically, the SVM algorithm is given a set of training examples labeled as belonging to one of two classes.
+ An SVM model is based on dividing the training sample points into separate categories by as wide a gap as possible
+ , while penalizing training samples that fall on the wrong side of the gap.
+ The SVM model then makes predictions by assigning points to one side of the gap or the other.
+
+ Therefore, in one-class SVM, the support vector model is trained on data that has only one class, which is the “normal” class.
+  It infers the properties of normal cases and from these properties can predict which examples are unlike the normal examples. 
+
+
+Type a value that represents the upper bound on the fraction of outliers.
+ This parameter corresponds to the nu-property described in this paper. 
+ The nu-property lets you control the trade-off between outliers and normal cases.
+
+e (epsilon): Type a value to use as the stopping tolerance. The stopping tolerance,
+ affects the number of iterations used when optimizing the model, and depends on the stopping criterion value. 
+When the value is exceeded, the trainer stops iterating on a solution.
+
+
+Predictions from the One-Class SVM are uncalibrated scores that may be possibly unbounded
+ be sure to normalize scores if you are comparing models based on different algorithms.
+
+ and the approach towards one-class support vector machines, is described in these papers by B. Sch?lkopf et al.
+
+ nu: This parameter (represented by the Greek letter nu) determines the trade-off between the fraction of outliers and the number of support vectors.
+
+ epsilon: Specifies the stopping tolerance.
+
+while the threshold can be controlled by the contamination parameter
+
+
+
+
+
+
+
+
+
+
+----------------
+
+
+Particularly, statistical bounds like Hoeffding and Vapnik-Chervonenkis require a match between training and testing distributions.
+Chi Square goodness of fit test and Kolmogorov.
+
+
+for relating training samples to test data.
+The poll indicated that, […]
+The classification process regarding political participation
+
+inadvertently
+
+The predictive variables and their values must be mapped to appropriate scales between GESIS and GBS.
+
+
+The classifier ends up using the minimum-error attribute for prediction.
+
+
+John Platt's sequential minimal optimization algorithm 
+for training a support vector machine.
+
+the only case where it is possible to have instances classified as GBS
+with a ratio of under 1:5 is when the algorithm excluded a subgroup
+of the population that was overrepresented in GBS.
+
+However, if we exclude all instances, then we are also changing the GESIS
+distribution, of which we know it is representative.
+subsampling should go on way only: adapting GBS distribution.
+
+"exclude only the really sure ones"
+
+outlier detection -> no outlier in GESIS -> machine learning results: 0 = FP rate and TP > 0.
+
+Example in-text citation:
+Inner city mental health care access continues to be a problem (see Appendix for a table showing mental health care access by city).
+
+Aus <http://askus.library.wwu.edu/faq/116707> 
+
+http://ccsg.isr.umich.edu/index.php/chapters/statistical-analysis-chapter#nine
+
