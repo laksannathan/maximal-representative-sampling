@@ -1,12 +1,5 @@
 
-ASK: am i allowed to publish the data in any form?? (e.g: on github for recreation)
-
-#out 
-
 The specific case where the probability of attribute values is different while the conditional distribution of the class variable given the attributes remains unchanged is a non-stationary environment known as covariate shift.
-
-OCC - SVM
-
 
 trying to estimate a function f which is positive on S and negative on the complement.
 
@@ -23,7 +16,6 @@ Typically, the SVM algorithm is given a set of training examples labeled as belo
 
  Therefore, in one-class SVM, the support vector model is trained on data that has only one class, which is the “normal” class.
   It infers the properties of normal cases and from these properties can predict which examples are unlike the normal examples. 
-
 
 Type a value that represents the upper bound on the fraction of outliers.
  This parameter corresponds to the nu-property described in this paper. 
@@ -45,21 +37,10 @@ Predictions from the One-Class SVM are uncalibrated scores that may be possibly 
 
 while the threshold can be controlled by the contamination parameter
 
-
-
-
-
-
-
-
-
-
 ----------------
-
 
 Particularly, statistical bounds like Hoeffding and Vapnik-Chervonenkis require a match between training and testing distributions.
 Chi Square goodness of fit test and Kolmogorov.
-
 
 for relating training samples to test data.
 The poll indicated that, […]
@@ -69,9 +50,7 @@ inadvertently
 
 The predictive variables and their values must be mapped to appropriate scales between GESIS and GBS.
 
-
 The classifier ends up using the minimum-error attribute for prediction.
-
 
 John Platt's sequential minimal optimization algorithm 
 for training a support vector machine.
@@ -82,11 +61,9 @@ of the population that was overrepresented in GBS.
 
 However, if we exclude all instances, then we are also changing the GESIS
 distribution, of which we know it is representative.
-subsampling should go on way only: adapting GBS distribution.
+subsampling should go one way only: adapting GBS distribution.
 
 "exclude only the really sure ones"
-
-outlier detection -> no outlier in GESIS -> machine learning results: 0 = FP rate and TP > 0.
 
 Example in-text citation:
 Inner city mental health care access continues to be a problem (see Appendix for a table showing mental health care access by city).
@@ -94,4 +71,3 @@ Inner city mental health care access continues to be a problem (see Appendix for
 Aus <http://askus.library.wwu.edu/faq/116707> 
 
 http://ccsg.isr.umich.edu/index.php/chapters/statistical-analysis-chapter#nine
-

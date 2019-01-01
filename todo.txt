@@ -1,11 +1,11 @@
 
 I. Clean Project Structure
 
-1. move ./tex/fig to ./fig and adapt tex files.
+-- 1. move ./tex/fig to ./fig and adapt tex files.
 2. run all ipynb with data from ./data.
 3. remove unused csv-files in ./data.
 4. add files from ./data/too_large to .gitignore.
-5. write readme for new project structure.
+-- 5. write readme for new project structure.
 
 II. Preprocessing
 
@@ -32,5 +32,4 @@ IV. Missing Sections
 10. results from all of the above on all data.
 11. conclusion.
 
-
-last update: 24.12.2018
+stand: 01.01.2019

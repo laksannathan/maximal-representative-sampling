@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  24 DEC 2018 07:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  25 DEC 2018 14:26
 entering extended mode
 **./thesis_template.tex
 (thesis_template.tex
@@ -734,65 +734,71 @@ File: fig/Conscientiousness_figure.png Graphic file (type png)
 <use fig/Conscientiousness_figure.png>
 Package pdftex.def Info: fig/Conscientiousness_figure.png  used on input line 5
 0.
-(pdftex.def)             Requested size: 485.6511pt x 161.88368pt.
+(pdftex.def)             Requested size: 476.98349pt x 158.99448pt.
 
-Overfull \hbox (44.63338pt too wide) in paragraph at lines 50--52
+Overfull \hbox (35.96577pt too wide) in paragraph at lines 50--52
  [] 
  []
 
-<fig/Agreeablenessfigure.png, id=235, 650.43pt x 216.81pt>
-File: fig/Agreeablenessfigure.png Graphic file (type png)
-<use fig/Agreeablenessfigure.png>
-Package pdftex.def Info: fig/Agreeablenessfigure.png  used on input line 58.
-(pdftex.def)             Requested size: 364.23831pt x 121.41277pt.
-<fig/Opennessfigure.png, id=236, 867.24pt x 289.08pt>
+<fig/Opennessfigure.png, id=235, 867.24pt x 289.08pt>
 File: fig/Opennessfigure.png Graphic file (type png)
 <use fig/Opennessfigure.png>
-Package pdftex.def Info: fig/Opennessfigure.png  used on input line 66.
-(pdftex.def)             Requested size: 485.6511pt x 161.88368pt.
+Package pdftex.def Info: fig/Opennessfigure.png  used on input line 58.
+(pdftex.def)             Requested size: 476.98349pt x 158.99448pt.
 
-Overfull \hbox (44.63338pt too wide) in paragraph at lines 66--68
+Overfull \hbox (35.96577pt too wide) in paragraph at lines 58--60
  [] 
  []
 
-<fig/Extraversionfigure.png, id=237, 867.24pt x 289.08pt>
+<fig/Extraversionfigure.png, id=236, 867.24pt x 289.08pt>
 File: fig/Extraversionfigure.png Graphic file (type png)
 <use fig/Extraversionfigure.png>
-Package pdftex.def Info: fig/Extraversionfigure.png  used on input line 74.
-(pdftex.def)             Requested size: 485.6511pt x 161.88368pt.
+Package pdftex.def Info: fig/Extraversionfigure.png  used on input line 66.
+(pdftex.def)             Requested size: 476.98349pt x 158.99448pt.
 
-Overfull \hbox (44.63338pt too wide) in paragraph at lines 74--76
+Overfull \hbox (35.96577pt too wide) in paragraph at lines 66--68
  [] 
  []
 
-<fig/Neuroticismfigure.png, id=238, 867.24pt x 289.08pt>
+<fig/Neuroticismfigure.png, id=237, 867.24pt x 289.08pt>
 File: fig/Neuroticismfigure.png Graphic file (type png)
 <use fig/Neuroticismfigure.png>
-Package pdftex.def Info: fig/Neuroticismfigure.png  used on input line 82.
-(pdftex.def)             Requested size: 485.6511pt x 161.88368pt.
+Package pdftex.def Info: fig/Neuroticismfigure.png  used on input line 74.
+(pdftex.def)             Requested size: 476.98349pt x 158.99448pt.
 
-Overfull \hbox (44.63338pt too wide) in paragraph at lines 82--84
+Overfull \hbox (35.96577pt too wide) in paragraph at lines 74--76
  [] 
  []
 
-[11 <./fig/Conscientiousness_figure.png> <./fig/Agreeablenessfigure.png>]
-Underfull \vbox (badness 2781) has occurred while \output is active []
+<fig/Agreeablenessfigure.png, id=238, 650.43pt x 216.81pt>
+File: fig/Agreeablenessfigure.png Graphic file (type png)
+<use fig/Agreeablenessfigure.png>
+Package pdftex.def Info: fig/Agreeablenessfigure.png  used on input line 82.
+(pdftex.def)             Requested size: 487.8213pt x 162.60709pt.
+
+Overfull \hbox (46.80359pt too wide) in paragraph at lines 82--84
+ [] 
+ []
+
+[11 <./fig/Conscientiousness_figure.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12 <./fig/Opennessfigure.png>] [13 <./fig/Extraversionfigure.png>]
 <fig/scales.png, id=260, 740.7675pt x 226.59656pt>
 File: fig/scales.png Graphic file (type png)
 <use fig/scales.png>
-Package pdftex.def Info: fig/scales.png  used on input line 121.
+Package pdftex.def Info: fig/scales.png  used on input line 143.
 (pdftex.def)             Requested size: 407.42339pt x 124.62848pt.
-) [14 <./fig/Neuroticismfigure.png> <./fig/scales.png>] (feas.tex [15] [16
+) [14 <./fig/Neuroticismfigure.png>] (feas.tex [15 <./fig/Agreeablenessfigure.p
+ng> <./fig/scales.png>] [16
 
 ]
 Chapter 4.
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
-(intro2.tex
-<fig/tree3.png, id=279, 1064.47687pt x 518.6878pt>
+(feas2.tex
+<fig/tree3.png, id=280, 1064.47687pt x 518.6878pt>
 File: fig/tree3.png Graphic file (type png)
 <use fig/tree3.png>
 Package pdftex.def Info: fig/tree3.png  used on input line 10.
@@ -810,7 +816,7 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
-<fig/roc_example.png, id=285, 819.06pt x 148.30406pt>
+<fig/roc_example.png, id=286, 819.06pt x 148.30406pt>
 File: fig/roc_example.png Graphic file (type png)
 <use fig/roc_example.png>
 Package pdftex.def Info: fig/roc_example.png  used on input line 31.
@@ -837,7 +843,7 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
-<fig/Representative.png, id=292, 839.38594pt x 447.92343pt>
+<fig/Representative.png, id=293, 839.38594pt x 447.92343pt>
 File: fig/Representative.png Graphic file (type png)
 <use fig/Representative.png>
 Package pdftex.def Info: fig/Representative.png  used on input line 22.
@@ -962,16 +968,16 @@ onding model se-lec-tion ap-proach
  []
 
 [24]
-<fig/procedure.png, id=328, 828.09375pt x 372.64218pt>
+<fig/procedure.png, id=329, 828.09375pt x 372.64218pt>
 File: fig/procedure.png Graphic file (type png)
 <use fig/procedure.png>
 Package pdftex.def Info: fig/procedure.png  used on input line 177.
 (pdftex.def)             Requested size: 430.61124pt x 193.77504pt.
-) [25 <./fig/procedure.png>] (pu.tex) (res.tex [26
+) [25 <./fig/procedure.png>] (res.tex [26
 
 ]
 Chapter 5.
-<fig/Roc_all.png, id=340, 867.24pt x 578.16pt>
+<fig/Roc_all.png, id=341, 867.24pt x 578.16pt>
 File: fig/Roc_all.png Graphic file (type png)
 <use fig/Roc_all.png>
 Package pdftex.def Info: fig/Roc_all.png  used on input line 10.
@@ -981,14 +987,14 @@ Overfull \hbox (35.96577pt too wide) in paragraph at lines 10--13
  [] 
  []
 
-<fig/Discriminative_Procedure.png, id=341, 1099.10625pt x 549.55313pt>
+<fig/Discriminative_Procedure.png, id=342, 1099.10625pt x 549.55313pt>
 File: fig/Discriminative_Procedure.png Graphic file (type png)
 <use fig/Discriminative_Procedure.png>
 Package pdftex.def Info: fig/Discriminative_Procedure.png  used on input line 2
 1.
 (pdftex.def)             Requested size: 439.6347pt x 219.81735pt.
 [27 <./fig/Roc_all.png>]
-<fig/occfigure.png, id=348, 867.24pt x 289.08pt>
+<fig/occfigure.png, id=349, 867.24pt x 289.08pt>
 File: fig/occfigure.png Graphic file (type png)
 <use fig/occfigure.png>
 Package pdftex.def Info: fig/occfigure.png  used on input line 39.
@@ -1018,13 +1024,13 @@ Chapter 6.
 ] (thesis_template.bbl [32
 
 ]) [33] (authorship.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
  [34]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
 
 (thesis_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 155.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 155.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 Package rerunfilecheck Info: File `thesis_template.out' has not changed.
 (rerunfilecheck)             Checksum: 8D352689750CE8C725A40BB8DFBAA0E4;2022.
 
@@ -1034,12 +1040,12 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 155.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 10929 strings out of 493305
- 165754 string characters out of 3129802
- 434362 words of memory out of 3000000
+ 10927 strings out of 493305
+ 165825 string characters out of 3129802
+ 436362 words of memory out of 3000000
  14212 multiletter control sequences out of 15000+200000
  12997 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1062,9 +1068,9 @@ ers/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis_template.pdf (40 pages, 885494 bytes).
+Output written on thesis_template.pdf (40 pages, 887076 bytes).
 PDF statistics:
- 456 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
+ 457 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
  318 words of extra memory for PDF output out of 10000 (max. 10000000)
 
