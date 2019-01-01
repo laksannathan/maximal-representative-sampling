@@ -12,7 +12,7 @@ missing values are imputed based on domain-expert decisions. Outliers are handle
 	\begin{center}
 		\includegraphics[scale=0.53,angle=0]{fig/values_compare}
 		\label{std}
-		\caption{GBS - GESIS attribute and value comparison.}
+		\caption{GBS - GESIS attribute and value comparison. Not all attributes are used in every learning task. See GitHub documentation for more information.}
 	\end{center}
 \end{figure}
 
@@ -20,15 +20,6 @@ Continuous Features First of all, we perform logarithmic transformation of the s
 Categorical Features We encode all categorical variables with values between 0 and nclasses-1 where nclasses is the number of distinct categorical values for a given variable. Next, we perform one-hot encoding.
 
 This combination of class imbalance with non-stationary environments poses signiﬁcant and interesting practical problems for classiﬁcation
-
-
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.50,angle=0]{fig/workflow_data_processing}
-		\label{std}
-		\caption{GBS - GESIS attribute and value comparison.}
-	\end{center}
-\end{figure}
 
 \begin{figure}[ht]
 	\begin{center}
@@ -133,7 +124,7 @@ job satisfaction of departments,
 
 The graphs are almost identical for the Likert item "Gruendlich". Kiviat diagrams are chosen over bar plots and histograms, as the data is not continuous but values are still related. The cyclic structure of the chart, i.e. "Strongly Disagree" next to Strongly Agree", provides a vivid example for the central-tendency bias across all items.
 
-\subsection{Demographic and Personal Data}
+\subsection{Demographics and Personal Data}
 
 \begin{table}[ht]
     \begin{center}
@@ -156,13 +147,25 @@ The graphs are almost identical for the Likert item "Gruendlich". Kiviat diagram
 \end{center}
 \end{table}
 
-\section{Survey Mismatch}
+\section{Likert-Type Mismatch}
 
-\subsection{Likert-Type Scale}
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.44,angle=0]{fig/gesis_hist}
+		\label{std}
+		\caption{GESIS hists.}
+	\end{center}
+\end{figure}
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.44,angle=0]{fig/gbs_hist}
+		\label{std}
+		\caption{GBS hists.}
+	\end{center}
+\end{figure}
 
 John Tukey wrote otherwise (back in 1960) in a monograph "Data Analysis and Behavioral Science" (published in Collected Works v. III). One result he obtained is that if you're getting better than about 10percent test-retest agreement, your scale isn't narrow enough!
-
-
 
 [1] It is confirmed that different numbers of rating bars in a subjective rating scale can have significant effects on the subjective measurement, thus the assessment of the Big Five dimensions of personality.
 
@@ -201,4 +204,3 @@ In some cases, an additional "opt-out" option is provided for those respondents 
 \end{center}
 \end{table}
 
-\subsection{Imbalanced Data}
