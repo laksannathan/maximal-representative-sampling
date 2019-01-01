@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  25 DEC 2018 14:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  1 JAN 2019 12:51
 entering extended mode
 **./thesis_template.tex
 (thesis_template.tex
@@ -457,6 +457,18 @@ LaTeX Warning: Label `std' multiply defined.
 LaTeX Warning: Label `std' multiply defined.
 
 
+LaTeX Warning: Label `std' multiply defined.
+
+
+LaTeX Warning: Label `std' multiply defined.
+
+
+LaTeX Warning: Label `std' multiply defined.
+
+
+LaTeX Warning: Label `std' multiply defined.
+
+
 LaTeX Warning: Label `project' multiply defined.
 
 
@@ -723,82 +735,114 @@ File: fig/workflow_data_processing.png Graphic file (type png)
 Package pdftex.def Info: fig/workflow_data_processing.png  used on input line 2
 7.
 (pdftex.def)             Requested size: 190.08469pt x 157.71382pt.
-<fig/std_figure.png, id=225, 650.43pt x 216.81pt>
+<fig/gbs_missing.png, id=225, 867.24pt x 867.24pt>
+File: fig/gbs_missing.png Graphic file (type png)
+<use fig/gbs_missing.png>
+Package pdftex.def Info: fig/gbs_missing.png  used on input line 35.
+(pdftex.def)             Requested size: 433.61894pt x 433.61894pt.
+<fig/gesis_missing.png, id=226, 867.24pt x 867.24pt>
+File: fig/gesis_missing.png Graphic file (type png)
+<use fig/gesis_missing.png>
+Package pdftex.def Info: fig/gesis_missing.png  used on input line 43.
+(pdftex.def)             Requested size: 433.61894pt x 433.61894pt.
+<fig/gesis_corr.png, id=227, 867.24pt x 867.24pt>
+File: fig/gesis_corr.png Graphic file (type png)
+<use fig/gesis_corr.png>
+Package pdftex.def Info: fig/gesis_corr.png  used on input line 53.
+(pdftex.def)             Requested size: 450.9674pt x 450.9674pt.
+
+Overfull \hbox (9.94969pt too wide) in paragraph at lines 53--55
+ [] 
+ []
+
+<fig/gbs_corr.png, id=228, 867.24pt x 867.24pt>
+File: fig/gbs_corr.png Graphic file (type png)
+<use fig/gbs_corr.png>
+Package pdftex.def Info: fig/gbs_corr.png  used on input line 61.
+(pdftex.def)             Requested size: 450.9674pt x 450.9674pt.
+
+Overfull \hbox (9.94969pt too wide) in paragraph at lines 61--63
+ [] 
+ []
+
+<fig/std_figure.png, id=229, 650.43pt x 216.81pt>
 File: fig/std_figure.png Graphic file (type png)
 <use fig/std_figure.png>
-Package pdftex.def Info: fig/std_figure.png  used on input line 40.
+Package pdftex.def Info: fig/std_figure.png  used on input line 71.
 (pdftex.def)             Requested size: 357.7376pt x 119.24586pt.
- [10 <./fig/workflow_data_processing.png> <./fig/std_figure.png>]
-<fig/Conscientiousness_figure.png, id=234, 867.24pt x 289.08pt>
+<fig/Conscientiousness_figure.png, id=230, 867.24pt x 289.08pt>
 File: fig/Conscientiousness_figure.png Graphic file (type png)
 <use fig/Conscientiousness_figure.png>
-Package pdftex.def Info: fig/Conscientiousness_figure.png  used on input line 5
-0.
+Package pdftex.def Info: fig/Conscientiousness_figure.png  used on input line 8
+1.
 (pdftex.def)             Requested size: 476.98349pt x 158.99448pt.
 
-Overfull \hbox (35.96577pt too wide) in paragraph at lines 50--52
+Overfull \hbox (35.96577pt too wide) in paragraph at lines 81--83
  [] 
  []
 
-<fig/Opennessfigure.png, id=235, 867.24pt x 289.08pt>
+<fig/Opennessfigure.png, id=231, 867.24pt x 289.08pt>
 File: fig/Opennessfigure.png Graphic file (type png)
 <use fig/Opennessfigure.png>
-Package pdftex.def Info: fig/Opennessfigure.png  used on input line 58.
+Package pdftex.def Info: fig/Opennessfigure.png  used on input line 89.
 (pdftex.def)             Requested size: 476.98349pt x 158.99448pt.
 
-Overfull \hbox (35.96577pt too wide) in paragraph at lines 58--60
+Overfull \hbox (35.96577pt too wide) in paragraph at lines 89--91
  [] 
  []
 
-<fig/Extraversionfigure.png, id=236, 867.24pt x 289.08pt>
+<fig/Extraversionfigure.png, id=232, 867.24pt x 289.08pt>
 File: fig/Extraversionfigure.png Graphic file (type png)
 <use fig/Extraversionfigure.png>
-Package pdftex.def Info: fig/Extraversionfigure.png  used on input line 66.
+Package pdftex.def Info: fig/Extraversionfigure.png  used on input line 97.
 (pdftex.def)             Requested size: 476.98349pt x 158.99448pt.
 
-Overfull \hbox (35.96577pt too wide) in paragraph at lines 66--68
+Overfull \hbox (35.96577pt too wide) in paragraph at lines 97--99
  [] 
  []
 
-<fig/Neuroticismfigure.png, id=237, 867.24pt x 289.08pt>
+<fig/Neuroticismfigure.png, id=233, 867.24pt x 289.08pt>
 File: fig/Neuroticismfigure.png Graphic file (type png)
 <use fig/Neuroticismfigure.png>
-Package pdftex.def Info: fig/Neuroticismfigure.png  used on input line 74.
+Package pdftex.def Info: fig/Neuroticismfigure.png  used on input line 105.
 (pdftex.def)             Requested size: 476.98349pt x 158.99448pt.
 
-Overfull \hbox (35.96577pt too wide) in paragraph at lines 74--76
+Overfull \hbox (35.96577pt too wide) in paragraph at lines 105--107
  [] 
  []
 
-<fig/Agreeablenessfigure.png, id=238, 650.43pt x 216.81pt>
+<fig/Agreeablenessfigure.png, id=234, 650.43pt x 216.81pt>
 File: fig/Agreeablenessfigure.png Graphic file (type png)
 <use fig/Agreeablenessfigure.png>
-Package pdftex.def Info: fig/Agreeablenessfigure.png  used on input line 82.
+Package pdftex.def Info: fig/Agreeablenessfigure.png  used on input line 113.
 (pdftex.def)             Requested size: 487.8213pt x 162.60709pt.
 
-Overfull \hbox (46.80359pt too wide) in paragraph at lines 82--84
+Overfull \hbox (46.80359pt too wide) in paragraph at lines 113--115
  [] 
  []
 
-[11 <./fig/Conscientiousness_figure.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[10 <./fig/workflow_data_processing.png>]
+Underfull \vbox (badness 7486) has occurred while \output is active []
 
- [12 <./fig/Opennessfigure.png>] [13 <./fig/Extraversionfigure.png>]
-<fig/scales.png, id=260, 740.7675pt x 226.59656pt>
+ [11 <./fig/gbs_missing.png>]
+Underfull \vbox (badness 1616) has occurred while \output is active []
+
+ [12 <./fig/gesis_missing.png>]
+<fig/scales.png, id=253, 740.7675pt x 226.59656pt>
 File: fig/scales.png Graphic file (type png)
 <use fig/scales.png>
-Package pdftex.def Info: fig/scales.png  used on input line 143.
+Package pdftex.def Info: fig/scales.png  used on input line 174.
 (pdftex.def)             Requested size: 407.42339pt x 124.62848pt.
-) [14 <./fig/Neuroticismfigure.png>] (feas.tex [15 <./fig/Agreeablenessfigure.p
-ng> <./fig/scales.png>] [16
-
-]
+ [13]) [14] (feas.tex [15 <./fig/gesis_corr.png>] [16 <./fig/gbs_corr.png>] [17
+ <./fig/std_figure.png> <./fig/Conscientiousness_figure.png>] [18 <./fig/Openne
+ssfigure.png> <./fig/Extraversionfigure.png>] [19 <./fig/Neuroticismfigure.png>
+ <./fig/Agreeablenessfigure.png>] [20 <./fig/scales.png>]
 Chapter 4.
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
 (feas2.tex
-<fig/tree3.png, id=280, 1064.47687pt x 518.6878pt>
+<fig/tree3.png, id=309, 1064.47687pt x 518.6878pt>
 File: fig/tree3.png Graphic file (type png)
 <use fig/tree3.png>
 Package pdftex.def Info: fig/tree3.png  used on input line 10.
@@ -812,11 +856,13 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
- [17]
+ [21
+
+]
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
-<fig/roc_example.png, id=286, 819.06pt x 148.30406pt>
+<fig/roc_example.png, id=315, 819.06pt x 148.30406pt>
 File: fig/roc_example.png Graphic file (type png)
 <use fig/roc_example.png>
 Package pdftex.def Info: fig/roc_example.png  used on input line 31.
@@ -824,7 +870,7 @@ Package pdftex.def Info: fig/roc_example.png  used on input line 31.
 )
 Underfull \vbox (badness 1377) has occurred while \output is active []
 
- [18 <./fig/tree3.png>]
+ [22 <./fig/tree3.png>]
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
@@ -843,7 +889,7 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
-<fig/Representative.png, id=293, 839.38594pt x 447.92343pt>
+<fig/Representative.png, id=322, 839.38594pt x 447.92343pt>
 File: fig/Representative.png Graphic file (type png)
 <use fig/Representative.png>
 Package pdftex.def Info: fig/Representative.png  used on input line 22.
@@ -865,7 +911,7 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-[19 <./fig/roc_example.png>]
+[23 <./fig/roc_example.png>]
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ç in font cmr10!
@@ -899,17 +945,17 @@ Missing character: There is no Ä in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20 <./fig/Representative.png>]
+ [24 <./fig/Representative.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
 
-LaTeX Warning: Reference `Tab:DescripStatsRawDataDetail' on page 21 undefined o
+LaTeX Warning: Reference `Tab:DescripStatsRawDataDetail' on page 25 undefined o
 n input line 101.
 
 
-LaTeX Warning: Reference `Tab:DescripStatsRawDataDetail' on page 21 undefined o
+LaTeX Warning: Reference `Tab:DescripStatsRawDataDetail' on page 25 undefined o
 n input line 101.
 
 Missing character: There is no Ô in font cmr10!
@@ -918,7 +964,7 @@ Missing character: There is no Å in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21]
+ [25]
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
@@ -932,7 +978,7 @@ Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
 
-[22]
+[26]
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
@@ -957,7 +1003,7 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
- [23]
+ [27]
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
@@ -967,17 +1013,17 @@ Overfull \hbox (15.8412pt too wide) in paragraph at lines 173--174
 onding model se-lec-tion ap-proach
  []
 
-[24]
-<fig/procedure.png, id=329, 828.09375pt x 372.64218pt>
+[28]
+<fig/procedure.png, id=358, 828.09375pt x 372.64218pt>
 File: fig/procedure.png Graphic file (type png)
 <use fig/procedure.png>
 Package pdftex.def Info: fig/procedure.png  used on input line 177.
 (pdftex.def)             Requested size: 430.61124pt x 193.77504pt.
-) [25 <./fig/procedure.png>] (res.tex [26
+) [29 <./fig/procedure.png>] (res.tex [30
 
 ]
 Chapter 5.
-<fig/Roc_all.png, id=341, 867.24pt x 578.16pt>
+<fig/Roc_all.png, id=369, 867.24pt x 578.16pt>
 File: fig/Roc_all.png Graphic file (type png)
 <use fig/Roc_all.png>
 Package pdftex.def Info: fig/Roc_all.png  used on input line 10.
@@ -987,14 +1033,14 @@ Overfull \hbox (35.96577pt too wide) in paragraph at lines 10--13
  [] 
  []
 
-<fig/Discriminative_Procedure.png, id=342, 1099.10625pt x 549.55313pt>
+<fig/Discriminative_Procedure.png, id=370, 1099.10625pt x 549.55313pt>
 File: fig/Discriminative_Procedure.png Graphic file (type png)
 <use fig/Discriminative_Procedure.png>
 Package pdftex.def Info: fig/Discriminative_Procedure.png  used on input line 2
 1.
 (pdftex.def)             Requested size: 439.6347pt x 219.81735pt.
-[27 <./fig/Roc_all.png>]
-<fig/occfigure.png, id=349, 867.24pt x 289.08pt>
+[31 <./fig/Roc_all.png>]
+<fig/occfigure.png, id=378, 867.24pt x 289.08pt>
 File: fig/occfigure.png Graphic file (type png)
 <use fig/occfigure.png>
 Package pdftex.def Info: fig/occfigure.png  used on input line 39.
@@ -1010,22 +1056,22 @@ Missing character: There is no Å in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 <./fig/Discriminative_Procedure.png>]
+ [32 <./fig/Discriminative_Procedure.png>]
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29 <./fig/occfigure.png>] [30] (conc.tex
+ [33 <./fig/occfigure.png>] [34] (conc.tex
 Chapter 6.
-) [31
+) [35
 
-] (thesis_template.bbl [32
+] (thesis_template.bbl [36
 
-]) [33] (authorship.tex)
+]) [37] (authorship.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
- [34]
+ [38]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
 
 (thesis_template.aux)
@@ -1043,10 +1089,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 10927 strings out of 493305
- 165825 string characters out of 3129802
- 436362 words of memory out of 3000000
- 14212 multiletter control sequences out of 15000+200000
+ 10955 strings out of 493305
+ 166351 string characters out of 3129802
+ 440362 words of memory out of 3000000
+ 14228 multiletter control sequences out of 15000+200000
  12997 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,16n,41p,1641b,473s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1068,9 +1114,9 @@ ers/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis_template.pdf (40 pages, 887076 bytes).
+Output written on thesis_template.pdf (44 pages, 1140055 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 93 named destinations out of 1000 (max. 500000)
- 318 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 487 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 500000)
+ 338 words of extra memory for PDF output out of 10000 (max. 10000000)
 
