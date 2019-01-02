@@ -9,7 +9,7 @@ I. Clean Project Structure
 
 II. Preprocessing
 
-1. add resilience and political features.
+-- 1. add resilience and political features.
 2. include demographic data
 
 III. Improvements
@@ -20,7 +20,7 @@ III. Improvements
 
 IV. Missing Sections
 
-1. related work.
+-- 1. related work.
 2. the problem of overfitting. 
 3. ida.
 4. survey mismatch.
@@ -32,4 +32,4 @@ IV. Missing Sections
 10. results from all of the above on all data.
 11. conclusion.
 
-stand: 01.01.2019
+stand: 02.01.2019
