@@ -1,12 +1,6 @@
 \chapter{Initial Data Analysis}\label{Sec:Initial Data Analysis}
 
-A brief characterization of the data employed in this evaluation is given. 
-
-In order to diagnose to what extent an algorithm suffers from , it will be useful to have another dataset.
-The da, that is understanding what properties of the data differ between GBS and GESIS. 
-
-For completeness, we provide a description of the feature engineering process. We specify the list of transformations that are sequentially applied to each group of features in order to prepare the input for the ﬁnal model. All
-missing values are imputed based on domain-expert decisions. Outliers are handledmanually. Wesplittheinputdataintothreegroupsoffeatures: continuous, categorical and text.
+In order to diagnose to what extent an algorithm suffers from sampling bias, it will be useful to have another dataset. Initial data analysis is conducted independently of the problem statements to understand what properties of the data differ between GBS and GESIS for matching attributes. A brief characterization of the data currently employed in the studies is given in this chapter. The GitHub repository further specifies the list of transformations that are sequentially applied to each group of features in order to prepare the inputs for survey comparisons. Preprocessing steps and methods used to evaluate outcomes are documented as well. Scaling methods that apply to both data sets, e.g: centering and scaling of skewed continuous features for SVMs, are not mentioned but can be deduced from code easily.
 
 \begin{figure}[ht]
 	\begin{center}
@@ -19,7 +13,9 @@ missing values are imputed based on domain-expert decisions. Outliers are handle
 Continuous Features First of all, we perform logarithmic transformation of the skewed continuous features in order to reduce the skewness. Second, westandardizethecontinuousfeaturesbyremovingth emeanandscalingto unit variance. Centering and scaling happen independently on each feature by computing the relevant statistics on the samples in the dataset.
 Categorical Features We encode all categorical variables with values between 0 and nclasses-1 where nclasses is the number of distinct categorical values for a given variable. Next, we perform one-hot encoding.
 
-This combination of class imbalance with non-stationary environments poses signiﬁcant and interesting practical problems for classiﬁcation
+
+We missing values are imputed based on domain-expert decisions. We split the input data into three groups of features: continuous, categorical and text.
+
 
 \begin{figure}[ht]
 	\begin{center}
@@ -75,8 +71,6 @@ The Big Five is an empirically-derived model of human personality and psyche. Wh
 
 Agreeableness is the measure of one's cooperation, empathy, and willingness to trust and help others. Openness refers to openness to new experiences (i.e., whether one is timid/hesitant or eager about new objects or situations), level of inquisitiveness or curiousity, and level of preference for variety, novel stimuli and creativity. Extraversion refers to level of sociability, seeking and enjoyment of social contact, and energy and assertiveness in social situations. Extraverted people are outgoing and loquacious, while introverted people are reserved and favour solitude to social contact. Positive high affect (emotion) is linked to this concept. Neuroticism is characterized by easily experiencing disagreeable or negative emotions (anger, disappointment, frustration, etc.), and a poor coping response to those emotions
 
-
-
  is still ongoing debate on whether to use a Likert scale item as categorical or numeric feature. The intervals between positions on the scale are monotonic but never so well-defined as to be numerically uniform increments. A "Strongly Agree (5)" response indicates more agreement than "Agree", but it does not show agreement that is five times stronger than "Strongly Disagree (1)". 
 
 There is an underlying measurement continuum, but  
@@ -93,6 +87,8 @@ job satisfaction of departments,
 The graphs are almost identical for the Likert item "Gruendlich". Kiviat diagrams are chosen over bar plots and histograms, as the data is not continuous but values are still related. The cyclic structure of the chart, i.e. "Strongly Disagree" next to Strongly Agree", provides a vivid example for the central-tendency bias across all items.
 
 \section{Demographics and Personal Data}
+
+Shortcomings in attribute mappings may result in inappropriate representation and incorrect conclusions.
 
 \begin{table}[ht]
     \begin{center}

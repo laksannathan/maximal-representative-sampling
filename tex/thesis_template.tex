@@ -16,8 +16,7 @@
   \setlength\hangindent{\mylen}%
   \hspace*{\mylen}#1\\}
   
-%\usepackage{algorithm}
-%\usepackage[noend]{algpseudocode}
+\usepackage[toc]{appendix}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PYTHON CODE
 
@@ -151,9 +150,9 @@ showstringspaces=false            %
 
 \input{intro}
 \newpage
-\input{ida}
-\newpage
 \input{terms}
+\newpage
+\input{ida}
 \newpage
 \input{feas}
 \newpage
@@ -165,6 +164,8 @@ showstringspaces=false            %
 \newpage
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{literature}
+
+\input{appendix}
 
 % ----------------------------------------------------
 % --- frontmatter: List of Figures (not mandatory) ---

@@ -12,7 +12,7 @@ Python 3.6+ with Jupyter notebook and WEKA are necessary to get a development en
     ├── ...
     ├── data                    # data sources: GESIS and GBS
     |   ├── raw input           # survey results
-    |   └── prep                # preprocessed (ml ready) data
+    |   └── ._proc.csv          # preprocessed (ml ready) data
     ├── docs                    # documentation on data sources
     ├── src                     # source code: Python, WEKA
     └── tex                     # thesis: LaTex Code
