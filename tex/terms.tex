@@ -1,6 +1,6 @@
 \chapter{Terminology and Definitions}
 
-A well-defined learning problem involves a number of design choices, including selecting the type of training experience, the target function to be learned, a representation for this target function, and an algorithm to learn from the source of training experience [2]. In modelling a political participation process, a computer program is designed to approximate the likelihood of a person going to vote on election day. Ideally, for every instance with unknown political interest and willingness to participate, there is enough data of people of similiar demographics, socioeconomics and psychological traits to generalize from. This chapter defines key terminology and destinctions when learning from biased data. Basic design issues and approaches to supervised learning are covered, while conceptual elements of interest are introduced with regards to overfitting. The role of noise in the bias-variance decomposition will be analyzed and further broken down.
+A well-defined learning problem involves a number of design choices, including selecting the type of training experience, the target function to be learned, a representation for this target function, and an algorithm to learn from the source of training experience [2]. In modelling a political participation process, a computer program is designed to approximate the likelihood of a person going to vote on election day. Ideally, for every instance with unknown political interest and willingness to participate, there is enough data of people of similiar demographics, socioeconomics and psychological traits to generalize from. This chapter defines key terminology and destinctions when learning from biased data. Basic design issues and approaches to supervised learning are covered, while conceptual elements of interest are introduced with regards to overfitting. The role of noise in the bias-variance decomposition will be analyzed and further broken down. sources of error.
 
 \section{Sampling Bias}
 
@@ -9,8 +9,6 @@ A well-defined learning problem involves a number of design choices, including s
 Sampling bias is often referred to as selection bias or sample selection bias. I will stick to the more descriptive term sampling bias. It underlines the fact that the bias arises in how the data was sampled. Also, the use of the term becomes less ambiguous, because there exists another notion of selection bias in the context of model selection. This type of bias is usually referred to as bad generalization, where the performance of the selected hypothesis is overly optimistic.
 
 \section{The Problem of Overfitting}
-
-\subsection{Model and Hypothesis}
 
 The model in supervised learning usually refers to the mathematical structure of how to make predictions \(y_i\) given \(x_i\). The most common model is a linear regression model, where the prediction is given by a linear combination of weighted input features. The parameters, the weights of these features, are the undetermined part that need to be learned from data. Depending on the task, the prediction value can have different interpretations, i.e. regression or classiﬁcation. The categorical outcome, "did vote" or "did not vote", makes political participation a binary classiﬁcation problem [7]. In machine learning, the terms hypothesis and model are often used interchangeably. This paper uses the following convention [3] as the terminology to describe ideas and concepts is not standardized:
 
@@ -24,7 +22,7 @@ The model in supervised learning usually refers to the mathematical structure of
 
 With the deﬁnitions above, it is a hypothesis selection problem if both the degree of a polynomial and the corresponding parameters are of interest. The phrase single hypothesis refers to a single probability distribution or function. A machine learning model, the composite hypothesis, refers to a family of probability distributions or functions with the same functional form. An example is the set of all second-degree polynomials [9].
 
-\subsection{Bias and Variance Tradeoff}
+\subsection{Bias-Variance Tradeoff}
 
 "Overﬁtting is the disease. Noise is the cause. Learning is led astray by ﬁtting the noise more than the actual signal"[6]. To avoid overﬁtting you might deliberately exclude certain factors, increase sample size, stop the analysis early, or simply pick less complex algorithms. Regularization puts a break where additional iterations of algorithms start to harm the performance. Validation is another way to see what will actually happen out-of-sample
 
@@ -34,3 +32,5 @@ By deﬁnition, statistical inference is taking the results of applying some sor
 \item if \(h\) is too simple, \(y_i = h(x_i)\) may not hold for many values of \(i\);
 \item if \(h\) is too complex, it fits the data very well but will not generalize well on unseen data.
 \end{itemize}
+
+\subsection{Stochastic and Deterministic Noise}

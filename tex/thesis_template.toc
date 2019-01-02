@@ -2,20 +2,20 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Related Work}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Outline}{3}{section.1.2}
-\contentsline {chapter}{\numberline {2}Terminology and Definitions}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Sampling Bias}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}The Problem of Overfitting}{5}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Model and Hypothesis}{5}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Bias and Variance Tradeoff}{6}{subsection.2.2.2}
-\contentsline {chapter}{\numberline {3}Initial Data Analysis}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}The Big Five Dimensions}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Demographics and Personal Data}{11}{section.3.2}
-\contentsline {section}{\numberline {3.3}Likert-Type Mismatch}{11}{section.3.3}
-\contentsline {chapter}{\numberline {4}Feasibility of Learning}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Representative Sample}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}Learning from Positive and Unlabeled Data}{21}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Recovering Model Performance}{24}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Artificial Data Synthesis}{27}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {2}Initial Data Analysis}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}The Big Five Dimensions}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Demographics and Personal Data}{9}{section.2.2}
+\contentsline {chapter}{\numberline {3}Terminology and Definitions}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Sampling Bias}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}The Problem of Overfitting}{13}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Bias-Variance Tradeoff}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Stochastic and Deterministic Noise}{14}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Feasibility of Learning}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Likert-Type Mismatch}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Representative Sample}{17}{section.4.2}
+\contentsline {section}{\numberline {4.3}Learning from Positive and Unlabeled Data}{18}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Recovering Model Performance}{20}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Artificial Data Synthesis}{23}{subsection.4.3.2}
 \contentsline {chapter}{\numberline {5}Results}{29}{chapter.5}
 \contentsline {section}{\numberline {5.1}Maximal Representative Subsample}{29}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Fraction of Positives}{29}{subsection.5.1.1}
