@@ -2,16 +2,42 @@
 
 No practical amount of data can distinguish between two distributions, thus instances of GBS can not be proven to come from GESIS. However, machine learning allows to infer the conditional probability of \textit{'GBS participant is representative'} given the survey data within a probabilistic framework. 
 
-
-
-
 \section{Likert-Type Mismatch}
 
-Inconsistencies are discovered later with the planned learning models as 
+
+Shortcomings in attribute mappings may result in inappropriate representation and incorrect conclusions.
+
+\begin{table}[ht]
+    \begin{center}
+            {\footnotesize
+            \begin{tabular}{l|c|ccccccccc}
+                \hline \hline
+		attribute & GBS values & GBS values count &  GBS values & GBS values count \\
+                \hline \hline
+                     Wach & 4 & 311 & Einigermassen & 1697 \\
+                     & 3 & 183 & Erheblich & 1389 \\
+                     & 2 & 66 & Ein bisschen & 467 \\ 
+              	& 1 & 14 & Aeusserst & 367 \\	
+		& -1 & 1 & Gar nicht & 184 \\		
+		& -9 & 1 & & \\
+            \end{tabular}}
+        \caption{Caption.}
+\end{center}
+\end{table}
+
 
 \begin{figure}[ht]
 	\begin{center}
-		\includegraphics[scale=0.44,angle=0]{fig/gesis_hist}
+		\includegraphics[scale=0.50,angle=0]{fig/scales}
+		\label{6_5}
+		\caption{Example of a Likert item discrepancy. GBS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GESIS encouraging participants to voice a positive or negative opinion.}
+	\end{center}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.30,angle=0]{fig/gesis_hist}
 		\label{std}
 		\caption{GESIS hists.}
 	\end{center}
@@ -19,11 +45,13 @@ Inconsistencies are discovered later with the planned learning models as
 
 \begin{figure}[ht]
 	\begin{center}
-		\includegraphics[scale=0.44,angle=0]{fig/gbs_hist}
+		\includegraphics[scale=0.30,angle=0]{fig/gbs_hist}
 		\label{std}
 		\caption{GBS hists.}
 	\end{center}
 \end{figure}
+
+Inconsistencies are discovered later with the planned learning models as 
 
 John Tukey wrote otherwise (back in 1960) in a monograph "Data Analysis and Behavioral Science" (published in Collected Works v. III). One result he obtained is that if you're getting better than about 10percent test-retest agreement, your scale isn't narrow enough!
 
@@ -32,13 +60,6 @@ John Tukey wrote otherwise (back in 1960) in a monograph "Data Analysis and Beha
 Techniques for reducing the length of scales while maintaining psychometric quality.
 Figure X shows an example of such as a statement.
 
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.55,angle=0]{fig/scales}
-		\label{6_5}
-		\caption{Example of a Likert item discrepancy. GBS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GESIS encouraging participants to voice a positive or negative opinion.}
-	\end{center}
-\end{figure}
 
 In some cases, an additional "opt-out" option is provided for those respondents who truly cannot respond in GBS only.
 
@@ -64,18 +85,11 @@ In some cases, an additional "opt-out" option is provided for those respondents 
 \end{center}
 \end{table}
 
-
-
-
-\pythonexternal{fig/latex.py}
-
 This leads to a binary classification task with GESIS as positive class and GBS as negative class, i.e. representative and non-representitve sample respectively. Discriminative learners will look for decision boundaries to distinguish the different views of GBS from GESIS in each of the four reference studies. False negatives are then more closely aligned with the target probability distribution. The process of classification is repeated until the learner starts fitting noise more than is warranted. To avoid overfitting, the learning objective needs to be refined as contingency tables lack proper interpretibility. An importance weighted adaption of cross-validation serves as model selection criterion. Given the imbalanced nature and size of GBS, learning is restrained to simpler algorithms with lesser degrees of freedom. The fraction of false positives in the result set of this procedure is kept as proxy measure for the subsequent method positive-unlabeled learning (PU learning). The development of classiﬁcation models in this setting is often referred to as positive-unlabeled learning (Denis et al. 2005).
 
 \input{feas2}
 
 PU learning is a semi-supervised technique that does not make the simplifying assumption of GBS instances being negative. Instead, a one-class classifier is trained on GESIS only. [...] This can result in even better assessment. [Read Literature] - Imporance weighted cross validation and pu learning with proper assessment.
-
-%\lstinputlisting[language=Python]{tex_code/test.py}
 
 For further, more technical reading, references to background papers are provided in [38].
 
@@ -84,9 +98,10 @@ Overﬁtting stands out as one of the biggest challenges for machine learning. I
 State-of-the-art techniques in positive-unlabeled learningtackle this problem by treating the unlabeled sample as neg-atives and training a classiﬁer to distinguish between la-beled (positive) and unlabeled examples. 
 Surprisingly,for a variety of performance criteria, non-traditional classi-ﬁers achieve similar performance under traditional evalua-tion as optimal traditional classiﬁers (Blanchard et al. 2010;Menon et al. 2015). 
 
+\vspace{25pt}
 \begin{figure}[ht]
 	\begin{center}
-		\includegraphics[scale=0.54,angle=0]{fig/Representative}
+		\includegraphics[scale=0.44,angle=0]{fig/Representative}
 		\label{representativ}
 		\caption{Consider samples of fixed size \(m\) with some constants \(c_m\) and \(d_m\). Maximal representative sampling adjusts for nonresponse \(-d\) of subgroup \(Female\) by removing \(+d\) of subgroup \(Male\) from the sample.}
 	\end{center}

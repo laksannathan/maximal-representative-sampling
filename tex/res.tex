@@ -12,6 +12,29 @@ The overly optimistic resubstitution error, is not a good indicator of model per
 
 \begin{figure}[ht]
 	\begin{center}
+		\includegraphics[scale=0.55,angle=0]{fig/occfigure}
+		\label{occ}
+		\vspace*{-1.0cm}
+		\caption{Tuning parameter \(nu\) that controls the trade-off between the fraction of non-representative samples and the number of support vectors in one-class SVM. More than 0.73 of GBS (right) are classified as representative with high confidence (low sdt) for the optimal value \(nu = 10^{-5}\).}
+	\end{center}
+\end{figure}
+
+Estimating Positive Class Prior with One-Class SVMs. In a simple random sample, one can assume that observations are independent from each other. The complex sample design of GBS however
+
+, e.g. multi-stage samples from different survey periods,
+Complex sample design, such as multi-stage samples of schools, classes and students, students from one classroom are likely to be more correlated than those from another classroom. 
+
+we need to compensate for complex survey designs with features including, but not limited to, unequal likelihoods of selection, differences in response rates across key subgroups, and deviations from distributions on critical variables found in the target population from external sources, such as a national Census
+
+\subsection{ROC and puROC Evaluation}
+
+most commonly through the development of survey weights for statistical adjustment. If complex sample designs are implemented in data collection but the analysis assumes simple random sampling, the variances of the survey estimates can be underestimated and the confidence interval and test statistics are likely to be biased (Heeringa, West,  Berglund, 2010).
+
+In a recent meta-analysis of 150 sampled research papers analyzing several surveys with complex sampling designs, it is found that analytic errors caused by ignorance or incorrect use of the complex sample design features were frequent. Such analytic errors define an important component of the larger total survey error framework, produce misleading descriptions of populations and ultimately yield misleading inferences (Aurelien, West,  Sakshaug, 2016). It is thus of critical importance to incorporate the complex survey design features in statistical analysis. 
+
+
+\begin{figure}[ht]
+	\begin{center}
 		\includegraphics[scale=0.55,angle=0]{fig/Roc_all}
 		\label{occ}
 		\vspace*{-1.0cm}
@@ -28,27 +51,6 @@ The overly optimistic resubstitution error, is not a good indicator of model per
 	\end{center}
 \end{figure}
 
-Estimating Positive Class Prior with One-Class SVMs. In a simple random sample, one can assume that observations are independent from each other. The complex sample design of GBS however
-
-, e.g. multi-stage samples from different survey periods,
-Complex sample design, such as multi-stage samples of schools, classes and students, students from one classroom are likely to be more correlated than those from another classroom. 
-
-we need to compensate for complex survey designs with features including, but not limited to, unequal likelihoods of selection, differences in response rates across key subgroups, and deviations from distributions on critical variables found in the target population from external sources, such as a national Census
-
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.55,angle=0]{fig/occfigure}
-		\label{occ}
-		\vspace*{-1.0cm}
-		\caption{Tuning parameter \(nu\) that controls the trade-off between the fraction of non-representative samples and the number of support vectors in one-class SVM. More than 0.73 of GBS (right) are classified as representative with high confidence (low sdt) for the optimal value \(nu = 10^{-5}\).}
-	\end{center}
-\end{figure}
-
-\subsection{ROC and puROC Evaluation}
-
-most commonly through the development of survey weights for statistical adjustment. If complex sample designs are implemented in data collection but the analysis assumes simple random sampling, the variances of the survey estimates can be underestimated and the confidence interval and test statistics are likely to be biased (Heeringa, West,  Berglund, 2010).
-
-In a recent meta-analysis of 150 sampled research papers analyzing several surveys with complex sampling designs, it is found that analytic errors caused by ignorance or incorrect use of the complex sample design features were frequent. Such analytic errors define an important component of the larger total survey error framework, produce misleading descriptions of populations and ultimately yield misleading inferences (Aurelien, West,  Sakshaug, 2016). It is thus of critical importance to incorporate the complex survey design features in statistical analysis. 
 
 
 \section{Political Participation and Resilience}

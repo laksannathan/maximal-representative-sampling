@@ -10,54 +10,32 @@ In order to diagnose to what extent an algorithm suffers from sampling bias, it 
 	\end{center}
 \end{figure}
 
-Continuous Features First of all, we perform logarithmic transformation of the skewed continuous features in order to reduce the skewness. Second, westandardizethecontinuousfeaturesbyremovingth emeanandscalingto unit variance. Centering and scaling happen independently on each feature by computing the relevant statistics on the samples in the dataset.
-Categorical Features We encode all categorical variables with values between 0 and nclasses-1 where nclasses is the number of distinct categorical values for a given variable. Next, we perform one-hot encoding.
-
-
-We missing values are imputed based on domain-expert decisions. We split the input data into three groups of features: continuous, categorical and text.
-
+\section{Missing Data and Imputation}
 
 \begin{figure}[ht]
 	\begin{center}
-		\includegraphics[scale=0.50,angle=0]{fig/gbs_missing}
+		\includegraphics[scale=0.52,angle=0]{fig/gesis_missing}
 		\label{std}
-		\caption{GBS missing value comparison.}
+		\caption{GBS - GESIS attribute and value comparison.}
 	\end{center}
 \end{figure}
 
+\section{Correlation Matrix}
+
+Continuous Features First of all, we perform logarithmic transformation of the skewed continuous features in order to reduce the skewness. Second, westandardizethecontinuousfeaturesbyremovingth emeanandscalingto unit variance. Centering and scaling happen independently on each feature by computing the relevant statistics on the samples in the dataset.
+Categorical Features We encode all categorical variables with values between 0 and nclasses-1 where nclasses is the number of distinct categorical values for a given variable. Next, we perform one-hot encoding.
+
+We missing values are imputed based on domain-expert decisions. We split the input data into three groups of features: continuous, categorical and text.
+
 \begin{figure}[ht]
 	\begin{center}
-		\includegraphics[scale=0.50,angle=0]{fig/gesis_missing}
+		\includegraphics[scale=0.73,angle=0]{fig/correl}
 		\label{std}
 		\caption{GESIS missing value comparison.}
 	\end{center}
 \end{figure}
 
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.52,angle=0]{fig/gesis_corr}
-		\label{std}
-		\caption{GBS - GESIS attribute and value comparison.}
-	\end{center}
-\end{figure}
-
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.52,angle=0]{fig/gbs_corr}
-		\label{std}
-		\caption{GBS - GESIS attribute and value comparison.}
-	\end{center}
-\end{figure}
-
 \section{The Big Five Dimensions}
-
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.55,angle=0]{fig/std_figure}
-		\label{std}
-		\caption{Mean and standard deviation of BFI-10 Items:\textit{"A Short Scale for Assessing the Big Five Dimensions of Personality"}.}
-	\end{center}
-\end{figure}
 
 The Big Five is an empirically-derived model of human personality and psyche. When factor analysis is applied to personality survey data, five clusters of traits consistently emerge. The BFI-10 is a 10-item scale measuring the Big Five personality traits, two BFI items for each dimension, representing both the high and low pole of each factor [Fig X]. Likert scales are the most frequently used instruments in GBS and GESIS. They consist of statements which measure the intensity of one's estimation towards the preceding statement. Respondents are asked to rate the BFI-10 items on a level of agreement on a consistent rating scale ranging from "Strongly Agree (5)" to Strongly Disagree (1)" for all items in both survey.
 
@@ -68,8 +46,6 @@ The Big Five is an empirically-derived model of human personality and psyche. Wh
 		\caption{Conscientiousness: the degree of organization, self-regulation, and responsibility one exhibits. \textit{"I see myself as someone who tends to be lazy."}(left). \textit{"I see myself as someone who does a thorough job."}(right).}
 	\end{center}
 \end{figure}
-
-Agreeableness is the measure of one's cooperation, empathy, and willingness to trust and help others. Openness refers to openness to new experiences (i.e., whether one is timid/hesitant or eager about new objects or situations), level of inquisitiveness or curiousity, and level of preference for variety, novel stimuli and creativity. Extraversion refers to level of sociability, seeking and enjoyment of social contact, and energy and assertiveness in social situations. Extraverted people are outgoing and loquacious, while introverted people are reserved and favour solitude to social contact. Positive high affect (emotion) is linked to this concept. Neuroticism is characterized by easily experiencing disagreeable or negative emotions (anger, disappointment, frustration, etc.), and a poor coping response to those emotions
 
  is still ongoing debate on whether to use a Likert scale item as categorical or numeric feature. The intervals between positions on the scale are monotonic but never so well-defined as to be numerically uniform increments. A "Strongly Agree (5)" response indicates more agreement than "Agree", but it does not show agreement that is five times stronger than "Strongly Disagree (1)". 
 
@@ -86,27 +62,3 @@ job satisfaction of departments,
 
 The graphs are almost identical for the Likert item "Gruendlich". Kiviat diagrams are chosen over bar plots and histograms, as the data is not continuous but values are still related. The cyclic structure of the chart, i.e. "Strongly Disagree" next to Strongly Agree", provides a vivid example for the central-tendency bias across all items.
 
-\section{Demographics and Personal Data}
-
-Shortcomings in attribute mappings may result in inappropriate representation and incorrect conclusions.
-
-\begin{table}[ht]
-    \begin{center}
-            {\footnotesize
-            \begin{tabular}{l|c|ccccccccc}
-                \hline \hline
-		attribute & GBS values & GBS values count &  GBS values & GBS values count \\
-                \hline \hline
-                     Wach & 4 & 311 & Einigermassen & 1697 \\
-                     & 3 & 183 & Erheblich & 1389 \\
-                     & 2 & 66 & Ein bisschen & 467 \\ 
-              	& 1 & 14 & Aeusserst & 367 \\	
-		& -1 & 1 & Gar nicht & 184 \\		
-		& -9 & 1 & & \\
-		\hline
-		Wach & 4 & 311 & Einigermassen & 1697 \\
-                     & 3 & 183 & Erheblich & 1389 \\
-            \end{tabular}}
-        \caption{Caption.}
-\end{center}
-\end{table}
