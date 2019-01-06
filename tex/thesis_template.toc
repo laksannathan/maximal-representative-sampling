@@ -26,10 +26,3 @@
 \contentsline {section}{\numberline {5.2}Political Participation and Resilience}{28}{section.5.2}
 \contentsline {chapter}{\numberline {6}Conclusion}{31}{chapter.6}
 \contentsline {chapter}{Bibliography}{32}{chapter.6}
-\contentsline {chapter}{Appendices}{35}{section*.23}
-\setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Supplementary Material}{35}{Appendix.1.A}
-\contentsline {section}{\numberline {A.1}Figures}{35}{section.1.A.1}
-\contentsline {section}{\numberline {A.2}Tables}{36}{section.1.A.2}
-\contentsline {section}{\numberline {A.3}Code}{36}{section.1.A.3}
-\contentsline {chapter}{\numberline {B}GitHub Repository}{39}{Appendix.1.B}
