@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  7 JAN 2019 09:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  7 JAN 2019 10:22
 entering extended mode
 **./thesis_template.tex
 (thesis_template.tex
@@ -974,8 +974,19 @@ File: fig/Discriminative_Procedure.png Graphic file (type png)
 Package pdftex.def Info: fig/Discriminative_Procedure.png  used on input line 4
 7.
 (pdftex.def)             Requested size: 439.6347pt x 219.81735pt.
+<fig/weka_gesis.png, id=328, 614.295pt x 782.925pt>
+File: fig/weka_gesis.png Graphic file (type png)
+<use fig/weka_gesis.png>
+Package pdftex.def Info: fig/weka_gesis.png  used on input line 60.
+(pdftex.def)             Requested size: 337.86328pt x 430.61008pt.
+<fig/weka_gbs.png, id=329, 615.80063pt x 782.925pt>
+File: fig/weka_gbs.png Graphic file (type png)
+<use fig/weka_gbs.png>
+Package pdftex.def Info: fig/weka_gbs.png  used on input line 66.
+(pdftex.def)             Requested size: 338.69139pt x 430.61008pt.
 ) [28 <./fig/occfigure.png>] [29 <./fig/Roc_all.png>] (conc.tex [30 <./fig/Disc
-riminative_Procedure.png>]
+riminative_Procedure.png>] [31 <./fig/weka_gesis.png>] [32 <./fig/weka_gbs.png>
+]
 Chapter 5.
 Missing character: There is no ï in font cmr10!
 Missing character: There is no ¬ in font cmr10!
@@ -983,13 +994,13 @@ Missing character: There is no  in font cmr10!
 Missing character: There is no ï in font cmr10!
 Missing character: There is no ¬ in font cmr10!
 Missing character: There is no  in font cmr10!
-) [31
+) [33
 
-] (thesis_template.bbl [32
+] (thesis_template.bbl [34
 
-]) [33] (authorship.tex)
+]) [35] (authorship.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
- [34]
+ [36]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
 
 (thesis_template.aux)
@@ -1007,10 +1018,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
  ) 
 Here is how much of TeX's memory you used:
- 11008 strings out of 493305
- 166680 string characters out of 3129802
+ 11022 strings out of 493305
+ 166928 string characters out of 3129802
  276822 words of memory out of 3000000
- 14296 multiletter control sequences out of 15000+200000
+ 14304 multiletter control sequences out of 15000+200000
  13654 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,16n,41p,1383b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1032,9 +1043,9 @@ ers/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis_template.pdf (39 pages, 1217432 bytes).
+Output written on thesis_template.pdf (41 pages, 1334956 bytes).
 PDF statistics:
- 436 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
- 289 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
+ 299 words of extra memory for PDF output out of 10000 (max. 10000000)
 
