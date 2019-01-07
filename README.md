@@ -2,7 +2,7 @@
 This project deals with selection bias in social sciences. Discriminative learners are trained and combined to reduce the effects of bias in psychological and political studies. With positive-unlabeled learning and artificial data synthesis, performance estimation becomes more accurate in a non-traditional setting.
 
 ## Motivation
-In scope of my bachelor thesis, the main goal is to apply machine learning to the fields of survey analytics.
+Apply machine learning to the fields of survey analytics.
 
 ## Installation
 Python 3.6+ with Jupyter notebook and WEKA are necessary to get a development env running. If random_state is not provided, any init will come close to analysed results.
