@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  8 JAN 2019 15:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  8 JAN 2019 18:02
 entering extended mode
 **./thesis_template.tex
 (thesis_template.tex
@@ -473,50 +473,7 @@ Package scrpage2 Warning: usage of obsolete package!
 (scrpage2)                You should replace usage of package `scrpage2'
 (scrpage2)                by `scrlayer-scrpage' on input line 52.
 
-) (thesis_template.aux
-
-LaTeX Warning: Label `std' multiply defined.
-
-
-LaTeX Warning: Label `project' multiply defined.
-
-
-LaTeX Warning: Label `project' multiply defined.
-
-
-LaTeX Warning: Label `Tab:DescripStatsRawData' multiply defined.
-
-
-LaTeX Warning: Label `std' multiply defined.
-
-
-LaTeX Warning: Label `occ' multiply defined.
-
-
-LaTeX Warning: Label `fig:Ng1' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:Ng1' multiply defined.
-
-
-LaTeX Warning: Label `fig:Ng2' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:Ng2' multiply defined.
-
-
-LaTeX Warning: Label `std' multiply defined.
-
-
-LaTeX Warning: Label `std' multiply defined.
-
-
-LaTeX Warning: Label `std' multiply defined.
-
-
-LaTeX Warning: Label `std' multiply defined.
-
-)
+) (thesis_template.aux)
 \openout1 = `thesis_template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
@@ -626,7 +583,10 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 [4
 
-] (thesis_template.toc [5])
+]
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write4
 \openout4 = `thesis_template.toc'.
 
@@ -659,7 +619,7 @@ l.19
 
 
 ]
-<fig/overview.png, id=123, 602.25pt x 346.29375pt>
+<fig/overview.png, id=72, 602.25pt x 346.29375pt>
 File: fig/overview.png Graphic file (type png)
 <use fig/overview.png>
 Package pdftex.def Info: fig/overview.png  used on input line 23.
@@ -686,7 +646,7 @@ l.1 \chapter
 
 ]
 Chapter 2.
-<fig/values_compare.png, id=137, 837.1275pt x 589.4522pt>
+<fig/values_compare.png, id=90, 837.1275pt x 589.4522pt>
 File: fig/values_compare.png Graphic file (type png)
 <use fig/values_compare.png>
 Package pdftex.def Info: fig/values_compare.png  used on input line 7.
@@ -694,13 +654,8 @@ Package pdftex.def Info: fig/values_compare.png  used on input line 7.
 
 Underfull \vbox (badness 4713) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.16 
-      [5 <./fig/values_compare.png>]
-<fig/Conscientiousness_figure.png, id=143, 867.24pt x 289.08pt>
+ [5 <./fig/values_compare.png>]
+<fig/Conscientiousness_figure.png, id=98, 867.24pt x 289.08pt>
 File: fig/Conscientiousness_figure.png Graphic file (type png)
 <use fig/Conscientiousness_figure.png>
 Package pdftex.def Info: fig/Conscientiousness_figure.png  used on input line 2
@@ -718,12 +673,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 3118) has occurred while \output is active []
 
  [7 <./fig/Conscientiousness_figure.png>]
-<fig/scales.png, id=156, 740.7675pt x 226.59656pt>
+<fig/scales.png, id=113, 740.7675pt x 226.59656pt>
 File: fig/scales.png Graphic file (type png)
 <use fig/scales.png>
 Package pdftex.def Info: fig/scales.png  used on input line 99.
 (pdftex.def)             Requested size: 370.38284pt x 113.29799pt.
-<fig/histo.png, id=157, 708.39656pt x 475.7775pt>
+<fig/histo.png, id=114, 708.39656pt x 475.7775pt>
 File: fig/histo.png Graphic file (type png)
 <use fig/histo.png>
 Package pdftex.def Info: fig/histo.png  used on input line 108.
@@ -742,7 +697,7 @@ Missing character: There is no ì in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
-<fig/tree3.png, id=181, 1064.47687pt x 518.6878pt>
+<fig/tree3.png, id=140, 1064.47687pt x 518.6878pt>
 File: fig/tree3.png Graphic file (type png)
 <use fig/tree3.png>
 Package pdftex.def Info: fig/tree3.png  used on input line 22.
@@ -764,7 +719,7 @@ Missing character: There is no Å in font cmr10!
 Underfull \vbox (badness 1377) has occurred while \output is active []
 
  [13 <./fig/tree3.png>]
-<fig/roc_example.png, id=196, 819.06pt x 148.30406pt>
+<fig/roc_example.png, id=156, 819.06pt x 148.30406pt>
 File: fig/roc_example.png Graphic file (type png)
 <use fig/roc_example.png>
 Package pdftex.def Info: fig/roc_example.png  used on input line 44.
@@ -930,7 +885,7 @@ Overfull \hbox (15.8412pt too wide) in paragraph at lines 160--161
 onding model se-lec-tion ap-proach
  []
 
-<fig/procedure.png, id=229, 950.80219pt x 434.37282pt>
+<fig/procedure.png, id=193, 950.80219pt x 434.37282pt>
 File: fig/procedure.png Graphic file (type png)
 <use fig/procedure.png>
 Package pdftex.def Info: fig/procedure.png  used on input line 164.
@@ -950,7 +905,7 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
-<fig/occfigure.png, id=246, 867.24pt x 289.08pt>
+<fig/occfigure.png, id=212, 867.24pt x 289.08pt>
 File: fig/occfigure.png Graphic file (type png)
 <use fig/occfigure.png>
 Package pdftex.def Info: fig/occfigure.png  used on input line 15.
@@ -961,7 +916,7 @@ Overfull \hbox (35.96577pt too wide) in paragraph at lines 15--18
  []
 
 [23]
-<fig/Roc_BFI-10.png, id=251, 867.24pt x 578.16pt>
+<fig/Roc_BFI-10.png, id=219, 867.24pt x 578.16pt>
 File: fig/Roc_BFI-10.png Graphic file (type png)
 <use fig/Roc_BFI-10.png>
 Package pdftex.def Info: fig/Roc_BFI-10.png  used on input line 35.
@@ -980,17 +935,17 @@ Overfull \hbox (11.42282pt too wide) in paragraph at lines 42--43
 [][] 
  []
 
-<fig/roc_AUC.png, id=252, 433.62pt x 289.08pt>
+<fig/roc_AUC.png, id=220, 433.62pt x 289.08pt>
 File: fig/roc_AUC.png Graphic file (type png)
 <use fig/roc_AUC.png>
 Package pdftex.def Info: fig/roc_AUC.png  used on input line 59.
 (pdftex.def)             Requested size: 303.53192pt x 202.35461pt.
-<fig/weka_gbs.png, id=253, 615.80063pt x 429.85594pt>
+<fig/weka_gbs.png, id=221, 615.80063pt x 429.85594pt>
 File: fig/weka_gbs.png Graphic file (type png)
 <use fig/weka_gbs.png>
 Package pdftex.def Info: fig/weka_gbs.png  used on input line 71.
 (pdftex.def)             Requested size: 338.69139pt x 236.4215pt.
-<fig/weka_gesis.png, id=254, 614.295pt x 438.8897pt>
+<fig/weka_gesis.png, id=222, 614.295pt x 438.8897pt>
 File: fig/weka_gesis.png Graphic file (type png)
 <use fig/weka_gesis.png>
 Package pdftex.def Info: fig/weka_gesis.png  used on input line 78.
@@ -1012,27 +967,27 @@ Missing character: There is no Å in font cmr10!
 
 ]
 Appendix A.
-<fig/Agreeablenessfigure.png, id=306, 650.43pt x 216.81pt>
+<fig/Agreeablenessfigure.png, id=276, 650.43pt x 216.81pt>
 File: fig/Agreeablenessfigure.png Graphic file (type png)
 <use fig/Agreeablenessfigure.png>
 Package pdftex.def Info: fig/Agreeablenessfigure.png  used on input line 10.
 (pdftex.def)             Requested size: 292.6908pt x 97.56358pt.
-<fig/Extraversionfigure.png, id=307, 867.24pt x 289.08pt>
+<fig/Extraversionfigure.png, id=277, 867.24pt x 289.08pt>
 File: fig/Extraversionfigure.png Graphic file (type png)
 <use fig/Extraversionfigure.png>
 Package pdftex.def Info: fig/Extraversionfigure.png  used on input line 11.
 (pdftex.def)             Requested size: 286.1901pt x 95.39668pt.
-<fig/Neuroticismfigure.png, id=308, 867.24pt x 289.08pt>
+<fig/Neuroticismfigure.png, id=278, 867.24pt x 289.08pt>
 File: fig/Neuroticismfigure.png Graphic file (type png)
 <use fig/Neuroticismfigure.png>
 Package pdftex.def Info: fig/Neuroticismfigure.png  used on input line 12.
 (pdftex.def)             Requested size: 286.1901pt x 95.39668pt.
-<fig/Opennessfigure.png, id=309, 867.24pt x 289.08pt>
+<fig/Opennessfigure.png, id=279, 867.24pt x 289.08pt>
 File: fig/Opennessfigure.png Graphic file (type png)
 <use fig/Opennessfigure.png>
 Package pdftex.def Info: fig/Opennessfigure.png  used on input line 13.
 (pdftex.def)             Requested size: 286.1901pt x 95.39668pt.
-<fig/gesis_missing.png, id=310, 867.24pt x 867.24pt>
+<fig/gesis_missing.png, id=280, 867.24pt x 867.24pt>
 File: fig/gesis_missing.png Graphic file (type png)
 <use fig/gesis_missing.png>
 Package pdftex.def Info: fig/gesis_missing.png  used on input line 20.
@@ -1040,12 +995,12 @@ Package pdftex.def Info: fig/gesis_missing.png  used on input line 20.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/gbs_missing.png, id=311, 867.24pt x 867.24pt>
+<fig/gbs_missing.png, id=281, 867.24pt x 867.24pt>
 File: fig/gbs_missing.png Graphic file (type png)
 <use fig/gbs_missing.png>
 Package pdftex.def Info: fig/gbs_missing.png  used on input line 28.
 (pdftex.def)             Requested size: 433.61894pt x 433.61894pt.
-<fig/correl.png, id=312, 620.3175pt x 576.65437pt>
+<fig/correl.png, id=282, 620.3175pt x 576.65437pt>
 File: fig/correl.png Graphic file (type png)
 <use fig/correl.png>
 Package pdftex.def Info: fig/correl.png  used on input line 36.
@@ -1061,7 +1016,7 @@ Overfull \hbox (11.8103pt too wide) in paragraph at lines 36--38
 ismfigure.png> <./fig/Opennessfigure.png>] [34 <./fig/gesis_missing.png>]
 [35 <./fig/gbs_missing.png>] [36 <./fig/correl.png>]
 Appendix B.
-<fig/github.png, id=340, 755.82375pt x 934.99312pt>
+<fig/github.png, id=310, 755.82375pt x 934.99312pt>
 File: fig/github.png Graphic file (type png)
 <use fig/github.png>
 Package pdftex.def Info: fig/github.png  used on input line 54.
@@ -1074,25 +1029,36 @@ Package pdftex.def Info: fig/github.png  used on input line 54.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
  [39]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
- (thesis_template.aux)
+ (thesis_template.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
-Package rerunfilecheck Info: File `thesis_template.out' has not changed.
-(rerunfilecheck)             Checksum: C19451F1BE8868A7A06EE1596197E1FA;466.
 
+
+Package rerunfilecheck Warning: File `thesis_template.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis_template.out':
+(rerunfilecheck)             Before: C19451F1BE8868A7A06EE1596197E1FA;466
+(rerunfilecheck)             After:  10C76830E2F99589B0BD8E017FEBF435;1795.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
  ) 
 Here is how much of TeX's memory you used:
- 11089 strings out of 493305
- 168213 string characters out of 3129802
- 276508 words of memory out of 3000000
- 14358 multiletter control sequences out of 15000+200000
+ 11086 strings out of 493305
+ 168101 string characters out of 3129802
+ 273849 words of memory out of 3000000
+ 14357 multiletter control sequences out of 15000+200000
  13654 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,16n,41p,1383b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1114,9 +1080,9 @@ ers/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis_template.pdf (45 pages, 1401254 bytes).
+Output written on thesis_template.pdf (44 pages, 1392313 bytes).
 PDF statistics:
- 429 PDF objects out of 1000 (max. 8388607)
+ 399 PDF objects out of 1000 (max. 8388607)
  98 named destinations out of 1000 (max. 500000)
  183 words of extra memory for PDF output out of 10000 (max. 10000000)
 
