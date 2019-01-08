@@ -1,22 +1,22 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Auxiliary information GESIS linked to GBS so that expected bias can be detected and corrected for. In addition, GBS contains an attribute for positive or negative treatment of survey participants for further analysis.\relax }}{2}{figure.caption.3}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Auxiliary information GESIS linked to GBS so that expected bias can be detected and corrected for. In addition, GBS contains an attribute for positive or negative treatment of survey participants for further analysis.\relax }}{2}{figure.caption.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces GBS - GESIS attribute and value comparison. Not all attributes are used in every learning task. See GitHub documentation for more information.\relax }}{5}{figure.caption.5}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Conscientiousness: the degree of organization, self-regulation, and responsibility one exhibits. \textit {"I see myself as someone who tends to be lazy."}(left). \textit {"I see myself as someone who does a thorough job."}(right).\relax }}{8}{figure.caption.9}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces GESIS missing values visualisation. This graph is able to detect functional dependencies in survey data. For example, participants that leave out "Nettoeink. Selbst" are very likely to also leave out "Nettoeink. Haushalt". In the BFI-10 columns, some imputation techniques are better suited due to a line pattern.\relax }}{10}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces GBS missing values visualisation. This graphic also lends itself to first thoughts about whether missing data elements depend on observable and unobservable attributes or occur entirely at random.\relax }}{11}{figure.caption.7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Correlation Matrix with ratio -1 to +1. The upper right triangular matrix shows GESIS correlations while GBS correlations are shown in the lower left. The main diagonal should not be confused with white squares. These trivial combinations are simply excluded and not colored black.\relax }}{12}{figure.caption.8}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Example of a Likert item discrepancy. GBS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GESIS encouraging participants to voice a positive or negative opinion.\relax }}{13}{figure.caption.11}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces GESIS hists.\relax }}{13}{figure.caption.12}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces .\relax }}{17}{figure.caption.13}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces There is no caption for such a stupid figure.\relax }}{18}{figure.caption.14}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Consider samples of fixed size \(m\) with some constants \(c_m\) and \(d_m\). Maximal representative sampling adjusts for nonresponse \(-d\) of subgroup \(Female\) by removing \(+d\) of subgroup \(Male\) from the sample.\relax }}{20}{figure.caption.15}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Tuning parameter \(nu\) that controls the trade-off between the fraction of non-representative samples and the number of support vectors in one-class SVM. More than 0.73 of GBS (right) are classified as representative with high confidence (low sdt) for the optimal value \(nu = 10^{-5}\).\relax }}{28}{figure.caption.18}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces .\relax }}{29}{figure.caption.19}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces .\relax }}{30}{figure.caption.20}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces GBS - GESIS attribute and value comparison.\relax }}{9}{figure.caption.4}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces GBS - GESIS attribute and value comparison.\relax }}{10}{figure.caption.5}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Mean and standard deviation of BFI-10 Items:\textit {"A Short Scale for Assessing the Big Five Dimensions of Personality"}.\relax }}{10}{figure.caption.6}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Conscientiousness: the degree of organization, self-regulation, and responsibility one exhibits. \textit {"I see myself as someone who tends to be lazy."}(left). \textit {"I see myself as someone who does a thorough job."}(right).\relax }}{11}{figure.caption.7}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Agreeableness: \textit {""I see myself as someone who tends to find fault with others"}(left). \textit {"I see myself as someone who is generally trusting"}(right).\relax }}{12}{figure.caption.8}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Openness: \textit {" I see myself as someone who has few artistic interests"}(left). \textit {"I see myself as someone who has an active imagination"}(right).\relax }}{13}{figure.caption.9}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Extraversion: \textit {"I see myself as someone who is reserved."}(left). \textit {"I see myself as someone who is outgoing, sociable. "}(right).\relax }}{14}{figure.caption.10}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Neuroticism: \textit {"I see myself as someone who is relaxed, handles stress well. "}(left). \textit {"I see myself as someone who gets nervous easily."}(right)..\relax }}{15}{figure.caption.11}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Example of a Likert item discrepancy. GBS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GESIS encouraging participants to voice a positive or negative opinion.\relax }}{15}{figure.caption.12}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces .\relax }}{18}{figure.caption.14}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces There is no caption for such a stupid figure.\relax }}{19}{figure.caption.15}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Consider samples of fixed size \(m\) with some constants \(c_m\) and \(d_m\). Maximal representative sampling adjusts for nonresponse \(-d\) of subgroup \(Female\) by removing \(+d\) of subgroup \(Male\) from the sample.\relax }}{20}{figure.caption.16}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces .\relax }}{27}{figure.caption.19}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces .\relax }}{28}{figure.caption.20}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Tuning parameter \(nu\) that controls the trade-off between the fraction of non-representative samples and the number of support vectors in one-class SVM. More than 0.73 of GBS (right) are classified as representative with high confidence (low sdt) for the optimal value \(nu = 10^{-5}\).\relax }}{29}{figure.caption.21}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces caption\relax }}{37}{figure.caption.25}
 \addvspace {10\p@ }

@@ -10,63 +10,11 @@ In order to diagnose to what extent an algorithm suffers from sampling bias, it 
 	\end{center}
 \end{figure}
 
-\section{Missing Data and Imputation}
+\section{Data Preprocessing}
 
-Missing values in GESIS and GBS need to be handled first to clarify preprocessing steps and simplify future work on political participation and resilience. Note that the figures represent the data after attribute and value matching and before potential data imputation.
+Missing values in GESIS and GBS need to be handled first to clarify preprocessing steps and simplify future work on political participation and resilience. Note that the figure represents the data after attribute and value matching and before potential data imputation. This graphic also lends itself to first thoughts about whether missing data elements depend on observable and unobservable attributes or occur entirely at random and is also able to detect functional dependencies in survey data. Figure X summarizes the main observations from GESIS, figure Y summarizes the main obersvations in GBS. The correlation matrix (Fig Z) with ratio -1 to +1 is used as another way to visualize differences in GESIS and GBS and to further simplify preprocessing decisions. Potential bugs and issues can also be detected with this graph. 
 
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[scale=0.50,angle=0]{fig/gesis_missing}
-		\label{std}
-		\caption{GESIS missing values visualisation. This graph is able to detect functional dependencies in survey data. For example, participants that leave out "Nettoeink. Selbst" are very likely to also leave out "Nettoeink. Haushalt". In the BFI-10 columns, some imputation techniques are better suited due to a line pattern.}
-	\end{center}
-\end{figure}
-
-Summarizing the main points from GESIS:
-\begin{itemize}
-\item The attribute values of a participant are always known for "Geschlecht", "Geburtsland", "Geburtsjahr", "Nationalitaet", "Familienstand", "Personen im Haushalt". 
-\item In contrast, the last three columns "Druck", "Optimismus Zukunft", "Zufriedenheit Wahlergebnisse" and "Resilienz" are almost always missing and are therefore removed from the analysis.
-\item "Nettoeink. Selbst" and "Nettoeink. Haushalt" both seem to be missing at random. 
-\item "Berufsgruppe" was surveyed as a text field so that the column clearly suffers from ambiguous value mismatch. To include "Berufsgruppe" mappings need to be redefined first. For now, "Berufsgruppe" is removed.
-\item Participants with missing BFI-10 elements are removed. Sample size will only be reduced slightly as missing values often occur for the same instance. These dependencies form a line pattern in the graph. 
-\end{itemize}
-
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.50,angle=0]{fig/gbs_missing}
-		\label{std}
-		\caption{GBS missing values visualisation. This graphic also lends itself to first thoughts about whether missing data elements depend on observable and unobservable attributes or occur entirely at random.}
-	\end{center}
-\end{figure}
-
-Summarizing the main points from GBS:
-\begin{itemize}
-\item There is one more attribute in "Gruppe". Not every participant received a positive a negative psychological treatment. Therefore, "Gruppe" is more likely to be missing than not. However, the absence of a value indicates no treatment rather than a missing positive or negative. "Gruppe" is not properly represented yet.
-\item "Desinteresse Politiker" is given by multiple data sources from different excel files. Some of them being the inverse of the attribute itself. The surey design regarding this issue is unclear to me. To incorporate "Desinteresse Politiker" the attribute(s) need to be imported correctly, if possible.
-\item Another import issue is given by "Personen im Haushalt". If the actual value is greater than one, the cell will be empty. To correct this, the corresponding csv-file needs to be fixed.
-\item The text field "Berufsgruppe" suffers on both ends, GBS and GESIS, due to current oversimplification of value and potential data mismatch.
-\end{itemize}
-
-If not stated differently, deletion of rows is applied to every instance with missing values in GESIS to reduce the class imbalance in the later described classification problem. Missing values are sparse in GBS and can be imputed, e.g: with mean substitution, with negligible effects.
-
-\section{Correlation Matrix}
-
-Correlation matrices are used as another way to visualize differences in GESIS and GBS and to further simplify preprocessing decisions. Potential bugs and issues can also be detected with this graph. 
-
-For both data sets:
-\begin{itemize}
-\item Entropy-based mutual information in "Wahlteilnahme" and "Wahlabsicht" led to almost perfect classification performances in predicting political participation. "Wahlabsicht" is therefore removed.
-\item "Personen im H." in GBS can not be calculated, since there is only one possible value.
-\item "Nettoeink. Selbst" and "Nettoeink. Haushalt" are highly correlated but not removed or handled at all. I will keep this in mind, when facing the naive bayes assumption in the learning process.
-\end{itemize}
-
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.73,angle=0]{fig/correl}
-		\label{std}
-		\caption{Correlation Matrix with ratio -1 to +1. The upper right triangular matrix shows GESIS correlations while GBS correlations are shown in the lower left. The main diagonal should not be confused with white squares. These trivial combinations are simply excluded and not colored black.}
-	\end{center}
-\end{figure}
+If not stated differently, deletion of rows is applied to every instance with missing values in GESIS to reduce the class imbalance in the later described classification problem. Missing values are sparse in GBS and can be imputed, e.g: with median substitution, with negligible effects. Mean substitution can not be used as this might lead to new unseen values. 
 
 \section{Likert-Type Scale}
 
@@ -100,6 +48,29 @@ The graphs are almost identical for the Likert item "Gruendlich".
 The cyclic structure of the chart, i.e. "Strongly Disagree" next to Strongly Agree", provides a vivid example for the central-tendency bias across all items.
 
 \subsection{Data Mismatch}
+
+\begin{table}[ht]
+    \begin{center}
+            {\footnotesize
+            \begin{tabular}{l|c|ccccccccc}
+                \hline \hline
+		Raw Data & GESIS & 1 & 2 & 3 & 4 & 5 & 6 \\
+                     & GBS & 1 & 2 & 3 & 4 & 5 & \\
+                \hline
+		Max Scaler & GESIS & 0.83 & 1.7 & 2.5 & 3.3 & 4.2 & 5.0 \\
+                     & GBS & 1 & 2 & 3 & 4 & 5 & \\
+                \hline
+		Min-Max Scaler & GESIS & 1 & 1.8 & 2.6 & 3.4 & 4.2 & 5 \\
+                     & GBS & 1.0 & 2.25 & 3.5 & 4.75 & 6.0 & \\
+                \hline
+		Cut-Off Mapping & GESIS & 1 & 2 & 3 & 4 & 5 & 5 \\
+                     & GBS & 1 & 2 & 3 & 4 & 5 & \\
+\hline \hline
+            \end{tabular}}
+        \caption{Different value scalings of attribute "Desinteresse Politiker".}
+\label{Tab:DescripStatsRawData}
+\end{center}
+\end{table}
 
 Shortcomings in attribute mappings may result in inappropriate representation and incorrect conclusions.
 
@@ -150,27 +121,4 @@ Techniques for reducing the length of scales while maintaining psychometric qual
 Figure X shows an example of such as a statement.
 
 In some cases, an additional "opt-out" option is provided for those respondents who truly cannot respond in GBS only.
-
-\begin{table}[ht]
-    \begin{center}
-            {\footnotesize
-            \begin{tabular}{l|c|ccccccccc}
-                \hline \hline
-		Raw Data & GESIS & 1 & 2 & 3 & 4 & 5 & 6 \\
-                     & GBS & 1 & 2 & 3 & 4 & 5 & \\
-                \hline
-		Max Scaler & GESIS & 0.83 & 1.7 & 2.5 & 3.3 & 4.2 & 5.0 \\
-                     & GBS & 1 & 2 & 3 & 4 & 5 & \\
-                \hline
-		Min-Max Scaler & GESIS & 1 & 1.8 & 2.6 & 3.4 & 4.2 & 5 \\
-                     & GBS & 1.0 & 2.25 & 3.5 & 4.75 & 6.0 & \\
-                \hline
-		Cut-Off Mapping & GESIS & 1 & 2 & 3 & 4 & 5 & 5 \\
-                     & GBS & 1 & 2 & 3 & 4 & 5 & \\
-\hline \hline
-            \end{tabular}}
-        \caption{Different value scalings of attribute "Desinteresse Politiker".}
-\label{Tab:DescripStatsRawData}
-\end{center}
-\end{table}
 

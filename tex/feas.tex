@@ -14,17 +14,25 @@ Overﬁtting stands out as one of the biggest challenges for machine learning. I
 
 State-of-the-art techniques in positive-unlabeled learningtackle this problem by treating the unlabeled sample as neg-atives and training a classiﬁer to distinguish between la-beled (positive) and unlabeled examples. 
 Surprisingly,for a variety of performance criteria, non-traditional classi-ﬁers achieve similar performance under traditional evalua-tion as optimal traditional classiﬁers (Blanchard et al. 2010;Menon et al. 2015). 
-
-\vspace{25pt}
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.44,angle=0]{fig/Representative}
-		\label{representativ}
-		\caption{Consider samples of fixed size \(m\) with some constants \(c_m\) and \(d_m\). Maximal representative sampling adjusts for nonresponse \(-d\) of subgroup \(Female\) by removing \(+d\) of subgroup \(Male\) from the sample.}
-	\end{center}
-\end{figure}
-
+	
 \section{Discriminative Learning}
+
+\begin{table}[ht] 	
+    \begin{center}
+            {\footnotesize
+            \begin{tabular}{l|cccccccccc}
+                \hline \hline
+                           &  TP Rate & FP Rate & Precision & Recall & F-Measure & ROC Area & PRC Area & Class \\
+                \hline
+                      & 0.000 & 0.000 & ? & 0.000 & ? & 0.500 & 0.130 & GBS &\\
+                      & 1.000 & 1.000 & 0.870 & 1.000 & 0.931 & 0.500 & 0.870 & GESIS &\\
+                \hline \hline
+		 W. Avg. & 0.870 & 0.870 & ? & 0.870 & ? & ? & 0.500 & 0.774 &
+            \end{tabular}}
+        \caption{Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref{Tab:DescripStatsRawDataDetail} in the appendix for more details.}
+\label{Tab:DescripStatsRawData}
+\end{center}
+\end{table}
 
 \section{Learning from Positive and Unlabeled Data}
 
@@ -86,23 +94,6 @@ Return \[s(x) = f(x)/n(x)\]
 
 \subsection{Recovering Model Performance}
 
-\begin{table}[ht] 	
-    \begin{center}
-            {\footnotesize
-            \begin{tabular}{l|cccccccccc}
-                \hline \hline
-                           &  TP Rate & FP Rate & Precision & Recall & F-Measure & ROC Area & PRC Area & Class \\
-                \hline
-                      & 0.000 & 0.000 & ? & 0.000 & ? & 0.500 & 0.130 & GBS &\\
-                      & 1.000 & 1.000 & 0.870 & 1.000 & 0.931 & 0.500 & 0.870 & GESIS &\\
-                \hline \hline
-		 W. Avg. & 0.870 & 0.870 & ? & 0.870 & ? & ? & 0.500 & 0.774 &
-            \end{tabular}}
-        \caption{Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref{Tab:DescripStatsRawDataDetail} in the appendix for more details.}
-\label{Tab:DescripStatsRawData}
-\end{center}
-\end{table}
-
 methods to estimate true classiﬁcationperformance. 
 
 be recov-ered with the knowledge of class priors
@@ -163,8 +154,6 @@ The area under ROC curves \(AUROC^{pu}\) so far could only be estimated for the 
 \[AUC = \frac{AUC^{pu} - \frac{\alpha}{2}}{1 - \alpha}\] proving
 
 \[AUC > AUC^{pu} \iff AUC^{pu} > \frac{1}{2}\]
-
-\subsection{Example}
 
 \section{Artificial Data Synthesis}
 

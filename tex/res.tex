@@ -28,43 +28,61 @@ we need to compensate for complex survey designs with features including, but no
 
 \subsection{ROC and puROC Evaluation}
 
+
+\begin{figure}
+\centering
+\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[scale=0.42,angle=0]{fig/Roc_BFI-10}
+   \caption{Feature importance GBS (n=579) in classification of political participation "Wahlteilnahme".}
+   \label{fig:Ng1} 
+\end{subfigure}
+
+\begin{subfigure}[b]{0.8\textwidth}
+\vspace{0.55cm}
+		\includegraphics[scale=0.42,angle=0]{fig/Roc_BFI-10}
+   \caption{Feature importance GBS MRS (n=280) in classification of political participation "Wahlteilnahme".}
+   \label{fig:Ng2}
+\end{subfigure}
+\vspace{0.35cm}
+\caption[Two numerical solutions]{(a) Numerical solutions for the small-time system 
+with a constant-curvature body shape showing the scaled leading-order veritcal.}
+\end{figure}
+
+
+
 most commonly through the development of survey weights for statistical adjustment. If complex sample designs are implemented in data collection but the analysis assumes simple random sampling, the variances of the survey estimates can be underestimated and the confidence interval and test statistics are likely to be biased (Heeringa, West,  Berglund, 2010).
 
 In a recent meta-analysis of 150 sampled research papers analyzing several surveys with complex sampling designs, it is found that analytic errors caused by ignorance or incorrect use of the complex sample design features were frequent. Such analytic errors define an important component of the larger total survey error framework, produce misleading descriptions of populations and ultimately yield misleading inferences (Aurelien, West,  Sakshaug, 2016). It is thus of critical importance to incorporate the complex survey design features in statistical analysis. 
 
-
 \begin{figure}[ht]
 	\begin{center}
-		\includegraphics[scale=0.55,angle=0]{fig/Roc_all}
+		\includegraphics[scale=0.70,angle=0]{fig/roc_AUC}
 		\label{occ}
 		\vspace*{-1.0cm}
 		\caption{.}
 	\end{center}
 \end{figure}
-
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.40,angle=0]{fig/Discriminative_Procedure}
-		\label{occ}
-		\vspace*{-1.0cm}
-		\caption{.}
-	\end{center}
-\end{figure}
-
-
 
 \section{Political Participation and Resilience}
 
-\begin{figure}[ht]
-	\begin{center}
+\begin{figure}
+\centering
+\begin{subfigure}[b]{0.8\textwidth}
+		\includegraphics[scale=0.55,angle=0]{fig/weka_gbs}
+   \caption{Feature importance GBS (n=579) in classification of political participation "Wahlteilnahme".}
+   \label{fig:Ng1} 
+\end{subfigure}
+
+\begin{subfigure}[b]{0.8\textwidth}
+\vspace{0.55cm}
 		\includegraphics[scale=0.55,angle=0]{fig/weka_gesis}
-	\end{center}
+   \caption{Feature importance GBS MRS (n=280) in classification of political participation "Wahlteilnahme".}
+   \label{fig:Ng2}
+\end{subfigure}
+\vspace{0.35cm}
+\caption[Two numerical solutions]{(a) Numerical solutions for the small-time system 
+with a constant-curvature body shape showing the scaled leading-order veritcal.}
 \end{figure}
 
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.55,angle=0]{fig/weka_gbs}
-	\end{center}
-\end{figure}
 
 XGBoost is an open-source software library for predictive modelling, created by Tianqi Chen in 2014 [1]. The name XGBoost stands for "Extreme Gradient Boosting" and implements "Gradient Boosting" as proposed in Greedy Function Approximation: A Gradient Boosting Machine by Friedman, while the term "extreme" refers to the engineering goal to maximize the resources used by the algorithm to achieve high accuracy, computational efficiency and scalability. What started off as a terminal application for a research project, has become a scalable end-to-end tree boosting system that has integrations with scikit-learn in Python, the caret package in R, as well as big data frameworks like Apache Spark and Hadoop. Since its introduction, XGBoost has been used in more than half of the winning solutions in Kaggle competitions, after it gained much popularity and attention in the community by winning the Higgs boson machine learning challenge.
