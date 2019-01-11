@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  11 JAN 2019 09:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  11 JAN 2019 16:35
 entering extended mode
 **./thesis_template.tex
 (thesis_template.tex
@@ -984,57 +984,25 @@ Chapter 5.
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ä in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
+Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-<fig/procedure.png, id=339, 950.80219pt x 434.37282pt>
-File: fig/procedure.png Graphic file (type png)
-<use fig/procedure.png>
-Package pdftex.def Info: fig/procedure.png  used on input line 11.
-(pdftex.def)             Requested size: 494.41998pt x 225.87515pt.
+Missing character: There is no â in font cmr10!
+<fig/procedure2.png, id=339, 943.27406pt x 286.06876pt>
+File: fig/procedure2.png Graphic file (type png)
+<use fig/procedure2.png>
+Package pdftex.def Info: fig/procedure2.png  used on input line 12.
+(pdftex.def)             Requested size: 358.44786pt x 108.70724pt.
+) [31 <./fig/procedure2.png>] (conc.tex [32
 
-Overfull \hbox (53.40227pt too wide) in paragraph at lines 11--13
- [] 
- []
-
-) [31] (conc.tex [32 <./fig/procedure.png>]
+]
 Chapter 6.
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-) [33
-
-] (thesis_template.bbl [34
+) [33] (thesis_template.bbl [34
 
 ]) [35] (authorship.tex [36
 
@@ -1058,8 +1026,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
  ) 
 Here is how much of TeX's memory you used:
- 11090 strings out of 493305
- 168199 string characters out of 3129802
+ 11091 strings out of 493305
+ 168213 string characters out of 3129802
  283821 words of memory out of 3000000
  14369 multiletter control sequences out of 15000+200000
  13654 words of font info for 51 fonts, out of 3000000 for 9000
@@ -1083,7 +1051,7 @@ ers/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis_template.pdf (42 pages, 1325018 bytes).
+Output written on thesis_template.pdf (42 pages, 1314293 bytes).
 PDF statistics:
  446 PDF objects out of 1000 (max. 8388607)
  89 named destinations out of 1000 (max. 500000)
