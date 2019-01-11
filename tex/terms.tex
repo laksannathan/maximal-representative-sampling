@@ -39,27 +39,7 @@ Descriptive statistics can be used to
 No practical amount of data can distinguish between two distributions, thus instances of GBS can not be proven to come from GESIS. However, discriminative learning allows to infer the conditional probability of \textit{'instance of GBS/GESIS'} given the survey data within a probabilistic framework:
 
 
-GBS is in actual fact unlabeled, i.e. subgroups of the target population might be over-represented or under-represented.  
-
-PU learning is a semi-supervised technique that does not make the simplifying assumption of GBS instances being negative. Instead, a one-class classifier is trained on GESIS only. [...] This can result in even better assessment.
-
 \subsection{The Problem of Overfitting}
-
-The model in supervised learning usually refers to the mathematical structure of how to make predictions \(y_i\) given \(x_i\). The most common model is a linear regression model, where the prediction is given by a linear combination of weighted input features. The parameters, the weights of these features, are the undetermined part that need to be learned from data. Depending on the task, the prediction value can have different interpretations, i.e. regression or classiﬁcation. The categorical outcome, "did vote" or "did not vote", makes political participation a binary classiﬁcation problem [7]. In machine learning, the terms hypothesis and model are often used interchangeably. This paper uses the following convention [3] as the terminology to describe ideas and concepts is not standardized:
-
-\begin{itemize}
-\item The phrase single hypothesis refers to a single probability distribution or function. An example is the polynomial \(2x^2 + 3x + 1\).
-
-\item The word model refers to a set of probability distributions or family of functions with the same functional form. An example is the set of all quadratic functions.
-
-\item As a generic term, hypothesis refers to both single hypotheses and models.
-\end{itemize}
-
-With the deﬁnitions above, it is a hypothesis selection problem if both the degree of a polynomial and the corresponding parameters are of interest. The phrase single hypothesis refers to a single probability distribution or function. A machine learning model, the composite hypothesis, refers to a family of probability distributions or functions with the same functional form. An example is the set of all second-degree polynomials [9].
-
-%\subsection{Bias-Variance Tradeoff}
-
-"Overﬁtting is the disease. Noise is the cause. Learning is led astray by ﬁtting the noise more than the actual signal"[6]. To avoid overﬁtting you might deliberately exclude certain factors, increase sample size, stop the analysis early, or simply pick less complex algorithms. Regularization puts a break where additional iterations of algorithms start to harm the performance. Validation is another way to see what will actually happen out-of-sample
 
 By deﬁnition, statistical inference is taking the results of applying some sort of construct or model to speciﬁc data and then speculating that it would continue to perform well beyond the original observation range. Given a set of training samples \((x_i,y_i)\) ﬁnd a single hypothesis \(h\) that "fits the data well": \(y_i = h(x_i)\) for most \(i\). The equation is characterized by a trade-off between goodness-of-ﬁt and complexity of the hypothesis:
 
@@ -68,5 +48,4 @@ By deﬁnition, statistical inference is taking the results of applying some sor
 \item if \(h\) is too complex, it fits the data very well but will not generalize well on unseen data.
 \end{itemize}
 
-%\subsection{Stochastic and Deterministic Noise}
 

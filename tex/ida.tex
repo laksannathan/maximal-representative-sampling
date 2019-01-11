@@ -16,6 +16,30 @@ If not stated differently, deletion of rows is applied to every instance with mi
 
 Fig. A.2 lends itself to first thoughts about whether missing data elements depend on observable attributes or occur entirely at random and is also able to detect functional dependencies in GESIS. Fig. A.3 summarizes the main observations from GBS. The correlation matrix with ratio -1 to +1 in Fig. A.4 is used as another way to visualize differences in GESIS and GBS and to further simplify preprocessing decisions. Potential bugs and issues can also be detected with this graph. 
 
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.50,angle=0]{fig/gesis_missing}
+		\label{gesis_miss}
+		\caption{Missing values in GESIS. The attribute values of a participant are always known for "Geschlecht", "Geburtsland", "Geburtsjahr", "Nationalitaet", "Familienstand", "Personen im Haushalt". In contrast, the last three columns "Druck", "Optimismus Zukunft", "Zufriedenheit Wahlergebnisse" and "Resilienz" are almost always missing and are therefore removed from the analysis. Participants with missing BFI-10 elements are removed. Sample size will only be reduced slightly as missing values often occur for the same instance. These dependencies form a line pattern in the graph. "Berufsgruppe" was surveyed as a text field so that the column clearly suffers from ambiguous value mismatch. To include "Berufsgruppe" mappings need to be redefined first. For now, "Berufsgruppe" is removed. }
+	\end{center}
+\end{figure}
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.50,angle=0]{fig/gbs_missing}
+		\label{gbs_miss}
+		\caption{Missing values in GBS. There is one more attribute in "Gruppe". Not every participant received a positive a negative psychological treatment. Therefore, "Gruppe" is more likely to be missing than not. However, the absence of a value indicates no treatment rather than a missing positive or negative. "Gruppe" is not properly represented yet. "Desinteresse Politiker" is given by multiple data sources from different excel files. Some of them being the inverse of the attribute itself. The surey design regarding this issue is unclear to me. To incorporate "Desinteresse Politiker" the attribute(s) need to be imported correctly, if possible. Another import issue is given by "Personen im Haushalt". If the actual value is greater than one, the cell will be empty. To correct this, the corresponding csv-file needs to be fixed. The text field "Berufsgruppe" suffers on both ends, GBS and GESIS, due to current oversimplification of value and potential data mismatch.}
+	\end{center}
+\end{figure}
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.73,angle=0]{fig/correl}
+		\label{corr}
+		\caption{The upper right triangular matrix shows GESIS correlations while GBS correlations are shown in the lower left. The main diagonal should not be confused with white squares. These trivial combinations are simply excluded and not colored black. As can be seen "Personen im Haushalt" in GBS can not be calculated, since there is only one possible value. "Nettoeinkommen Selbst" and "Nettoeinkommen Haushalt" are highly correlated but not removed or handled at all. I will keep this in mind, when facing the naive bayes assumption in the learning process. Entropy-based mutual information in "Wahlteilnahme" and "Wahlabsicht" have led to almost perfect classification performances in predicting political participation. "Wahlabsicht" is therefore removed.}
+	\end{center}
+\end{figure}
+
 \section{Perspectives on Response Styles}
 
 In survey analysis, scales measuring attributes need to be reliable and valid. Therefore, GBS and GESIS almost entirely use already tested scales from the literature.
@@ -30,6 +54,17 @@ The Big Five is an empirically-derived model of human personality and psyche. Wh
 		\label{Conscientiousness}
 		\caption{Conscientiousness is the degree of organization, self-regulation, and responsibility one exhibits. \textit{"I see myself as someone who tends to be lazy."}(left). \textit{"I see myself as someone who does a thorough job."}(right). The graphs are almost identical for the Likert item "Gruendlich". Respondents specify their level of disagreement for "Faulheit" more in GBS.}
 	\end{center}
+\end{figure}
+
+\begin{figure}[ht]
+	\begin{center}
+\includegraphics[scale=0.42,angle=0]{fig/Agreeablenessfigure} \\
+\includegraphics[scale=0.31,angle=0]{fig/Extraversionfigure} \\
+\includegraphics[scale=0.31,angle=0]{fig/Neuroticismfigure} \\
+\includegraphics[scale=0.31,angle=0]{fig/Opennessfigure} \\
+\vspace{0.75cm}
+\caption{Agreeableness is the measure of one's cooperation, empathy, and willingness to trust and help others. Openness estimates whether one is hesitant or eager about new objects or situations. Extraversion refers to level of sociability, seeking and enjoyment of social contact, and energy and assertiveness in social situations. Neuroticism is characterized by easily experiencing negative emotions, and a poor coping response to those emotions. The cyclic structure of the chart, i.e. "Strongly Disagree" next to Strongly Agree", provides a vivid example for the central-tendency bias across all items.}
+\end{center}
 \end{figure}
 
 is still ongoing debate on whether to use a Likert scale item as categorical or numeric feature. The intervals between positions on the scale are monotonic but never so well-defined as to be numerically uniform increments. A "Strongly Agree (5)" response indicates more agreement than "Agree", but it does not show agreement that is five times stronger than "Strongly Disagree (1)". 
@@ -95,7 +130,6 @@ Shortcomings in attribute mappings may result in inappropriate representation an
 \end{center}
 \end{table}
 
-
 \begin{figure}[ht]
 	\begin{center}
 		\includegraphics[scale=0.50,angle=0]{fig/scales}
@@ -103,7 +137,6 @@ Shortcomings in attribute mappings may result in inappropriate representation an
 		\caption{Example of a Likert item discrepancy. GBS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GESIS encouraging participants to voice a positive or negative opinion.}
 	\end{center}
 \end{figure}
-
 
 \begin{figure}[ht]
 	\begin{center}
@@ -113,11 +146,6 @@ Shortcomings in attribute mappings may result in inappropriate representation an
 	\end{center}
 \end{figure}
 
-Inconsistencies are discovered later with the planned learning models as 
-
-
-
-Techniques for reducing the length of scales while maintaining psychometric quality.
 Figure X shows an example of such as a statement.
 
 In some cases, an additional "opt-out" option is provided for those respondents who truly cannot respond in GBS only.

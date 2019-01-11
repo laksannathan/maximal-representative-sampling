@@ -6,16 +6,9 @@ This leads to a binary classification task with GESIS as positive class and GBS 
 
 \input{terms}
 
-PU learning is a semi-supervised technique that does not make the simplifying assumption of GBS instances being negative. Instead, a one-class classifier is trained on GESIS only. [...] This can result in even better assessment. [Read Literature] - Imporance weighted cross validation and pu learning with proper assessment.
-
-For further, more technical reading, references to background papers are provided in [38].
-
-Overﬁtting stands out as one of the biggest challenges for machine learning. It is not exclusive to machine learning but rather a fundamental problem across science and is at the very heart of the dangers of statistical inference. By deﬁnition, statistical inference is taking the results of applying some sort of construct or model to speciﬁc data and then speculating that it would continue to perform well beyond the original observation range.
-
-State-of-the-art techniques in positive-unlabeled learningtackle this problem by treating the unlabeled sample as neg-atives and training a classiﬁer to distinguish between la-beled (positive) and unlabeled examples. 
-Surprisingly,for a variety of performance criteria, non-traditional classi-ﬁers achieve similar performance under traditional evalua-tion as optimal traditional classiﬁers (Blanchard et al. 2010;Menon et al. 2015). 
-	
 \section{Discriminative Learning}
+
+\section{Learning from Positive and Unlabeled Data}
 
 \begin{table}[ht] 	
     \begin{center}
@@ -34,7 +27,14 @@ Surprisingly,for a variety of performance criteria, non-traditional classi-ﬁer
 \end{center}
 \end{table}
 
-\section{Learning from Positive and Unlabeled Data}
+PU learning is a semi-supervised technique that does not make the simplifying assumption of GBS instances being negative. Instead, a one-class classifier is trained on GESIS only. [...] This can result in even better assessment. [Read Literature] - Imporance weighted cross validation and pu learning with proper assessment.
+
+For further, more technical reading, references to background papers are provided in [38].
+
+Overﬁtting stands out as one of the biggest challenges for machine learning. It is not exclusive to machine learning but rather a fundamental problem across science and is at the very heart of the dangers of statistical inference. By deﬁnition, statistical inference is taking the results of applying some sort of construct or model to speciﬁc data and then speculating that it would continue to perform well beyond the original observation range.
+
+State-of-the-art techniques in positive-unlabeled learningtackle this problem by treating the unlabeled sample as neg-atives and training a classiﬁer to distinguish between la-beled (positive) and unlabeled examples. 
+Surprisingly,for a variety of performance criteria, non-traditional classi-ﬁers achieve similar performance under traditional evalua-tion as optimal traditional classiﬁers (Blanchard et al. 2010;Menon et al. 2015). 
 
 Breiman [9] introduced bagging as a technique to construct strong ensembles by combining a set of base models. Breiman [10] stated that “the essential problem in combining classiﬁers is growing a suitably diverse ensemble of base classiﬁers” which can be done in various ways [12]. In bagging, the ensemble models use majority voting to aggregate decisions of base models which are trained on bootstrap resamples of the training set. From a Bayesian point of view, bagging can be interpreted as a Monte Carlo integration over an approximated posterior distribution [40]. 
 
@@ -154,16 +154,4 @@ The area under ROC curves \(AUROC^{pu}\) so far could only be estimated for the 
 \[AUC = \frac{AUC^{pu} - \frac{\alpha}{2}}{1 - \alpha}\] proving
 
 \[AUC > AUC^{pu} \iff AUC^{pu} > \frac{1}{2}\]
-
-\section{Artificial Data Synthesis}
-
-Try to avoid giving the synthesized data properties that makes it possible for a learning algorithm to distinguish synthesized from non-synthesized example such as if all the synthesized data comes from one of 20 car designs, or all the synthesized audio comes from only 1 hour of car noise. This advice can be hard to follow. 
-
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.52,angle=0]{fig/procedure}
-		\label{std}
-	\end{center}
-\end{figure}
-
 
