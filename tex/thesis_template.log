@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  11 JAN 2019 08:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  11 JAN 2019 09:04
 entering extended mode
 **./thesis_template.tex
 (thesis_template.tex
@@ -753,22 +753,20 @@ pennessfigure.png>] [13 <./fig/scales.png> <./fig/histo.png>] [14
 
 ]
 Chapter 3.
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-(terms.tex [15]
+(terms.tex
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
+ [15]
 <fig/tree3.png, id=250, 1064.47687pt x 518.6878pt>
 File: fig/tree3.png Graphic file (type png)
 <use fig/tree3.png>
 Package pdftex.def Info: fig/tree3.png  used on input line 24.
 (pdftex.def)             Requested size: 425.7832pt x 207.47144pt.
- [16]
+ [16 <./fig/tree3.png>]
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
@@ -790,18 +788,19 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
+)
+
+LaTeX Warning: Reference `Tab:DescripStatsRawDataDetail' on page 17 undefined o
+n input line 23.
+
+
+LaTeX Warning: Reference `Tab:DescripStatsRawDataDetail' on page 17 undefined o
+n input line 23.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./fig/tree3.png>])
-
-LaTeX Warning: Reference `Tab:DescripStatsRawDataDetail' on page 18 undefined o
-n input line 25.
-
-
-LaTeX Warning: Reference `Tab:DescripStatsRawDataDetail' on page 18 undefined o
-n input line 25.
-
+ [17]
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
@@ -820,7 +819,6 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
-[18]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -833,6 +831,8 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
+
+[18]
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ç in font cmr10!
@@ -864,7 +864,7 @@ Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
@@ -1083,7 +1083,7 @@ ers/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis_template.pdf (42 pages, 1325919 bytes).
+Output written on thesis_template.pdf (42 pages, 1325018 bytes).
 PDF statistics:
  446 PDF objects out of 1000 (max. 8388607)
  89 named destinations out of 1000 (max. 500000)
