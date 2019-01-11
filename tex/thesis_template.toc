@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {2.1}Feature Selection and Data Imputation}{6}{section.2.1}
 \contentsline {section}{\numberline {2.2}Perspectives on Response Styles}{6}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Likert-Type Scale}{6}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Data Mismatch}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Data Mismatch}{7}{subsection.2.2.2}
 \contentsline {chapter}{\numberline {3}Feasibility of Learning}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Terminology and Definitions}{15}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Sampling Bias}{15}{subsection.3.1.1}

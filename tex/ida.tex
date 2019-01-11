@@ -40,19 +40,19 @@ Fig. A.2 lends itself to first thoughts about whether missing data elements depe
 	\end{center}
 \end{figure}
 
-\section{Perspectives on Response Styles}
+\section{Perspectives on Likert-Type Scale}
 
-In survey analysis, scales measuring attributes need to be reliable and valid. Therefore, GBS and GESIS almost entirely use already tested scales from the literature.
+In survey analysis, scales measuring attributes need to be reliable and valid. Therefore, GBS and GESIS almost entirely use already tested scales from the literature. Although the same characteristics are asked in both surveys, they may have been covered differently, for example by different scales. In addition, GBS surveys are generally more detailed. Especially characteristics which are not exactly predefined are often recorded differently. Features must be engineered carefully, whereby potential loss of information must be minimized. Shortcomings in attribute mappings may result in inappropriate representation and therefore incorrect conclusions. The Big Five are a consistent set of attributes across the surveys. In contrast, there also exist vivid examples for data mismatch on Likert-type scales.
 
-\subsection{Likert-Type Scale}
+\subsection{The Big Five Dimensions}
 
-The Big Five is an empirically-derived model of human personality and psyche. When factor analysis is applied to personality survey data, five clusters of traits consistently emerge. The BFI-10 is a 10-item scale measuring the Big Five personality traits, two BFI items for each dimension, representing both the high and low pole of each factor [Fig X]. Likert scales are the most frequently used instruments in GBS and GESIS. They consist of statements which measure the intensity of one's estimation towards the preceding statement. Respondents are asked to rate the BFI-10 items on a level of agreement on a consistent rating scale ranging from "Strongly Agree (5)" to Strongly Disagree (1)" for all items in both survey.
+The Big Five is an empirically-derived model of human personality and psyche. When factor analysis is applied to personality survey data, five clusters of traits consistently emerge. The BFI-10 is a 10-item scale measuring the Big Five personality traits. Figures 2.5 and 2.6 visualizes the response distribution of two BFI items for each dimension, representing both the high and low pole of each factor. Likert scales are the most frequently used instruments in GBS and GESIS. They consist of statements which measure the intensity of one's estimation towards the preceding statement. Respondents are asked to rate the BFI-10 items on a level of agreement on a consistent rating scale ranging from "Strongly Agree (5)" to Strongly Disagree (1)" for all items in both survey. 
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.52,angle=0]{fig/Conscientiousness_figure}
 		\label{Conscientiousness}
-		\caption{Conscientiousness is the degree of organization, self-regulation, and responsibility one exhibits. \textit{"I see myself as someone who tends to be lazy."}(left). \textit{"I see myself as someone who does a thorough job."}(right). The graphs are almost identical for the Likert item "Gruendlich". Respondents specify their level of disagreement for "Faulheit" more in GBS.}
+		\caption{Conscientiousness is the degree of organization, self-regulation, and responsibility one exhibits. \textit{"I see myself as someone who tends to be lazy."}(left). \textit{"I see myself as someone who does a thorough job."}(right). The graphs are almost identical for the Likert item "Gruendlich". Respondents specify their level of disagreement for "Faulheit" stronger in GBS.}
 	\end{center}
 \end{figure}
 
@@ -67,24 +67,30 @@ The Big Five is an empirically-derived model of human personality and psyche. Wh
 \end{center}
 \end{figure}
 
-is still ongoing debate on whether to use a Likert scale item as categorical or numeric feature. The intervals between positions on the scale are monotonic but never so well-defined as to be numerically uniform increments. A "Strongly Agree (5)" response indicates more agreement than "Agree", but it does not show agreement that is five times stronger than "Strongly Disagree (1)". 
-
-There is an underlying measurement continuum, but  
-This project treats the responses as if they fell on an interval scale.
-
-Figure X. shows the response distribution of values for "Conscientiousness" of GBS and GESIS participants (see Appendix for a visualization of distribution shifts in "Agreeableness", "Openness", "Extraversion" and "Neuroticism").
-
-Since GESIS and GBS analyse on a group level should be relatively insensitive to problems that may arise.
-
-In all these cases each aggregate measure (perhaps the mean) is based on many individual responses (e.g., n=50, 100, 1000, etc.). In these cases the original Likert item begins to take on properties that resemble an interval scale at the aggregate level.
-life satisfaction of states or countries,
-job satisfaction of departments,
+There are still discussions about whether to use a Likert scale element as a categorical or numerical characteristic. The intervals between positions on the scale are monotonous, but never so well defined that they are numerically uniform steps. A "Strongly Agree (5)" answer indicates more agreement than "Agree", but it shows no agreement that is five times stronger than "Strongly Disagree (1)". In this work, the BFI-10 items are considered categorical.
 
 \subsection{Data Mismatch}
 
-John Tukey wrote otherwise (back in 1960) in a monograph "Data Analysis and Behavioral Science" (published in Collected Works v. III). One result he obtained is that if you're getting better than about 10percent test-retest agreement, your scale isn't narrow enough!
+\begin{table}[ht]
+    \begin{center}
+            {\footnotesize
+            \begin{tabular}{l|c|ccccccccc}
+                \hline \hline
+		attribute & GBS values & GBS values count &  GESIS values & GESIS values count \\
+                \hline \hline
+                     Wach & 4 & 311 & Einigermassen & 1697 \\
+                     & 3 & 183 & Erheblich & 1389 \\
+                     & 2 & 66 & Ein bisschen & 467 \\ 
+              	& 1 & 14 & Aeusserst & 367 \\	
+		& -1 & 1 & Gar nicht & 184 \\		
+		& -9 & 1 & & \\
+	     \hline \hline
+            \end{tabular}}
+        \caption{"Wach" as an example of a Likert item discrepancy. GESIS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GBS encouraging participants to voice a positive or negative opinion. In some cases, an additional "opt-out" option is provided for those respondents who truly cannot respond in GBS only (here: value "-9"). Missing values are indicated by "-1". "Zufriedenheit Leben" is recorded even more precisely but comes with the same issue.}
+\end{center}
+\end{table}
 
-[1] It is confirmed that different numbers of rating bars in a subjective rating scale can have significant effects on the subjective measurement, thus the assessment of the Big Five dimensions of personality.
+It can be assumed that different numbers of rating bars in a subjective rating scale can have significant effects on the subjective measurement. Table 2.1 gives an example for two different scales of the same attribute while trying to find a proper representation in Table 2.2. Figure 2.7 shows what happens when attributes are partially transformed using cut-off mappings.
 
 \begin{table}[ht]
     \begin{center}
@@ -102,51 +108,20 @@ John Tukey wrote otherwise (back in 1960) in a monograph "Data Analysis and Beha
                 \hline
 		Cut-Off Mapping & GESIS & 1 & 2 & 3 & 4 & 5 & 5 \\
                      & GBS & 1 & 2 & 3 & 4 & 5 & \\
-\hline \hline
+	     \hline \hline
             \end{tabular}}
-        \caption{Different value scalings of attribute "Desinteresse Politiker".}
+        \caption{Demonstration of potential scalings for differing attribute values. The cut-off mapping comes with a loss of information. Max scaler and min-max scaler introduce new unseen values. Depending on the discriminative algorithm, values ​​that only appear in one of the two surveys are enough to perfectly classify instances: "\textit{If value equals 1.7  \(\rightarrow\) Instance of class GESIS.}" Decision-tree based learning algorithms will likely suffer from erroneous mappings, while logistic regression with a proper scoring rule might be the most suitable algorithm to limit the effects of measurement discrepancy.}
 \label{Tab:DescripStatsRawData}
 \end{center}
 \end{table}
-
-Shortcomings in attribute mappings may result in inappropriate representation and incorrect conclusions.
-
-\begin{table}[ht]
-    \begin{center}
-            {\footnotesize
-            \begin{tabular}{l|c|ccccccccc}
-                \hline \hline
-		attribute & GBS values & GBS values count &  GBS values & GBS values count \\
-                \hline \hline
-                     Wach & 4 & 311 & Einigermassen & 1697 \\
-                     & 3 & 183 & Erheblich & 1389 \\
-                     & 2 & 66 & Ein bisschen & 467 \\ 
-              	& 1 & 14 & Aeusserst & 367 \\	
-		& -1 & 1 & Gar nicht & 184 \\		
-		& -9 & 1 & & \\
-	     \hline \hline
-            \end{tabular}}
-        \caption{Caption.}
-\end{center}
-\end{table}
-
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.50,angle=0]{fig/scales}
-		\label{6_5}
-		\caption{Example of a Likert item discrepancy. GBS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GESIS encouraging participants to voice a positive or negative opinion.}
-	\end{center}
-\end{figure}
 
 \begin{figure}[ht]
 	\begin{center}
 		\includegraphics[scale=0.62,angle=0]{fig/histo}
 		\label{std}
-		\caption{GESIS hists.}
+		\caption{Overview of attributes that can not be used for further analysis due to data mismatch. GESIS histograms (right) are show differently scaled values, some of which have been transformed already. Taking the inverse of "Aengstlich", "Alles anstrengend" and perhaps "Verargert" for either the left or right side is likely to match the values properly. The remaining attributes do not seem to be reliable and will not be included for the time being.}
 	\end{center}
 \end{figure}
 
-Figure X shows an example of such as a statement.
 
-In some cases, an additional "opt-out" option is provided for those respondents who truly cannot respond in GBS only.
 
