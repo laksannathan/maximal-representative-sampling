@@ -107,7 +107,7 @@ The intuition for these results comesfrom the fact that in many practical situat
 
 Such perfor-mance estimation often involves computing the fraction(s)of correctly and incorrectly classiﬁed examples from bothclasses; however, in absence of labeled negatives, the frac-tions computed under the non-traditional evaluation are in-correct, resulting in biased estimates. Figure 1 illustratesthe effect of this bias by showing the traditional and non-traditional ROC curves on a handmade data set. Becausesome of the unlabeled examples in the training set are infact positive, the area under the ROC curve estimated whenthe unlabeled examples were considered negative (non-traditional setting) underestimates the true performance forpositive versus negative classiﬁcation (traditional setting).This paper formalizes and evaluates performance estima-tion of a non-traditional classiﬁer in the traditional settingwhen the only available training data are (possibly noisy)positive examples and unlabeled data.
 
-Though the efﬁcacy of non-traditional classiﬁers has beenthoroughly studied (Peng et al. 2003; Elkan and Noto 2008;Ward et al. 2009; Menon et al. 2015), estimating their trueperformance has been much less explored.
+Though the efﬁcacy of non-traditional classiﬁers has beenthoroughly studied (Peng et al. 2003; Elkan and Noto 2008;Ward et al. 2009; Menon et al. 2015), estimating their true performance has been much less explored.
 
 the widely-accepted evaluation approaches us-ing ROC or pr-rc curves are insensitive to the variation ofraw prediction scores unless they affect the ranking.
 
@@ -122,6 +122,9 @@ Furthermore, AUC has a meaningful probabilistic interpretation that is used to  
 Another important performance criterion generallyused in information retrieval relies on the precision-recall 
 
  The most extensively studied and widely used performance evaluation in binary classiﬁcation involves estimating the Receiver Operating Characteristic (ROC) curve t
+
+Having a single-number evaluation metric speeds up your ability to make a decision when you are selecting among a large number of classifiers. It gives a clear preference ranking among all of them, and therefore a clear direction for progress
+
 
 Recall \(\gamma\), FPR \(\eta\) and Precision \(\rho\) are defined as:
 

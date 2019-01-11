@@ -1,27 +1,20 @@
 
 TODO:
 
-1. related work. (calibration estimators)
+- optional: improve related work.
 
---> 3-4 pages.
+- 2.2 perspectives on response style
+- 2.2.1 likert-type scale
+- 2.2.2 data mismatch + tables + GESIS hist.
 
-2. likert type scale. (definition and debate)
-3. data mismatch.
+- 3 Feasibility of Learning.
+- 3.1 Terms and Defs.
+- 3.1.1 Sampling Bias Covariate Shift.
+- 3.1.2 Representative Sample.
+- 3.1.3 The Problem of overfitting + table.
+- 3.2 Discriminative Learners (+ implementation).
+- 3.3 Learning from pu.
+- 3.3.1 recovering model perfomance.
 
---> 6 pages.
+4. Results.
 
-4. convenience sampling.
-5. probability sampling.
-6. representative sampling.
-7. the problem of overfitting. 
-+ 8. discriminative learning.
-+ 9. pu learning. (algorithm tex)
-10. smote
-
---> ? pages.
-
-11. results.
-12. conclusion.
-14. future work.
-
-stand: 11.01.2019
