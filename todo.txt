@@ -1,7 +1,6 @@
 
 TODO:
 
-0. introduction.
 1. related work. (calibration estimators)
 
 --> 3-4 pages.
@@ -23,5 +22,6 @@ TODO:
 
 11. results.
 12. conclusion.
+14. future work.
 
-stand: 08.01.2019
+stand: 11.01.2019
