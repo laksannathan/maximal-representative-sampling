@@ -38,18 +38,10 @@ Descriptive statistics can be used to
  
 No practical amount of data can distinguish between two distributions, thus instances of GBS can not be proven to come from GESIS. However, discriminative learning allows to infer the conditional probability of \textit{'instance of GBS/GESIS'} given the survey data within a probabilistic framework:
 
-Discriminative learners will look for decision boundaries to distinguish the different views of GBS from GESIS. False negatives are then more closely aligned with the target probability distribution. The process of classification is repeated until the learner starts fitting noise more than is warranted. To avoid overfitting, the learning objective needs to be refined as contingency tables lack proper interpretibility. Given the imbalanced nature and size of GBS, learning is restrained to simpler algorithms with lesser degrees of freedom. The fraction of false positives in the result set of this procedure is kept as proxy measure for the subsequent method positive-unlabeled learning (PU learning). The development of classiﬁcation models in this setting is often referred to as positive-unlabeled learning (Denis et al. 2005).
 
-\vspace{15pt}
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[scale=0.48,angle=0]{fig/roc_example}
-		\label{project}
-		\caption{There is no caption for such a stupid figure.}
-	\end{center}
-\end{figure}
+GBS is in actual fact unlabeled, i.e. subgroups of the target population might be over-represented or under-represented.  
 
-PU learning is a semi-supervised technique that does not make the simplifying assumption of GBS instances being negative. Instead, a one-class classifier is trained on GESIS only. [...] This can result in even better assessment. [Read Literature] - Imporance weighted cross validation and pu learning with proper assessment.
+PU learning is a semi-supervised technique that does not make the simplifying assumption of GBS instances being negative. Instead, a one-class classifier is trained on GESIS only. [...] This can result in even better assessment.
 
 \subsection{The Problem of Overfitting}
 

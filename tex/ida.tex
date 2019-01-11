@@ -12,13 +12,15 @@ In order to diagnose to what extent an algorithm suffers from sampling bias, it 
 
 \section{Feature Selection and Data Imputation}
 
-Missing values in GESIS and GBS need to be handled first to clarify preprocessing steps and simplify future work on political participation and resilience. Note that the figure represents the data after attribute and value matching and before potential data imputation. This graphic also lends itself to first thoughts about whether missing data elements depend on observable and unobservable attributes or occur entirely at random and is also able to detect functional dependencies in survey data. Figure X summarizes the main observations from GESIS, figure Y summarizes the main obersvations in GBS. The correlation matrix (Fig Z) with ratio -1 to +1 is used as another way to visualize differences in GESIS and GBS and to further simplify preprocessing decisions. Potential bugs and issues can also be detected with this graph. 
+If not stated differently, deletion of rows is applied to every instance with missing values in GESIS to reduce the class imbalance in the later described classification problem. Missing values are sparse in GBS and can be imputed, e.g: with median substitution, with negligible effects. Mean substitution can not be used as this might lead to previously unseen values. Discriminative algorithms will then use these new values to distinguish GBS and GESIS that have been created by ill-considered data imputation. Note that the following figures represent the data after attribute and value matching described in Sec. 2.2. 
 
-If not stated differently, deletion of rows is applied to every instance with missing values in GESIS to reduce the class imbalance in the later described classification problem. Missing values are sparse in GBS and can be imputed, e.g: with median substitution, with negligible effects. Mean substitution can not be used as this might lead to new unseen values. 
+Fig. A.2 lends itself to first thoughts about whether missing data elements depend on observable attributes or occur entirely at random and is also able to detect functional dependencies in GESIS. Fig. A.3 summarizes the main observations from GBS. The correlation matrix with ratio -1 to +1 in Fig. A.4 is used as another way to visualize differences in GESIS and GBS and to further simplify preprocessing decisions. Potential bugs and issues can also be detected with this graph. 
 
-\section{Likert-Type Scale}
+\section{Perspectives on Response Styles}
 
-\subsection{The Big Five Dimensions}
+In survey analysis, scales measuring attributes need to be reliable and valid. Therefore, GBS and GESIS almost entirely use already tested scales from the literature.
+
+\subsection{Likert-Type Scale}
 
 The Big Five is an empirically-derived model of human personality and psyche. When factor analysis is applied to personality survey data, five clusters of traits consistently emerge. The BFI-10 is a 10-item scale measuring the Big Five personality traits, two BFI items for each dimension, representing both the high and low pole of each factor [Fig X]. Likert scales are the most frequently used instruments in GBS and GESIS. They consist of statements which measure the intensity of one's estimation towards the preceding statement. Respondents are asked to rate the BFI-10 items on a level of agreement on a consistent rating scale ranging from "Strongly Agree (5)" to Strongly Disagree (1)" for all items in both survey.
 
@@ -26,28 +28,28 @@ The Big Five is an empirically-derived model of human personality and psyche. Wh
 	\begin{center}
 		\includegraphics[scale=0.52,angle=0]{fig/Conscientiousness_figure}
 		\label{Conscientiousness}
-		\caption{Conscientiousness is the degree of organization, self-regulation, and responsibility one exhibits. \textit{"I see myself as someone who tends to be lazy."}(left). \textit{"I see myself as someone who does a thorough job."}(right).}
+		\caption{Conscientiousness is the degree of organization, self-regulation, and responsibility one exhibits. \textit{"I see myself as someone who tends to be lazy."}(left). \textit{"I see myself as someone who does a thorough job."}(right). The graphs are almost identical for the Likert item "Gruendlich". Respondents specify their level of disagreement for "Faulheit" more in GBS.}
 	\end{center}
 \end{figure}
 
- is still ongoing debate on whether to use a Likert scale item as categorical or numeric feature. The intervals between positions on the scale are monotonic but never so well-defined as to be numerically uniform increments. A "Strongly Agree (5)" response indicates more agreement than "Agree", but it does not show agreement that is five times stronger than "Strongly Disagree (1)". 
+is still ongoing debate on whether to use a Likert scale item as categorical or numeric feature. The intervals between positions on the scale are monotonic but never so well-defined as to be numerically uniform increments. A "Strongly Agree (5)" response indicates more agreement than "Agree", but it does not show agreement that is five times stronger than "Strongly Disagree (1)". 
 
 There is an underlying measurement continuum, but  
 This project treats the responses as if they fell on an interval scale.
 
 Figure X. shows the response distribution of values for "Conscientiousness" of GBS and GESIS participants (see Appendix for a visualization of distribution shifts in "Agreeableness", "Openness", "Extraversion" and "Neuroticism").
 
-Since GESIS and GBS analyse  on a group level should be relatively insensitive to problems that may arise.
+Since GESIS and GBS analyse on a group level should be relatively insensitive to problems that may arise.
 
 In all these cases each aggregate measure (perhaps the mean) is based on many individual responses (e.g., n=50, 100, 1000, etc.). In these cases the original Likert item begins to take on properties that resemble an interval scale at the aggregate level.
 life satisfaction of states or countries,
 job satisfaction of departments,
 
-The graphs are almost identical for the Likert item "Gruendlich". 
-
-The cyclic structure of the chart, i.e. "Strongly Disagree" next to Strongly Agree", provides a vivid example for the central-tendency bias across all items.
-
 \subsection{Data Mismatch}
+
+John Tukey wrote otherwise (back in 1960) in a monograph "Data Analysis and Behavioral Science" (published in Collected Works v. III). One result he obtained is that if you're getting better than about 10percent test-retest agreement, your scale isn't narrow enough!
+
+[1] It is confirmed that different numbers of rating bars in a subjective rating scale can have significant effects on the subjective measurement, thus the assessment of the Big Five dimensions of personality.
 
 \begin{table}[ht]
     \begin{center}
@@ -113,9 +115,7 @@ Shortcomings in attribute mappings may result in inappropriate representation an
 
 Inconsistencies are discovered later with the planned learning models as 
 
-John Tukey wrote otherwise (back in 1960) in a monograph "Data Analysis and Behavioral Science" (published in Collected Works v. III). One result he obtained is that if you're getting better than about 10percent test-retest agreement, your scale isn't narrow enough!
 
-[1] It is confirmed that different numbers of rating bars in a subjective rating scale can have significant effects on the subjective measurement, thus the assessment of the Big Five dimensions of personality.
 
 Techniques for reducing the length of scales while maintaining psychometric quality.
 Figure X shows an example of such as a statement.
