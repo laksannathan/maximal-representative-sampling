@@ -1,12 +1,6 @@
 
 TODO:
 
-- optional: improve related work.
-
-- 2.2 perspectives on response style
-- 2.2.1 likert-type scale
-- 2.2.2 data mismatch + tables + GESIS hist.
-
 - 3 Feasibility of Learning.
 - 3.1 Terms and Defs.
 - 3.1.1 Sampling Bias Covariate Shift.
@@ -19,3 +13,7 @@ TODO:
 4. Results.
 
 5. Conclusion.
+
+
+- optional: improve related work with a little text.
+- optional: improve ida with a little text.

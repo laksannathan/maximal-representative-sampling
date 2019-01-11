@@ -1,7 +1,5 @@
 \chapter{Feasibility of Learning}\label{Sec:Feasibility of Learning}
 
-No practical amount of data can distinguish between two distributions, thus instances of GBS can not be proven to come from GESIS. However, machine learning allows to infer the conditional probability of \textit{'GBS participant is representative'} given the survey data within a probabilistic framework. 
-
 \input{terms}
 
 \section{Discriminative Learning}
@@ -27,17 +25,8 @@ No practical amount of data can distinguish between two distributions, thus inst
 
 PU learning is a semi-supervised technique that does not make the simplifying assumption of GBS instances being negative. Instead, a one-class classifier is trained on GESIS only. [...] This can result in even better assessment. [Read Literature] - Imporance weighted cross validation and pu learning with proper assessment.
 
-For further, more technical reading, references to background papers are provided in [38].
-
-Overﬁtting stands out as one of the biggest challenges for machine learning. It is not exclusive to machine learning but rather a fundamental problem across science and is at the very heart of the dangers of statistical inference. By deﬁnition, statistical inference is taking the results of applying some sort of construct or model to speciﬁc data and then speculating that it would continue to perform well beyond the original observation range.
-
 State-of-the-art techniques in positive-unlabeled learningtackle this problem by treating the unlabeled sample as neg-atives and training a classiﬁer to distinguish between la-beled (positive) and unlabeled examples. 
 Surprisingly,for a variety of performance criteria, non-traditional classi-ﬁers achieve similar performance under traditional evalua-tion as optimal traditional classiﬁers (Blanchard et al. 2010;Menon et al. 2015). 
-
-Breiman [9] introduced bagging as a technique to construct strong ensembles by combining a set of base models. Breiman [10] stated that “the essential problem in combining classiﬁers is growing a suitably diverse ensemble of base classiﬁers” which can be done in various ways [12]. In bagging, the ensemble models use majority voting to aggregate decisions of base models which are trained on bootstrap resamples of the training set. From a Bayesian point of view, bagging can be interpreted as a Monte Carlo integration over an approximated posterior distribution [40]. 
-
-In his landmark paper, Breiman [9] noted that base model instability is an important factor in the success of bagging which led to the use of inherently instable methods like decision trees in early bagging approaches [19, 11]. The main mechanism of bagging is often said to be variance reduction [4, 10]. In more recent work, Grandvalet [24] explained that base model instability is not related to the intrinsic variability of a predictor but rather to the presence of inﬂuential instances in a data set for a given predictor (so-called leverage points).
-The eﬀect of bagging is explained as equalizing the inﬂuence of all training instances, which is beneﬁcial when highly inﬂuential instances are harmful for the predictor’s accuracy.
 
 We have shown the eﬀect of resampling contaminated sets and provided some basic insight into the mechanics of bagging. We will now link these two elements to justify bagging approaches in the context of contaminated training sets. Its usefulness can be considered by both the variance reduction argument of Bauer and Kohavi [4] and equalizing the inﬂuence of training points as described by Grandvalet [24]. Variance reduction. Resampling a contaminated set yields diﬀerent levels of contamination in the resamples as explained in Section 3.1. Varying the contamination between base model training sets induces variability between base models without increasing bias. This observation enables us to create a diverse set of base models by resampling both P and U. The variance reduction of bagging is an excellent mechanism to exploit the variability of base models based on resampling [4, 10]. In the context of RESVM, a tradeoﬀ takes place between increased variability (by training on smaller resamples, see Figure 1) and base models with increased stability (larger training sets for the SVM models). (https://arxiv.org/pdf/1402.3144.pdf)
 
@@ -121,10 +110,9 @@ The two main criteria considered in this work are the area under the ROC curve (
 Furthermore, AUC has a meaningful probabilistic interpretation that is used to  the ability of the classiﬁer to separate classesand is often used to rank classiﬁers (Hanley and McNeil1982). 
 Another important performance criterion generallyused in information retrieval relies on the precision-recall 
 
- The most extensively studied and widely used performance evaluation in binary classiﬁcation involves estimating the Receiver Operating Characteristic (ROC) curve t
+The most extensively studied and widely used performance evaluation in binary classiﬁcation involves estimating the Receiver Operating Characteristic (ROC) curve t
 
 Having a single-number evaluation metric speeds up your ability to make a decision when you are selecting among a large number of classifiers. It gives a clear preference ranking among all of them, and therefore a clear direction for progress
-
 
 Recall \(\gamma\), FPR \(\eta\) and Precision \(\rho\) are defined as:
 
