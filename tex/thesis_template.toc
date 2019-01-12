@@ -18,8 +18,8 @@
 \contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Maximal Representative Subsample}{23}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Fraction of Positives}{23}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}ROC and puROC Evaluation}{23}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Political Participation and Resilience}{23}{section.4.2}
-\contentsline {chapter}{\numberline {5}Future Work}{29}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{31}{chapter.6}
-\contentsline {chapter}{Bibliography}{32}{chapter.6}
+\contentsline {subsection}{\numberline {4.1.2}ROC and puROC Evaluation}{24}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Political Participation and Resilience}{24}{section.4.2}
+\contentsline {chapter}{\numberline {5}Future Work}{27}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{29}{chapter.6}
+\contentsline {chapter}{Bibliography}{30}{chapter.6}

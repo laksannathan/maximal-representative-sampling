@@ -4,7 +4,11 @@
 
 \section{Discriminative Learning}
 
+The intuition for these results comesfrom the fact that in many practical situations, the posteriordistributions in traditional and non-traditional setting pro-vide the same optimal ranking of data points on a given testsample (Jain et al. 2016; Jain, White, and Radivojac 2016).
+
 \section{Learning from Positive and Unlabeled Data}
+
+We have shown the eﬀect of resampling contaminated sets and provided some basic insight into the mechanics of bagging. We will now link these two elements to justify bagging approaches in the context of contaminated training sets. Its usefulness can be considered by both the variance reduction argument of Bauer and Kohavi [4] and equalizing the inﬂuence of training points as described by Grandvalet [24]. Variance reduction. Resampling a contaminated set yields diﬀerent levels of contamination in the resamples as explained in Section 3.1. Varying the contamination between base model training sets induces variability between base models without increasing bias. This observation enables us to create a diverse set of base models by resampling both P and U. The variance reduction of bagging is an excellent mechanism to exploit the variability of base models based on resampling [4, 10]. In the context of RESVM, a tradeoﬀ takes place between increased variability (by training on smaller resamples, see Figure 1) and base models with increased stability (larger training sets for the SVM models). (https://arxiv.org/pdf/1402.3144.pdf)
 
 \begin{table}[ht] 	
     \begin{center}
@@ -25,39 +29,11 @@
 
 PU learning is a semi-supervised technique that does not make the simplifying assumption of GBS instances being negative. Instead, a one-class classifier is trained on GESIS only. [...] This can result in even better assessment. [Read Literature] - Imporance weighted cross validation and pu learning with proper assessment.
 
-State-of-the-art techniques in positive-unlabeled learningtackle this problem by treating the unlabeled sample as neg-atives and training a classiﬁer to distinguish between la-beled (positive) and unlabeled examples. 
-Surprisingly,for a variety of performance criteria, non-traditional classi-ﬁers achieve similar performance under traditional evalua-tion as optimal traditional classiﬁers (Blanchard et al. 2010;Menon et al. 2015). 
-
-We have shown the eﬀect of resampling contaminated sets and provided some basic insight into the mechanics of bagging. We will now link these two elements to justify bagging approaches in the context of contaminated training sets. Its usefulness can be considered by both the variance reduction argument of Bauer and Kohavi [4] and equalizing the inﬂuence of training points as described by Grandvalet [24]. Variance reduction. Resampling a contaminated set yields diﬀerent levels of contamination in the resamples as explained in Section 3.1. Varying the contamination between base model training sets induces variability between base models without increasing bias. This observation enables us to create a diverse set of base models by resampling both P and U. The variance reduction of bagging is an excellent mechanism to exploit the variability of base models based on resampling [4, 10]. In the context of RESVM, a tradeoﬀ takes place between increased variability (by training on smaller resamples, see Figure 1) and base models with increased stability (larger training sets for the SVM models). (https://arxiv.org/pdf/1402.3144.pdf)
+State-of-the-art techniques in positive-unlabeled learningtackle this problem by treating the unlabeled sample as neg-atives and training a classiﬁer to distinguish between la-beled (positive) and unlabeled examples. Surprisingly,for a variety of performance criteria, non-traditional classi-ﬁers achieve similar performance under traditional evalua-tion as optimal traditional classiﬁers (Blanchard et al. 2010;Menon et al. 2015). 
 
 \hfill \\
 
-\begin{algorithm}[H]
-\noindent\rule{12cm}{1.1pt}
-\caption{PU training procedure}\label{alg:alg1}
-\KwIn{\(P\): set of positive instances (GESIS)}
-\myinput{\(U\): set of unlabeled instances (GBS)}
-\myinput{\(n_{models}\): number of base models in ensemble}
-\myinput{\(n_P\): size of bootstrap sample of \(P\)}
-\myinput{\(n_U\): size of bootstrap sample of \(U\)}
-\KwResult{Scoring function \(f:U \rightarrow \) $\mathbb{R}$}
-\noindent\rule{6cm}{0.4pt}\\
-Initualize: 
-\(f(x) \leftarrow 0\) and 
-\(c(x) \leftarrow 0\)\\
-\For{t = 1 to \(n_{models}\)}{
-\hfill \\
-  Draw a bootstrap sample \(P_t\) of size \(n_P\). \\
-  Draw a bootstrap sample \(U_t\) of size \(n_U\). \\
-  Train classifier \(f_t\) to discriminate \(P_t\) against \(U_t\). \\
-  For any \(x \in U \backslash U_t\), update:
-\[f(x) \leftarrow f(x) + f_t(x),\]
-\[c(x) \leftarrow c(x) + 1\]
-}
-Return \[s(x) = f(x)/c(x)\]
-\hfill \\
-
-\end{algorithm}
+\input{algorithm}
 
 \begin{comment}
 \begin{algorithm}[H]
@@ -81,24 +57,12 @@ Return \[s(x) = f(x)/n(x)\]
 
 \subsection{Recovering Model Performance}
 
-methods to estimate true classiﬁcationperformance. 
+The most extensively studied and widely used performance evaluation in binary classiﬁcation involves estimating the Receiver Operating Characteristic (ROC) curve. The ROC curve plots the true positive rate (recall) of a classiﬁer as a function of its false positive rate (Fawcett 2006) over a range of decision thresholds. Furthermore, AUC has a meaningful probabilistic interpretation that is used to  the ability of the classiﬁer to separate classesand is often used to rank classiﬁers (Hanley and McNeil1982). the widely-accepted evaluation approaches us-ing ROC curves are insensitive to the variation ofraw prediction scores unless they affect the ranking.
 
-be recov-ered with the knowledge of class priors
-
-results in biased empirical estimates of the classiﬁer performance
-now can be corrected with the knowledge of class priors
-using the One-Class SVM and its ability to capture the shape of the data set, hence performing better when the data is strongly non-Gaussian, i.e. with two well-separated clusters;
+Such perfor-mance estimation often involves computing the fraction(s)of correctly and incorrectly classiﬁed examples from bothclasses; however, in absence of labeled negatives, the frac-tions computed under the non-traditional evaluation are in-correct, resulting in biased estimates. Figure 1 illustratesthe effect of this bias by showing the traditional and non-traditional ROC curves on a handmade data set. Becausesome of the unlabeled examples in the training set are infact positive, the area under the ROC curve estimated whenthe unlabeled examples were considered negative (non-traditional setting) underestimates the true performance forpositive versus negative classiﬁcation (traditional setting).This paper formalizes and evaluates performance estima-tion of a non-traditional classiﬁer in the traditional settingwhen the only available training data are (possibly noisy)positive examples and unlabeled data. hough the efﬁcacy of non-traditional classiﬁers has beenthoroughly studied (Peng et al. 2003; Elkan and Noto 2008;Ward et al. 2009; Menon et al. 2015), estimating their true performance has been much less explored. be recov-ered with the knowledge of class priors. results in biased empirical estimates of the classiﬁer performance
 
 The ROC curve provides in-sight into trade-offs between the classiﬁer’s accuracies onpositive versus negative examples over a range of decisionthresholds. 
-(pr-rc) curve, a plot of precision as a function of recall.The precision-recall evaluation, including summary statis-tics derived from the pr-rc curve, may be preferred to ROCcurves when classes are heavily skewed (Davis and Goad-rich 2006).Although model learning and performance evaluation in asupervised setting are well understood (Hastie et al. 2001),the availability of unlabeled data gives additional optionsand also presents new challenges. A typical semi-supervisedscenario involves the availability of positive, negative and(large quantities of) unlabeled data. Here, the unlabeled datacan be used to improve training (Blum and Mitchell 1998) orunbias the labeled data (Cortes et al. 2008); e.g., to estimateclass proportions that are necessary to calibrate the modeland accurately estimate precision when class balances (butnot class-conditional distributions) in labeled data are notrepresentative (Saerens et al. 2002). This is often the casewhen it is more expensive or difﬁcult to label examples ofone class than the examples of the other. 
-
-The intuition for these results comesfrom the fact that in many practical situations, the posteriordistributions in traditional and non-traditional setting pro-vide the same optimal ranking of data points on a given testsample (Jain et al. 2016; Jain, White, and Radivojac 2016).
-
-Such perfor-mance estimation often involves computing the fraction(s)of correctly and incorrectly classiﬁed examples from bothclasses; however, in absence of labeled negatives, the frac-tions computed under the non-traditional evaluation are in-correct, resulting in biased estimates. Figure 1 illustratesthe effect of this bias by showing the traditional and non-traditional ROC curves on a handmade data set. Becausesome of the unlabeled examples in the training set are infact positive, the area under the ROC curve estimated whenthe unlabeled examples were considered negative (non-traditional setting) underestimates the true performance forpositive versus negative classiﬁcation (traditional setting).This paper formalizes and evaluates performance estima-tion of a non-traditional classiﬁer in the traditional settingwhen the only available training data are (possibly noisy)positive examples and unlabeled data.
-
-Though the efﬁcacy of non-traditional classiﬁers has beenthoroughly studied (Peng et al. 2003; Elkan and Noto 2008;Ward et al. 2009; Menon et al. 2015), estimating their true performance has been much less explored.
-
-the widely-accepted evaluation approaches us-ing ROC or pr-rc curves are insensitive to the variation ofraw prediction scores unless they affect the ranking.
+Although model learning and performance evaluation in asupervised setting are well understood (Hastie et al. 2001),the availability of unlabeled data gives additional optionsand also presents new challenges. A typical semi-supervisedscenario involves the availability of positive, negative and(large quantities of) unlabeled data. Here, the unlabeled datacan be used to improve training (Blum and Mitchell 1998) orunbias the labeled data (Cortes et al. 2008); e.g., to estimateclass proportions that are necessary to calibrate the modeland accurately estimate precision when class balances (butnot class-conditional distributions) in labeled data are notrepresentative (Saerens et al. 2002). This is often the casewhen it is more expensive or difﬁcult to label examples ofone class than the examples of the other. 
 
 Let \(f\) be the true distribution over the input space \(X\) from which unlabeled data is drawn. With distributions f1 and f0 of the positive and negative examples, respectively, it follows that
 \[f(x) = \alpha f_1(x) + (1-\alpha)f_0(x)\]
@@ -106,35 +70,11 @@ with positive class prior \(\alpha \in [0,1], x \in X\).
 
 Consider the binary classification problem from input \(x \in X\) (BFI-10 and BRS data) to output \(y \in Y\) (representative: '\(1\)', not representative: '\(0\)'). The learning objective is to discriminate between \(X_p\) drawn according to \(f_1\) and \(X_u\) drawn according to \(f\)  and recover its performance estimate in the traditional setting, i.e. evaluating the decision boundary between positive and negative data.
 
-The two main criteria considered in this work are the area under the ROC curve (AUC) and the F-Measure. The ROC curve plots the true positive rate (recall) of a classiﬁer as a function of its false positive rate (Fawcett 2006) over a range of decision thresholds. 
-Furthermore, AUC has a meaningful probabilistic interpretation that is used to  the ability of the classiﬁer to separate classesand is often used to rank classiﬁers (Hanley and McNeil1982). 
-Another important performance criterion generallyused in information retrieval relies on the precision-recall 
-
-The most extensively studied and widely used performance evaluation in binary classiﬁcation involves estimating the Receiver Operating Characteristic (ROC) curve t
-
-Having a single-number evaluation metric speeds up your ability to make a decision when you are selecting among a large number of classifiers. It gives a clear preference ranking among all of them, and therefore a clear direction for progress
-
-Recall \(\gamma\), FPR \(\eta\) and Precision \(\rho\) are defined as:
-
-\begin{equation*}
-\begin{split}
-\gamma = P[\hat{Y} = 1| Y = 1] \\
-\eta = P[\hat{Y} = 1| Y = 0] \\
-\rho = P[Y = 1| \hat{Y} = 1]
-\end{split}
-\end{equation*}
-
-where \(\hat{Y}\) is an estimate of the true class label \(Y\).
-
-TPR \(\gamma\) can be estimated directly, because \(X_p\) was sampled from \(f_1\), while this does not hold true for \(\eta\) given the absence of samples from \(f0\).
-
+Recall \(\gamma\), false positive rate \(\eta\) and precision \(\rho\) are defined as: \(\gamma = P[\hat{Y} = 1| Y = 1]\), \(\eta = P[\hat{Y} = 1| Y = 0]\) and \(\rho = P[Y = 1| \hat{Y} = 1]\), where \(\hat{Y}\) is an estimate of the true class label \(Y\). TPR \(\gamma\) can be estimated directly, because \(X_p\) was sampled from \(f_1\), while this does not hold true for \(\eta\) given the absence of samples from \(f_0\). 
 \begin{gather*}
 \gamma = \e{f_1[h(x)]} = \frac{1}{|X_p|} \sum\nolimits_{x \in X_p} h(x) \\
 \hat{\eta}^{pu} = \e{f[h(x)]} = \frac{1}{|X|} \sum\nolimits_{x \in X} h(x) \\
 \end{gather*}
-
-The area under precision-recall curves \(AUPR\) can be expressed using the approximated value for the fraction of positives \(\alpha\) in \(X_u\)
-\[\rho = \frac{\alpha \gamma}{\hat{\eta}^{pu}}\]
 
 The area under ROC curves \(AUROC^{pu}\) so far could only be estimated for the positive versus unlabeled classification by plotting \(\gamma\) and \(\hat{\eta}^{pu}\). To calculate \(AUC\) from \(AUC^{pu}\), S. Jain et al. (2015) express \(\eta\) in terms of \(\hat{\eta}^{pu}\) and \(alpha\) and provide a full derivation from the probabilistic definition of the AUC with
 
@@ -143,4 +83,3 @@ The area under ROC curves \(AUROC^{pu}\) so far could only be estimated for the 
 \[AUC = \frac{AUC^{pu} - \frac{\alpha}{2}}{1 - \alpha}\] proving
 
 \[AUC > AUC^{pu} \iff AUC^{pu} > \frac{1}{2}\]
-
