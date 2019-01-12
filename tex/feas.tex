@@ -1,17 +1,51 @@
 \chapter{Feasibility of Learning}\label{Sec:Feasibility of Learning}
 
-\input{terms}
+No practical amount of data can distinguish between two distributions, thus instances of GBS can not be proven to come from GESIS. However, machine learning allows to infer the conditional probability of \textit{'GBS participant is representative'} given the survey data within a probabilistic framework. A well-defined learning problem involves a number of design choices, including selecting the target function to be learned, a representation for this target function, and an algorithm to learn from the source of training experience. This paper defines key terminology of the theoretical aspects of survey analytics and machine learning. The MRS algorithm is then formulated as positive-unlabeled learning problem in addition to traditional machine learning.
+
+\section{Sampling Bias}
+
+Sampling bias is often referred to as selection bias or sample selection bias. I will stick to the more descriptive term sampling bias. It underlines the fact that the bias arises in how the data was sampled. Also, the use of the term becomes less ambiguous, because there exists another notion of selection bias in the context of model selection. This type of bias is usually referred to as bad generalization, where the performance of the selected hypothesis is overly optimistic. [input: convenience sampling]
+
+Although one could employ a census to measure the entire population, it is more common to take a sample of the population. A properly designed probability sample (see probability sampling) can be used to make estimates for not only the sample itself, but also for the underlying population from which it was selected. A probability sample is one in which each element of the (underlying) population has a known and non-zero chance of being selected. That is, every person has a chance to be included in the study and have his or her characteristics, opinions, etc., become part of the data. It should be noted that everyone does not have to have an equal chance of being selected – just a known non-zero chance of being selected. 
+Probability samples have several desirable characteristics. They enable us to put a margin of error or confidence interval on our estimates – essentially a measure of how accurate the estimate is compared to the same estimate calculated on the full population. Probability samples make it possible to not only compare the sample to the population, but also to compare a sample from one population to a sample from another population,
+
+Variables considered in the study must accurately reflect the populations characteristics. Some examples include sex, age, education level, socioeconomic status or marital status. Consider a randomly chosen survey participant, i.e. an instance of GBS or GESIS. It is usually difficult to draw a simple random sample from the population, due to cost and practical considerations such as no comprehensive sampling frame available.
+
+\section{The Problem of Overfitting}
+
+Overﬁtting stands out as one of the biggest challenges for machine learning. It is not exclusive to machine learning but rather a fundamental problem across science and is at the very heart of the dangers of statistical inference. Hypothesis \(h\) in \(H\) overﬁts training data if there exists an alternative hypothesis \(\bar{h}\) in \(H\) such that \(errorTrain(h) < errorTrain(\bar{h})\) and \(errorD(h) > errorD(\bar{h})\), where \(errorTrain(h):=\) error of hypothesis \(h\) over training data and \(errorD(h):=\) error over entire distribution \(D\) of data. A hypothesis overfits the training examples if some other hypothesis that fits the training examples less well actually performs better over the entire distribution of instances [1].
+
+When overfitting occurs, the learned hypothesis is very good at calculating the answers for the given data, but much less so for new instances it encounters. In a sense, the machine learning algorithm has become ﬁxated on unimportant features of the training data overlooking the big picture. It often occurs when the algorithm has too many options to play with in designing its mappings, an approximation of the target function. The freedom to tune parameters and add complexity until it exactly matches the training data, rather than looking for large, systematic patterns leads to high variance [6].
+
+The expected prediction error at any given data point \(x_0\), the generalization error, can be decomposed as follows [5]: 
+\begin{align*}
+Err(x_o) &= \EX[(Y - \bar{f}(x_0))^2 \mid X = x_0] \\
+& =  \sigma^2_\epsilon + [\EX\bar{f}(x_0) - f(x_0)]^2 + \EX[\bar{f}(x_0) - \EX\bar{f}(x_0)]^2\\
+& =  \sigma^2_\epsilon + Bias^2(\bar{f}(x_0)) + Var(\bar{f}(x_0)) \\
+& = Irreducible Error + Bias^2 + Variance
+\end{align*}
+
+The bias and variance terms make up the error of \(\bar{f}(x_0)\) in estimating \(f(x_0)\). The bias component is the squared difference between the true mean \(f(x_0)\) and the expected value of the estimate \([\EX\bar{f}(x_0) - f(x_0)]^2\), where the expectation averages the randomness in the training data. The variance term refers to the amount by which the estimate of the target function would change if it was estimated using a different training data set. Ideally the estimate for the underlying pattern should not vary too much between training sets. More generally, as the model complexity is increased, the variance tends to increase and the squared bias tends to decrease. The opposite behavior occurs as the model complexity is decreased. The first term in this expression is the irreducible error, a combination of stochastic and deterministic noise. More precisely, stochastic noise are fluctuations or measurement errors that can not be modelled. Re-measuring \(y_n\) changes this component. Deterministic noise is the part of the target function that can not be represented. Changing \(H\) changes this component. With a single dataset \(D\) and fixed \(H\) it is impossible to distinguish [6].  
 
 \section{Discriminative Learning}
 
 The intuition for these results comesfrom the fact that in many practical situations, the posteriordistributions in traditional and non-traditional setting pro-vide the same optimal ranking of data points on a given testsample (Jain et al. 2016; Jain, White, and Radivojac 2016).
 
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.40,angle=0]{fig/tree3}
+		\label{project}
+		\caption{.}
+	\end{center}
+\end{figure}
+
 The holdout estimate can be made more reliable by repeating the process with different subsamples. The error rates on the different iterations are averaged to yield an overall error rate. To further reduce the variance of the error estimate, each class is sampled with approximately equal proportions in both datasets, a technique called stratiﬁcation.
 
 \section{Learning from Positive and Unlabeled Data}
 
-We have shown the eﬀect of resampling contaminated sets and provided some basic insight into the mechanics of bagging. We will now link these two elements to justify bagging approaches in the context of contaminated training sets. Its usefulness can be considered by both the variance reduction argument of Bauer and Kohavi [4] and equalizing the inﬂuence of training points as described by Grandvalet [24]. Variance reduction. Resampling a contaminated set yields diﬀerent levels of contamination in the resamples as explained in Section 3.1. Varying the contamination between base model training sets induces variability between base models without increasing bias. This observation enables us to create a diverse set of base models by resampling both P and U. The variance reduction of bagging is an excellent mechanism to exploit the variability of base models based on resampling [4, 10]. In the context of RESVM, a tradeoﬀ takes place between increased variability (by training on smaller resamples, see Figure 1) and base models with increased stability (larger training sets for the SVM models). (https://arxiv.org/pdf/1402.3144.pdf)
+We have shown the eﬀect of resampling contaminated sets and provided some basic insight into the mechanics of bagging. We will now link these two elements to justify bagging approaches in the context of contaminated training sets. Its usefulness can be considered by both the variance reduction argument of Bauer and Kohavi [4] and equalizing the inﬂuence of training points as described by Grandvalet [24]. Variance reduction. Resampling a contaminated set yields diﬀerent levels of contamination in the resamples as explained in Section 3.1. Varying the contamination between base model training sets induces variability between base models without increasing bias. This observation enables us to create a diverse set of base models by resampling both P and U. The variance reduction of bagging is an excellent mechanism to exploit the variability of base models based on resampling [4, 10]. In the context of RESVM, a tradeoﬀ takes place between increased variability (by training on smaller resamples, see Figure 1) and base models with increased stability (larger training sets for the SVM models).
 
+\vspace{0.333cm}
 \begin{table}[ht] 	
     \begin{center}
             {\footnotesize
@@ -55,14 +89,7 @@ Return \[s(x) = f(x)/n(x)\]
 \end{algorithm} 
 \end {comment}
 
-\subsection{Recovering Model Performance}
-
 The most extensively studied and widely used performance evaluation in binary classiﬁcation involves estimating the Receiver Operating Characteristic (ROC) curve. The ROC curve plots the true positive rate (recall) of a classiﬁer as a function of its false positive rate (Fawcett 2006) over a range of decision thresholds. Furthermore, AUC has a meaningful probabilistic interpretation that is used to  the ability of the classiﬁer to separate classesand is often used to rank classiﬁers (Hanley and McNeil1982). the widely-accepted evaluation approaches us-ing ROC curves are insensitive to the variation ofraw prediction scores unless they affect the ranking.
-
-Such perfor-mance estimation often involves computing the fraction(s)of correctly and incorrectly classiﬁed examples from bothclasses; however, in absence of labeled negatives, the frac-tions computed under the non-traditional evaluation are in-correct, resulting in biased estimates. Figure 1 illustratesthe effect of this bias by showing the traditional and non-traditional ROC curves on a handmade data set. Becausesome of the unlabeled examples in the training set are infact positive, the area under the ROC curve estimated whenthe unlabeled examples were considered negative (non-traditional setting) underestimates the true performance forpositive versus negative classiﬁcation (traditional setting).This paper formalizes and evaluates performance estima-tion of a non-traditional classiﬁer in the traditional settingwhen the only available training data are (possibly noisy)positive examples and unlabeled data. hough the efﬁcacy of non-traditional classiﬁers has beenthoroughly studied (Peng et al. 2003; Elkan and Noto 2008;Ward et al. 2009; Menon et al. 2015), estimating their true performance has been much less explored. be recov-ered with the knowledge of class priors. results in biased empirical estimates of the classiﬁer performance
-
-The ROC curve provides in-sight into trade-offs between the classiﬁer’s accuracies onpositive versus negative examples over a range of decisionthresholds. 
-Although model learning and performance evaluation in asupervised setting are well understood (Hastie et al. 2001),the availability of unlabeled data gives additional optionsand also presents new challenges. A typical semi-supervisedscenario involves the availability of positive, negative and(large quantities of) unlabeled data. Here, the unlabeled datacan be used to improve training (Blum and Mitchell 1998) orunbias the labeled data (Cortes et al. 2008); e.g., to estimateclass proportions that are necessary to calibrate the modeland accurately estimate precision when class balances (butnot class-conditional distributions) in labeled data are notrepresentative (Saerens et al. 2002). This is often the casewhen it is more expensive or difﬁcult to label examples ofone class than the examples of the other. 
 
 Let \(f\) be the true distribution over the input space \(X\) from which unlabeled data is drawn. With distributions f1 and f0 of the positive and negative examples, respectively, it follows that
 \[f(x) = \alpha f_1(x) + (1-\alpha)f_0(x)\]
@@ -82,4 +109,4 @@ The area under ROC curves \(AUROC^{pu}\) so far could only be estimated for the 
 
 \[AUC = \frac{AUC^{pu} - \frac{\alpha}{2}}{1 - \alpha}\] proving
 
-\[AUC > AUC^{pu} \iff AUC^{pu} > \frac{1}{2}\]
+\[AUC > AUC^{pu} \iff AUC^{pu} > \frac{1}{2}\].
