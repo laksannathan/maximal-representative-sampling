@@ -4,11 +4,18 @@
 \usepackage{amsmath,amssymb,amsfonts,amsthm}    % Typical maths resource packages
 \newcommand{\e}[1]{{\mathbb E}\left[ #1 \right]}
 
+\DeclareRobustCommand{\bbone}{\text{\usefont{U}{bbold}{m}{n}1}}
+
+\DeclareMathOperator{\EX}{\mathbb{E}}% expected value
+
+
 \usepackage{graphicx}                           % Packages to allow inclusion of graphics
 \usepackage{hyperref}                           % For creating hyperlinks in cross references
 \usepackage[authoryear]{natbib}                 % literature reference style
 \usepackage{caption}
 \usepackage{subcaption}
+
+\usepackage[ruled,longend]{algorithm2e}
 
 \usepackage[]{algorithm2e}
 \newlength\mylen
