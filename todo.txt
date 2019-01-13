@@ -1,14 +1,9 @@
 
 TODO:
 
-- 3.1.1 Sampling Bias - Covariate Shift.
 - 3.2 Discriminative Learners (+ implementation).
 - 3.3 Learning from pu.
 
 4. Results.
 
 5. Conclusion.
-
-review all notes and delete unused references.
-
-bibliography
