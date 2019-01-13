@@ -26,18 +26,13 @@ To evaluate the research questions to a certain required level of significance, 
 	\end{center}
 \end{figure}
 
-In the MRS procedure, discriminative learners will look for decision boundaries to distinguish the negative class GBS from the positive class GESIS. First, both data sets are combined by adding an attribute indicating the source of origin. This label is predicted so that instances can be ranked according to their predicted probability. GBS participants that can be distinguished are removed from the result set. The remaining instances in GBS define the MRS and are expected to be more closely aligned with the target probability distribution.  The area under the receiver operating characteristic curve (AUROC) is used as single number evaluation metric to measure the degree of sampling bias. The MRS is characterized by an AUROC of roughly \(\frac{1}{2}\).
-
-The fraction of misclassified GBS instances is kept as proxy measure for the subsequent method positive-unlabeled learning \cite{denis, claesen}. Positive-unlabeled learning is a semi-supervised technique that does not make the simplifying assumption of GBS being positive or negative.
-
-\section{Related Work}
+In the MRS procedure, discriminative learners will look for decision boundaries to distinguish the negative class GBS from the positive class GESIS. First, both data sets are combined by adding an attribute indicating the source of origin. This label is predicted so that instances can be ranked according to their predicted probability. GBS participants that can be distinguished are removed from the result set. The remaining instances in GBS define the MRS and are expected to be more closely aligned with the target probability distribution.  The area under the receiver operating characteristic curve (AUROC) is used as single number evaluation metric to measure the degree of sampling bias. The MRS is characterized by an AUROC of roughly \(\frac{1}{2}\). The fraction of misclassified GBS instances is kept as proxy measure for the subsequent method positive-unlabeled learning \cite{denis, claesen}. Positive-unlabeled learning is a semi-supervised technique that does not make the simplifying assumption of GBS being positive or negative.
 
 These procedures can only work when most of the observations come from a feature space which is not specific to one of the surveys. Thus, attributes must be matched correctly. 
 
-Both theoretical and practical results show that the out-of sample error increases proportionally to the distribution shift [2, 20]. To compensate for the degradation in performance, many techniques have been designed to reduce the effects of covariate shift.
-% [1,4,9,10,12,15,16,17,18,19,21]. 
+\section{Related Work}
 
-Weighting adjustments are often used to compensate for noncoverage and total nonresponse [brick]. The influence of sampling bias could be alleviated by weighting the instances according to their importance (Shimodaira 2000). Statistical adjustment might also be reached by developing survey weights for calibration estimators [5]. However, these techniques require density estimation which is known to be a hard problem especially in high-dimensional cases (Haerdle et al. 2004). Directly estimating the importance without estimating the density ratios would be more promising: Discriminative machine learning for maximal representative subsampling.
+Both theoretical and practical results show that the out-of sample error increases proportionally to the distribution shift. To compensate for the degradation in performance, many techniques have been designed to reduce the effects of covariate shift. Weighting adjustments are often used to compensate for noncoverage and total nonresponse \cite{brick}. The influence of sampling bias could be alleviated by weighting the instances according to their importance. Statistical adjustment might also be reached by developing survey weights for calibration estimators. However, these techniques require density estimation which is known to be a hard problem especially in high-dimensional cases. Directly estimating the importance without estimating the density ratios would be more promising: Discriminative machine learning for maximal representative subsampling.
 
 \section{Outline}
 

@@ -24,9 +24,21 @@ The bias and variance terms make up the error of \(\bar{f}(x_0)\) in estimating 
 
 \section{Learning from Positive and Unlabeled Data}
 
-The most straightforward approach to deal with positive and unlabeled data, is to assume that all the unlabeled data are negative and simply apply traditional learning techniques. This comes from the fact that it has been shown that in many practical cases the posterior distributions in traditional and non-traditional setting provide the same optimal ranking of instances on a given test sample \cite{jain}.
+\vspace{0.4cm}
+\input{algorithm}
+\vspace{0.4cm}
 
-Given GBS and GESIS, an algorithm tries to find a decision boundary that separates GESIS and GBS. Discriminative learners are trained on one half of the data. The remaining survey participants are then classified as either GBS or GESIS, depending on which side of the decision boundary they fall. Predictions are made accordingly creating a ranking. 
+\cite{claesen}
+
+Positive-unlabeled learning is used for tasks such as matrix completion, multi-view learning, and semi-supervised learning. It can also be used in data mining to classify data streams, time series and to detect events, like co-occurences, in graphs \cite{elkan}.
+
+According to the use of unlabaled data
+
+Although model learning and performance evaluation in a supervised setting are well understood \cite{hastie}, the availability of unlabeled data gives additional optionsand also presents new challenges. A typical semi-supervisedscenario involves the availability of positive, negative and(large quantities of) unlabeled data. Here, the unlabeled datacan be used to improve training \cite{tom} orunbias the labeled data (Cortes et al. 2008); e.g., to estimateclass proportions that are necessary to calibrate the modeland accurately estimate precision when class balances (butnot class-conditional distributions) in labeled data are notrepresentative (Saerens et al. 2002). This is often the casewhen it is more expensive or dif?cult to label examples ofone class than the examples of the other. 
+
+The most straightforward approach to deal with positive and unlabeled data, is to assume that all the unlabeled data are negative and simply apply traditional learning techniques. It has been shown that in many practical cases the posterior distributions in traditional and non-traditional setting provide the same optimal ranking of instances on a given test sample \cite{jain}.
+
+Given GBS and GESIS, an algorithm tries to find a decision boundary that separates GESIS and GBS. Discriminative learners are trained on part of the data. The remaining survey participants are then classified as either GBS or GESIS, depending on which side of the decision boundary they fall. Predictions are made accordingly creating a ranking. The instance in GESIS with the lowest predicted probability marks the threshold for excluding every GBS instance that is ranked below.
 
 \begin{figure}[ht]
 	\begin{center}
@@ -36,16 +48,13 @@ Given GBS and GESIS, an algorithm tries to find a decision boundary that separat
 	\end{center}
 \end{figure}
 
-The most extensively studied and widely used performance evaluation in binary classiﬁcation involves estimating the Receiver Operating Characteristic (ROC) curve. The ROC curve visualized the trade-offs between the classifier's performance on positive versus negative instances over a range of decision thresholds. Furthermore, AUC has a meaningful probabilistic interpretation that is used to the ability of the classiﬁer to separate classes and is often used to rank classiﬁers \cite{roc}. The widely accepted evaluation approaches using ROC curves are insensitive to the variation of raw prediction scores unless they affect the ranking. AUROC of more than 0.5 on a hold-out sets imply that there is no more evidence for covariate shift. 
+The most extensively studied and widely used performance evaluation in binary classiﬁcation involves estimating the Receiver Operating Characteristic (ROC) curve. AUROC, the area under the ROC curve, has a meaningful probabilistic interpretation that is used to the ability of the classiﬁer to separate classes and rank instances. The ROC curve visualized the trade-offs between the classifier's performance on positive versus negative instances over a range of decision thresholds \cite{roc}. Evaluation approaches using ROC curves are insensitive to the variation of raw prediction scores unless they affect the ranking.
 
-\vspace{0.4cm}
-\input{algorithm}
+Assessing the performance of binary classifiers becomes a non-trivial task in the absence of known negatives. This can result in even better assessment. To further reduce the variance of the error estimate, each class is sampled with approximately equal proportions in both datasets, a technique called stratiﬁcation. 
 
-PU learning is a semi-supervised technique that does not make the simplifying assumption of GBS instances being negative. 
+Such perfor-mance estimation often involves computing the fraction(s)of correctly and incorrectly classi?ed examples from bothclasses; however, in absence of labeled negatives, the frac-tions computed under the non-traditional evaluation are in-correct, resulting in biased estimates. Becausesome of the unlabeled examples in the training set are infact positive, the area under the ROC curve estimated whenthe unlabeled examples were considered negative (non-traditional setting) underestimates the true performance forpositive versus negative classi?cation (traditional setting).This paper formalizes and evaluates performance estima-tion of a non-traditional classi?er in the traditional settingwhen the only available training data are (possibly noisy)positive examples and unlabeled data. hough the ef?cacy of non-traditional classi?ers has beenthoroughly studied, estimating their true performance has been much less explored. 
 
-This can result in even better assessment. To further reduce the variance of the error estimate, each class is sampled with approximately equal proportions in both datasets, a technique called stratiﬁcation. 
-
-Assessing the performance of binary classifiers becomes a non-trivial task in the absence of known negatives.
+be recov-ered with the knowledge of class priors.
 
 Let \(f\) be the true distribution over the input space \(X\) from which unlabeled data is drawn. With distributions \(f_1\) and \(f_0\) of the positive and negative examples, respectively, it follows that \[f(x) = \alpha f_1(x) + (1-\alpha)f_0(x),\] with positive class prior \(\alpha \in [0,1], x \in X\).
 

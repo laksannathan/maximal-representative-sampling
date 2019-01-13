@@ -13,6 +13,6 @@
 \contentsline {section}{\numberline {3.3}Learning from Positive and Unlabeled Data}{15}{section.3.3}
 \contentsline {chapter}{\numberline {4}Results}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Maximal Representative Subsample}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}Future Work}{20}{section.4.2}
+\contentsline {section}{\numberline {4.2}Future Work}{19}{section.4.2}
 \contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}
 \contentsline {chapter}{Bibliography}{25}{chapter.5}

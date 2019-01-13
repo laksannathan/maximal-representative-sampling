@@ -2,9 +2,7 @@
 
 \section{Maximal Representative Subsample}
 
-There is almost always not enough data available to partition it into separate training and test sets without losing signiﬁcant modelling or testing capability. In these cases, a fair way to properly estimate model prediction performance is to use cross-validation as a powerful general technique[5].
-
-The overly optimistic resubstitution error, is not a good indicator of model performance. To evaluate the actual performance of a model, the given data samples need to be split. The proper procedure uses three sets: training data, validation data, and test data [2]. The holdout method is the most common approach to get a reliable performance estimation: A certain amount of data is reserved for testing while the remainder is used for the actual training. Because the method is very fast, it is useful to use when the algorithm is slow to train and the dataset is large. Training and test sets might not be representative of the same underlying distribution, e.g. class hardly represented in the test set.
+for relating training samples to test data.
 
 \begin{table}[ht]
     \begin{center}
@@ -23,9 +21,7 @@ The overly optimistic resubstitution error, is not a good indicator of model per
 \end{center}
 \end{table}
 
-The holdout estimate can be made more reliable by repeating the process with different subsamples. The error rates on the different iterations are averaged to yield an overall error rate. To further reduce the variance of the error estimate, each class is sampled with approximately equal proportions in both datasets, a technique called stratiﬁcation. Figure X shows the results on the GFI-10 data.
-
-Estimating positive class prior with One-Class SVMs.
+Estimating positive class prior with One-Class SVMs. trying to estimate a function f which is positive on S and negative on the complement. The dataset that you use for training can contain all or mostly normal cases. Typically, the SVM algorithm is given a set of training examples labeled as belonging to one of two classes. An SVM model is based on dividing the training sample points into separate categories by as wide a gap as possible, while penalizing training samples that fall on the wrong side of the gap. The SVM model then makes predictions by assigning points to one side of the gap or the other. Therefore, in one-class SVM, the support vector model is trained on data that has only one class, which is the “normal” class. It infers the properties of normal cases and from these properties can predict which examples are unlike the normal examples.  Predictions from the One-Class SVM are uncalibrated scores that may be possibly unbounded. be sure to normalize scores if you are comparing models based on different algorithms.
 
 \begin{figure}[ht]
 	\begin{center}
@@ -38,7 +34,7 @@ Estimating positive class prior with One-Class SVMs.
 \begin{figure}[ht]
 \centering
    \includegraphics[scale=0.50,angle=0]{fig/res1}
-\caption{ROC and puROC Evaluation.}
+\caption{ROC and puROC Evaluation. An AUROC of approximately \(\frac{1}{2}\) implies that there is no more evidence for covariate shift.}
    \label{fig:Ng1} 
 \end{figure}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  13 JAN 2019 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  13 JAN 2019 21:06
 entering extended mode
 **./thesis_template.tex
 (thesis_template.tex
@@ -635,10 +635,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 \section{Related Work}
-                            [2 <./fig/overview.png>])pdfTeX warning (ext4): des
-tination with the same identifier (name{page.3}) has been already used, duplica
-te ignored
+l.31 T
+      hese procedures can only work when most of the observations come from ...
+[2 <./fig/overview.png>])pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.120 \newpage
@@ -651,7 +651,7 @@ l.1 \chapter
 
 ]
 Chapter 2.
-<fig/values_compare.png, id=146, 837.1275pt x 589.4522pt>
+<fig/values_compare.png, id=148, 837.1275pt x 589.4522pt>
 File: fig/values_compare.png Graphic file (type png)
 <use fig/values_compare.png>
 Package pdftex.def Info: fig/values_compare.png  used on input line 7.
@@ -660,7 +660,7 @@ Package pdftex.def Info: fig/values_compare.png  used on input line 7.
 Underfull \vbox (badness 4713) has occurred while \output is active []
 
  [5 <./fig/values_compare.png>]
-<fig/gesis_missing.png, id=153, 867.24pt x 867.24pt>
+<fig/gesis_missing.png, id=155, 867.24pt x 867.24pt>
 File: fig/gesis_missing.png Graphic file (type png)
 <use fig/gesis_missing.png>
 Package pdftex.def Info: fig/gesis_missing.png  used on input line 21.
@@ -669,12 +669,12 @@ Package pdftex.def Info: fig/gesis_missing.png  used on input line 21.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/gbs_missing.png, id=154, 867.24pt x 867.24pt>
+<fig/gbs_missing.png, id=156, 867.24pt x 867.24pt>
 File: fig/gbs_missing.png Graphic file (type png)
 <use fig/gbs_missing.png>
 Package pdftex.def Info: fig/gbs_missing.png  used on input line 29.
 (pdftex.def)             Requested size: 433.61894pt x 433.61894pt.
-<fig/correl.png, id=155, 620.3175pt x 576.65437pt>
+<fig/correl.png, id=157, 620.3175pt x 576.65437pt>
 File: fig/correl.png Graphic file (type png)
 <use fig/correl.png>
 Package pdftex.def Info: fig/correl.png  used on input line 37.
@@ -685,7 +685,7 @@ Overfull \hbox (11.8103pt too wide) in paragraph at lines 37--39
  []
 
 [6]
-<fig/Conscientiousness_figure.png, id=162, 867.24pt x 289.08pt>
+<fig/Conscientiousness_figure.png, id=164, 867.24pt x 289.08pt>
 File: fig/Conscientiousness_figure.png Graphic file (type png)
 <use fig/Conscientiousness_figure.png>
 Package pdftex.def Info: fig/Conscientiousness_figure.png  used on input line 5
@@ -702,7 +702,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ã in font cmr10!
 [7 <./fig/Conscientiousness_figure.png>]
-<fig/histo.png, id=178, 708.39656pt x 475.7775pt>
+<fig/histo.png, id=180, 708.39656pt x 475.7775pt>
 File: fig/histo.png Graphic file (type png)
 <use fig/histo.png>
 Package pdftex.def Info: fig/histo.png  used on input line 111.
@@ -710,9 +710,6 @@ Package pdftex.def Info: fig/histo.png  used on input line 111.
 ) [8] (feas.tex [9 <./fig/gesis_missing.png>] [10 <./fig/gbs_missing.png>] [11 
 <./fig/correl.png>] [12 <./fig/histo.png>]
 Chapter 3.
-
-LaTeX Warning: Citation `tom' on page 13 undefined on input line 3.
-
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
@@ -721,11 +718,18 @@ Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
 [13
 
-] [14]
-<fig/tree.png, id=233, 1064.47687pt x 518.6878pt>
+] (algorithm.tex) [14]
+
+LaTeX Warning: Citation `hastie' on page 15 undefined on input line 37.
+
+
+Underfull \vbox (badness 1577) has occurred while \output is active []
+
+ [15]
+<fig/tree.png, id=247, 1064.47687pt x 518.6878pt>
 File: fig/tree.png Graphic file (type png)
 <use fig/tree.png>
-Package pdftex.def Info: fig/tree.png  used on input line 33.
+Package pdftex.def Info: fig/tree.png  used on input line 45.
 (pdftex.def)             Requested size: 340.63956pt x 165.98349pt.
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
@@ -733,74 +737,69 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
- [15 <./fig/tree.png>] (algorithm.tex)
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
- [16]) [17] (res.tex [18
 
-]
+[16 <./fig/tree.png>]
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+ [17]) [18] (res.tex
 Chapter 4.
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
 
 LaTeX Warning: Reference `Tab:DescripStatsRawDataDetail' on page 19 undefined o
-n input line 21.
+n input line 19.
 
 
 LaTeX Warning: Reference `Tab:DescripStatsRawDataDetail' on page 19 undefined o
-n input line 21.
+n input line 19.
 
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-<fig/occfigure.png, id=262, 867.24pt x 289.08pt>
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+<fig/occfigure.png, id=270, 867.24pt x 289.08pt>
 File: fig/occfigure.png Graphic file (type png)
 <use fig/occfigure.png>
-Package pdftex.def Info: fig/occfigure.png  used on input line 32.
+Package pdftex.def Info: fig/occfigure.png  used on input line 28.
 (pdftex.def)             Requested size: 433.61894pt x 144.53964pt.
-<fig/res1.png, id=263, 826.58812pt x 450.9347pt>
+<fig/res1.png, id=271, 826.58812pt x 450.9347pt>
 File: fig/res1.png Graphic file (type png)
 <use fig/res1.png>
-Package pdftex.def Info: fig/res1.png  used on input line 40.
+Package pdftex.def Info: fig/res1.png  used on input line 36.
 (pdftex.def)             Requested size: 413.29305pt x 225.4668pt.
-<fig/weka_gbs.png, id=264, 615.80063pt x 429.85594pt>
+<fig/weka_gbs.png, id=272, 615.80063pt x 429.85594pt>
 File: fig/weka_gbs.png Graphic file (type png)
 <use fig/weka_gbs.png>
-Package pdftex.def Info: fig/weka_gbs.png  used on input line 48.
+Package pdftex.def Info: fig/weka_gbs.png  used on input line 44.
 (pdftex.def)             Requested size: 338.69139pt x 236.4215pt.
-<fig/weka_gesis.png, id=265, 614.295pt x 438.8897pt>
+<fig/weka_gesis.png, id=273, 614.295pt x 438.8897pt>
 File: fig/weka_gesis.png Graphic file (type png)
 <use fig/weka_gesis.png>
-Package pdftex.def Info: fig/weka_gesis.png  used on input line 53.
+Package pdftex.def Info: fig/weka_gesis.png  used on input line 49.
 (pdftex.def)             Requested size: 337.86328pt x 241.39008pt.
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Ä in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no â in font cmr10!
+[19
 
-Underfull \vbox (badness 1622) has occurred while \output is active []
-
- [19]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no â in font cmr10!
-<fig/procedure2.png, id=272, 943.27406pt x 286.06876pt>
+]
+<fig/procedure2.png, id=280, 943.27406pt x 286.06876pt>
 File: fig/procedure2.png Graphic file (type png)
 <use fig/procedure2.png>
-Package pdftex.def Info: fig/procedure2.png  used on input line 71.
+Package pdftex.def Info: fig/procedure2.png  used on input line 67.
 (pdftex.def)             Requested size: 386.74487pt x 117.28894pt.
 
-Underfull \vbox (badness 1189) has occurred while \output is active []
+Underfull \vbox (badness 6542) has occurred while \output is active []
 
  [20 <./fig/occfigure.png>]) [21 <./fig/res1.png>] (conc.tex [22 <./fig/weka_gb
 s.png> <./fig/weka_gesis.png>] [23 <./fig/procedure2.png>] [24
@@ -829,7 +828,17 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 [27]
-Underfull \hbox (badness 6110) in paragraph at lines 40--41
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+
+Underfull \hbox (badness 6110) in paragraph at lines 52--53
 []\OT1/cmr/m/n/10.95 JM Brick, G. Kalton. \OT1/cmr/m/it/10.95 Han-dling miss-in
 g data in sur-vey re-search \OT1/cmr/m/n/10.95 , 1996,
  []
@@ -843,14 +852,15 @@ Missing character: There is no ì in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
+[28]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
-) [28] (authorship.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
- [29
+) [29] (authorship.tex [30
 
-]
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
+ [31]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
  (thesis_template.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
@@ -867,10 +877,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
  ) 
 Here is how much of TeX's memory you used:
- 10826 strings out of 493305
- 164443 string characters out of 3129802
- 275920 words of memory out of 3000000
- 14113 multiletter control sequences out of 15000+200000
+ 10834 strings out of 493305
+ 164529 string characters out of 3129802
+ 276013 words of memory out of 3000000
+ 14116 multiletter control sequences out of 15000+200000
  13353 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,11n,41p,1277b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -891,9 +901,9 @@ ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
 s/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10
 .pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/symbols/msbm10.pfb>
-Output written on thesis_template.pdf (34 pages, 1304607 bytes).
+Output written on thesis_template.pdf (36 pages, 1308806 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
