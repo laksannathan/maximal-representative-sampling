@@ -26,7 +26,7 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\citation{denis1,denis2,elkan,calvo,claesen}
+\citation{denis,elkan,claesen}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{project}{{\caption@xref {project}{ on input line 24}}{2}{Introduction}{figure.caption.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Multivariate auxiliary information GESIS linked to GBS so that expected bias can be detected and corrected for. In addition, GBS contains an attribute for positive or negative treatment of survey participants for further analysis.\relax }}{2}{figure.caption.4}}
@@ -39,13 +39,19 @@
 \newlabel{Sec:Initial Data Analysis}{{2}{5}{Initial Data Analysis}{chapter.2}{}}
 \newlabel{std}{{\caption@xref {std}{ on input line 8}}{5}{Initial Data Analysis}{figure.caption.5}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces GBS - GESIS attribute and value comparison. Not all attributes are used in every learning task. See GitHub documentation for more information.\relax }}{5}{figure.caption.5}}
+\citation{rammstedt}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Feature Selection and Data Imputation}{6}{section.2.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}Perspectives on Response Styles}{6}{section.2.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Likert-Type Scale}{6}{subsection.2.2.1}}
+\citation{likert}
+\citation{likert2,likert3}
+\citation{likert4}
+\citation{likert4}
+\citation{heeringa}
 \newlabel{Conscientiousness}{{\caption@xref {Conscientiousness}{ on input line 56}}{7}{Likert-Type Scale}{figure.caption.9}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Conscientiousness is the degree of organization, self-regulation, and responsibility one exhibits. \textit  {"I see myself as someone who tends to be lazy."}(left). \textit  {"I see myself as someone who does a thorough job."}(right). The graphs are almost identical for the Likert item "Gruendlich". Respondents specify their level of disagreement for "Faulheit" stronger in GBS.\relax }}{7}{figure.caption.9}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Data Mismatch}{7}{subsection.2.2.2}}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces "Wach" as an example of a Likert item discrepancy. GESIS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GBS encouraging participants to voice a positive or negative opinion. In some cases, an additional "opt-out" option is provided for those respondents who truly cannot respond. The respondent may not respond because some questions are too sensitive. This type of nonresponse would also be considered missing values indicated by "-1".\relax }}{8}{table.caption.10}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces "Wach" as an example of a Likert item discrepancy. GESIS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GBS encouraging participants to voice a positive or negative opinion. In some cases, an additional "opt-out" option is provided for those respondents who truly cannot respond. The respondent may not respond because some questions are too sensitive. This type of nonresponse would also be considered missing values indicated by "-1" \cite  {likert4}.\relax }}{8}{table.caption.10}}
 \@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Demonstration of potential scalings for differing attribute values. The cut-off mapping comes with a loss of information. Max scaler and min-max scaler introduce new unseen values that can be problematic for statistical learning.\relax }}{8}{table.caption.11}}
 \newlabel{Tab:DescripStatsRawData}{{2.2}{8}{Demonstration of potential scalings for differing attribute values. The cut-off mapping comes with a loss of information. Max scaler and min-max scaler introduce new unseen values that can be problematic for statistical learning.\relax }{table.caption.11}{}}
 \newlabel{gesis_miss}{{\caption@xref {gesis_miss}{ on input line 22}}{9}{Feature Selection and Data Imputation}{figure.caption.6}{}}
@@ -54,21 +60,27 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Missing values in GBS. There is one more attribute in "Gruppe". Not every participant received a positive a negative psychological treatment. Therefore, "Gruppe" is more likely to be missing than not. However, the absence of a value indicates no treatment rather than a missing positive or negative. "Gruppe" is not properly represented yet. "Desinteresse Politiker" is given by multiple data sources from different excel files. Some of them being the inverse of the attribute itself. The surey design regarding this issue is unclear to me. To incorporate "Desinteresse Politiker" the attribute(s) need to be imported correctly, if possible. Another import issue is given by "Personen im Haushalt". If the actual value is greater than one, the cell will be empty. To correct this, the corresponding csv-file needs to be fixed. The text field "Berufsgruppe" suffers on both ends, GBS and GESIS, due to current oversimplification of value and potential data mismatch.\relax }}{10}{figure.caption.7}}
 \newlabel{corr}{{\caption@xref {corr}{ on input line 38}}{11}{Feature Selection and Data Imputation}{figure.caption.8}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces The upper right triangular matrix shows GESIS correlations while GBS correlations are shown in the lower left. The main diagonal should not be confused with white squares. These trivial combinations are simply excluded and not colored black. As can be seen "Personen im Haushalt" in GBS can not be calculated, since there is only one possible value. "Nettoeinkommen Selbst" and "Nettoeinkommen Haushalt" are highly correlated but not removed or handled at all. I will keep this in mind, when facing the naive bayes assumption in the learning process. Entropy-based mutual information in "Wahlteilnahme" and "Wahlabsicht" have led to almost perfect classification performances in predicting political participation. "Wahlabsicht" is therefore removed.\relax }}{11}{figure.caption.8}}
-\newlabel{std}{{\caption@xref {std}{ on input line 110}}{12}{Data Mismatch}{figure.caption.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Overview of attributes that can not be used for further analysis due to data mismatch. GESIS histograms (right) are show differently scaled values, some of which have been transformed already. Taking the inverse of "Aengstlich", "Alles anstrengend" and perhaps "Verargert" for either the left or right side is likely to match the values properly. The remaining attributes do not seem to be reliable and will not be included for the time being.\relax }}{12}{figure.caption.12}}
+\newlabel{std}{{\caption@xref {std}{ on input line 112}}{12}{Data Mismatch}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Overview of attributes that can not be used for further analysis due to data mismatch. GESIS histograms (right) are show differently scaled values, some of which have been transformed already. Taking the inverse of "Aengstlich", "Alles anstrengend" and perhaps "Veraergert" for either the left or right side is likely to match the values properly. The remaining attributes do not seem to be reliable and will not be included for the time being.\relax }}{12}{figure.caption.12}}
+\citation{tom}
+\citation{west}
+\citation{yaser}
+\citation{yaser}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}Feasibility of Learning}{13}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{Sec:Feasibility of Learning}{{3}{13}{Feasibility of Learning}{chapter.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Sampling Bias}{13}{section.3.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}The Problem of Overfitting}{14}{section.3.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}The Problem of Overfitting}{13}{section.3.2}}
+\citation{yaser}
+\citation{ian}
+\citation{yaser}
+\citation{ian}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Discriminative Learning}{15}{section.3.3}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.4}Learning from Positive and Unlabeled Data}{15}{section.3.4}}
-\newlabel{project}{{\caption@xref {project}{ on input line 39}}{16}{Discriminative Learning}{figure.caption.13}{}}
+\newlabel{project}{{\caption@xref {project}{ on input line 42}}{16}{Discriminative Learning}{figure.caption.13}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces .\relax }}{16}{figure.caption.13}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref  {Tab:DescripStatsRawDataDetail} in the appendix for more details.\relax }}{16}{table.caption.14}}
-\newlabel{Tab:DescripStatsRawData}{{3.1}{16}{Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref {Tab:DescripStatsRawDataDetail} in the appendix for more details.\relax }{table.caption.14}{}}
 \@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces PU training procedure\relax }}{17}{algocf.1}}
 \newlabel{alg:alg}{{1}{17}{Learning from Positive and Unlabeled Data}{algocf.1}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{19}{chapter.4}}
@@ -77,47 +89,47 @@
 \@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{Sec:Results}{{4}{19}{Results}{chapter.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Maximal Representative Subsample}{19}{section.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Fraction of Positives}{19}{subsection.4.1.1}}
-\newlabel{occ}{{\caption@xref {occ}{ on input line 18}}{20}{Fraction of Positives}{figure.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Tuning parameter \(nu\) that controls the trade-off between the fraction of non-representative samples and the number of support vectors in one-class SVM. More than 0.73 of GBS (right) are classified as representative with high confidence (low sdt) for the optimal value \(nu = 10^{-5}\).\relax }}{20}{figure.caption.15}}
-\newlabel{fig:Ng1}{{\caption@xref {fig:Ng1}{ on input line 29}}{20}{ROC and puROC Evaluation}{figure.caption.16}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}ROC and puROC Evaluation}{20}{subsection.4.1.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Political Participation and Resilience}{20}{section.4.2}}
-\newlabel{fig:Ng1}{{\caption@xref {fig:Ng1}{ on input line 40}}{21}{Political Participation and Resilience}{figure.caption.17}{}}
-\newlabel{sub@fig:Ng1}{{}{21}{Political Participation and Resilience}{figure.caption.17}{}}
-\newlabel{fig:Ng2}{{\caption@xref {fig:Ng2}{ on input line 46}}{21}{Political Participation and Resilience}{figure.caption.17}{}}
-\newlabel{sub@fig:Ng2}{{}{21}{Political Participation and Resilience}{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Feature importance GBS (n=579) and GBS MRS (n=280) in classification of political participation "Wahlteilnahme".\relax }}{21}{figure.caption.17}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Future Work}{23}{chapter.5}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref  {Tab:DescripStatsRawDataDetail} in the appendix for more details.\relax }}{19}{table.caption.14}}
+\newlabel{Tab:DescripStatsRawData}{{4.1}{19}{Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref {Tab:DescripStatsRawDataDetail} in the appendix for more details.\relax }{table.caption.14}{}}
+\citation{smote}
+\newlabel{occ}{{\caption@xref {occ}{ on input line 33}}{20}{Maximal Representative Subsample}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Using the One-Class SVM and its ability to capture the fraction of positive. Tuning parameter \(nu\) that controls the trade-off between the fraction of non-representative samples and the number of support vectors in one-class SVM. More than 0.73 of GBS (right) are classified as representative with high confidence (low sdt) for the optimal value \(nu = 10^{-5}\).\relax }}{20}{figure.caption.15}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Future Work}{20}{section.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces ROC and puROC Evaluation.\relax }}{21}{figure.caption.16}}
+\newlabel{fig:Ng1}{{4.2}{21}{ROC and puROC Evaluation.\relax }{figure.caption.16}{}}
+\newlabel{fig:Ng1}{{\caption@xref {fig:Ng1}{ on input line 49}}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
+\newlabel{sub@fig:Ng1}{{}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
+\newlabel{fig:Ng2}{{\caption@xref {fig:Ng2}{ on input line 54}}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
+\newlabel{sub@fig:Ng2}{{}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Feature importance in GBS (n=579) and GBS MRS (n=280) for classification of political participation "Wahlteilnahme". In modelling a political participation process, algorithms approximate the likelihood of a person going to vote on election day. Ideally, for every instance with unknown political interest and willingness to participate, there is enough data of people of similiar demographics, socioeconomics and psychological traits to generalize from.\relax }}{22}{figure.caption.17}}
+\newlabel{std}{{\caption@xref {std}{ on input line 72}}{23}{Future Work}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Artificial data synthesis to overrepresent subgroups of GESIS. True negatives are removed from the MRS with positive classes GESIS (left) and GESIS-1 (right). Oversampled instances can easily be marked as such for result set comparisons.\relax }}{23}{figure.caption.18}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{Sec:Future Work}{{5}{23}{Future Work}{chapter.5}{}}
-\newlabel{std}{{\caption@xref {std}{ on input line 13}}{23}{Future Work}{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Artificial data synthesis to overrepresent subgroups of GESIS. True negatives are removed from the MRS with positive classes GESIS (left) and GESIS-1 (right). Oversampled instances can easily be marked as such for result set comparisons.\relax }}{23}{figure.caption.18}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{25}{chapter.6}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{Sec:Conclusion}{{6}{25}{Conclusion}{chapter.6}{}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{25}{chapter.6}}
+\newlabel{Sec:Conclusion}{{5}{25}{Conclusion}{chapter.5}{}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{25}{chapter.5}}
 \bibcite{tuscher}{1}
-\bibcite{candela}{2}
-\bibcite{west}{3}
-\bibcite{denis1}{4}
-\bibcite{denis2}{5}
-\bibcite{elkan}{6}
-\bibcite{calvo}{7}
-\bibcite{claesen}{8}
-\bibcite{brick}{9}
-\bibcite{rubin}{10}
-\bibcite{bagging}{11}
-\bibcite{tom}{12}
-\bibcite{trevor}{13}
-\bibcite{ian}{14}
-\bibcite{yaser}{15}
-\bibcite{stone}{16}
-\bibcite{rissanen}{17}
-\bibcite{tianqi}{18}
-\bibcite{walker}{19}
-\bibcite{cox}{20}
+\bibcite{rammstedt}{2}
+\bibcite{candela}{3}
+\bibcite{west}{4}
+\bibcite{heeringa}{5}
+\bibcite{likert}{6}
+\bibcite{likert3}{7}
+\bibcite{likert4}{8}
+\bibcite{denis}{9}
+\bibcite{elkan}{10}
+\bibcite{claesen}{11}
+\bibcite{brick}{12}
+\bibcite{rubin}{13}
+\bibcite{bagging}{14}
+\bibcite{tom}{15}
+\bibcite{trevor}{16}
+\bibcite{ian}{17}
+\bibcite{yaser}{18}
+\bibcite{stone}{19}
+\bibcite{tianqi}{20}
+\bibcite{walker}{21}
+\bibcite{cox}{22}
+\bibcite{smote}{23}

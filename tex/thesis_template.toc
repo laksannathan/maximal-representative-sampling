@@ -9,14 +9,11 @@
 \contentsline {subsection}{\numberline {2.2.2}Data Mismatch}{7}{subsection.2.2.2}
 \contentsline {chapter}{\numberline {3}Feasibility of Learning}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Sampling Bias}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}The Problem of Overfitting}{14}{section.3.2}
+\contentsline {section}{\numberline {3.2}The Problem of Overfitting}{13}{section.3.2}
 \contentsline {section}{\numberline {3.3}Discriminative Learning}{15}{section.3.3}
 \contentsline {section}{\numberline {3.4}Learning from Positive and Unlabeled Data}{15}{section.3.4}
 \contentsline {chapter}{\numberline {4}Results}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Maximal Representative Subsample}{19}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Fraction of Positives}{19}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}ROC and puROC Evaluation}{20}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Political Participation and Resilience}{20}{section.4.2}
-\contentsline {chapter}{\numberline {5}Future Work}{23}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{25}{chapter.6}
-\contentsline {chapter}{Bibliography}{25}{chapter.6}
+\contentsline {section}{\numberline {4.2}Future Work}{20}{section.4.2}
+\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}
+\contentsline {chapter}{Bibliography}{25}{chapter.5}

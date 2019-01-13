@@ -46,19 +46,19 @@ In survey analysis, scales measuring attributes need to be reliable and valid. T
 
 \subsection{Likert-Type Scale}
 
-The Big Five is an empirically-derived model of human personality and psyche. When factor analysis is applied to personality survey data, five clusters of traits consistently emerge. The BFI-10 is a 10-item scale measuring the Big Five personality traits. Figures 2.5 visualizes the response distribution of two BFI items for the "Conscientiousness" dimension, representing both the high and low pole. "Agreeableness", "Extraversion", "Neuroticism" and "Openness" can be compared in the output folder of the project repository. 
+The Big Five is an empirically-derived model of human personality and psyche. When factor analysis is applied to personality survey data, five clusters of traits consistently emerge. The BFI-10 is a 10-item scale measuring the Big Five personality traits. Figures 2.5 visualizes the response distribution of two BFI items for the "Conscientiousness" dimension, representing both the high and low pole. "Agreeableness", "Extraversion", "Neuroticism" and "Openness" can be compared in the output folder of the project repository \cite{rammstedt}. 
 
-Likert scales are the most frequently used instruments in GBS and GESIS. They consist of statements which measure the intensity of one's estimation towards the preceding statement. Respondents are asked to rate the BFI-10 items on a level of agreement on a consistent rating scale ranging from "Strongly Agree (5)" to Strongly Disagree (1)" for all items in both survey. 
+Likert scales are the most frequently used instruments in GBS and GESIS. They consist of statements which measure the intensity of one's estimation towards the preceding statement. Respondents are asked to rate the BFI-10 items on a level of agreement on a consistent rating scale ranging from "Strongly Agree (5)" to Strongly Disagree (1)" for all items in both surveys \cite{likert}. 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.52,angle=0]{fig/Conscientiousness_figure}
+		\includegraphics[scale=0.48,angle=0]{fig/Conscientiousness_figure}
 		\label{Conscientiousness}
 		\caption{Conscientiousness is the degree of organization, self-regulation, and responsibility one exhibits. \textit{"I see myself as someone who tends to be lazy."}(left). \textit{"I see myself as someone who does a thorough job."}(right). The graphs are almost identical for the Likert item "Gruendlich". Respondents specify their level of disagreement for "Faulheit" stronger in GBS.}
 	\end{center}
 \end{figure}
 
-There are still discussions about whether to use a Likert scale element as a categorical or numerical characteristic. The intervals between positions on the scale are monotonous, but never so well defined that they are numerically uniform steps. A "Strongly Agree (5)" answer indicates more agreement than "Agree", but it shows no agreement that is five times stronger than "Strongly Disagree (1)". In this work, the BFI-10 items are considered categorical.
+There are still discussions about whether to use a Likert scale element as a categorical or numerical characteristic. The intervals between positions on the scale are monotonous, but never so well defined that they are numerically uniform steps. A "Strongly Agree (5)" answer indicates more agreement than "Agree", but it shows no agreement that is five times stronger than "Strongly Disagree (1)". In this work, the BFI-10 items are considered categorical, considering the use and limitations of Likert scales \cite{likert2, likert3}.
 
 \subsection{Data Mismatch}
 
@@ -76,11 +76,13 @@ There are still discussions about whether to use a Likert scale element as a cat
 		& -1 & 1 & Gar nicht & 184 \\		
 	     \hline \hline
             \end{tabular}}
-        \caption{"Wach" as an example of a Likert item discrepancy. GESIS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GBS encouraging participants to voice a positive or negative opinion. In some cases, an additional "opt-out" option is provided for those respondents who truly cannot respond. The respondent may not respond because some questions are too sensitive. This type of nonresponse would also be considered missing values indicated by "-1".}
+        \caption{"Wach" as an example of a Likert item discrepancy. GESIS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GBS encouraging participants to voice a positive or negative opinion. In some cases, an additional "opt-out" option is provided for those respondents who truly cannot respond. The respondent may not respond because some questions are too sensitive. This type of nonresponse would also be considered missing values indicated by "-1" \cite{likert4}.}
 \end{center}
 \end{table}
-It can be assumed that different numbers of rating bars in a subjective rating scale can have significant effects on the subjective measurement. Table 2.1 gives an example for two different scales of the same attribute while trying to find a proper representation in Table 2.2. GESIS often contains textual values, which often cannot be clearly assigned to numeric scales, so that the value counts have to be used to support the decision making. Figure 2.7 shows what happens when attributes are partially transformed using cut-off mappings.
-\vspace{0.33cm}
+
+It can be assumed that different numbers of rating bars in a subjective rating scale can have significant effects on the subjective measurement \cite{heeringa}. Table 2.1 gives an example for two different scales of the same attribute while trying to find a proper representation in Table 2.2. GESIS often contains textual values, which often cannot be clearly assigned to numeric scales, so that the value counts have to be used to support the decision making. Figure 2.7 shows what happens when attributes are partially transformed using cut-off mappings. Depending on the discriminative algorithm, values ​​that only appear in one of the two surveys are enough to perfectly classify instances: "\textit{If value equals 1.7  \(\rightarrow\) Instance of class GESIS}". Decision-tree based learning algorithms will likely suffer from erroneous mappings, while logistic regression with a proper scoring rule might be the most suitable algorithm to limit the effects of measurement discrepancy.
+
+\vspace{0.48cm}
 \begin{table}[ht]
     \begin{center}
             {\footnotesize
@@ -108,7 +110,7 @@ It can be assumed that different numbers of rating bars in a subjective rating s
 	\begin{center}
 		\includegraphics[scale=0.62,angle=0]{fig/histo}
 		\label{std}
-		\caption{Overview of attributes that can not be used for further analysis due to data mismatch. GESIS histograms (right) are show differently scaled values, some of which have been transformed already. Taking the inverse of "Aengstlich", "Alles anstrengend" and perhaps "Verargert" for either the left or right side is likely to match the values properly. The remaining attributes do not seem to be reliable and will not be included for the time being.}
+		\caption{Overview of attributes that can not be used for further analysis due to data mismatch. GESIS histograms (right) are show differently scaled values, some of which have been transformed already. Taking the inverse of "Aengstlich", "Alles anstrengend" and perhaps "Veraergert" for either the left or right side is likely to match the values properly. The remaining attributes do not seem to be reliable and will not be included for the time being.}
 	\end{center}
 \end{figure}
 
