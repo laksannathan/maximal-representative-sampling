@@ -2,7 +2,8 @@
 
 \section{Maximal Representative Subsample}
 
-for relating training samples to test data.
+Although model learning and performance evaluation in a supervised setting are well understood \cite{hastie}, the availability of unlabeled data gives additional optionsand also presents new challenges.
+for relating training samples to test data. To further reduce the variance of the error estimate, each class is sampled with approximately equal proportions in both datasets, a technique called stratiﬁcation. 
 
 \begin{table}[ht]
     \begin{center}
@@ -33,8 +34,8 @@ Estimating positive class prior with One-Class SVMs. trying to estimate a functi
 
 \begin{figure}[ht]
 \centering
-   \includegraphics[scale=0.50,angle=0]{fig/res1}
-\caption{ROC and puROC Evaluation. An AUROC of approximately \(\frac{1}{2}\) implies that there is no more evidence for covariate shift.}
+   \includegraphics[scale=0.48,angle=0]{fig/res1}
+\caption{ROC and puROC evaluation. An AUROC of approximately \(\frac{1}{2}\) implies that there is no more evidence for covariate shift.}
    \label{fig:Ng1} 
 \end{figure}
 

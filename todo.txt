@@ -1,8 +1,6 @@
 
 TODO:
 
-- 3.3 Learning from pu.
-
 4. Results.
 
 5. Conclusion.
@@ -14,5 +12,3 @@ https://arxiv.org/pdf/1402.3144.pdf
 https://arxiv.org/pdf/1504.06837.pdf
 
 https://arxiv.org/pdf/1010.0772.pdf
-
-https://arxiv.org/pdf/1402.3144.pdf

@@ -77,20 +77,20 @@
 \citation{yaser}
 \citation{ian}
 \citation{yaser}
-\citation{claesen}
-\citation{elkan}
-\citation{hastie}
-\citation{tom}
+\citation{elkan,claesen}
+\citation{jain,claesen}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Learning from Positive and Unlabeled Data}{15}{section.3.3}}
 \@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces PU training procedure\relax }}{15}{algocf.1}}
 \newlabel{alg:alg}{{1}{15}{Learning from Positive and Unlabeled Data}{algocf.1}{}}
-\citation{jain}
 \citation{roc}
-\newlabel{project}{{\caption@xref {project}{ on input line 46}}{16}{Learning from Positive and Unlabeled Data}{figure.caption.13}{}}
+\citation{leo}
+\citation{claesen2,jain2}
+\newlabel{project}{{\caption@xref {project}{ on input line 42}}{16}{Learning from Positive and Unlabeled Data}{figure.caption.13}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Tree-based algorithm as discriminative learner. Increasing model complexity results in a better separation of GBS and GESIS and an improvement of the AUROC on the training data. Predicted probabilities are based on the proportions of positives and negatives in subspaces. Test set instances of GBS in leaf nodes are removed if correctly classified. The terms over-represented and under-represented can be translated to four distinct leaf node possibilities. If we excluded all misclassified instances, then we are also changing GESIS distribution, of which we know it is representative. Subsampling means adapting GBS distributions only.\relax }}{16}{figure.caption.13}}
+\citation{claesen2,jain,jain2}
 \citation{jain}
 \citation{jain}
-\citation{smote}
+\citation{hastie}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{19}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -99,18 +99,19 @@
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Maximal Representative Subsample}{19}{section.4.1}}
 \@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref  {Tab:DescripStatsRawDataDetail} in the appendix for more details.\relax }}{19}{table.caption.14}}
 \newlabel{Tab:DescripStatsRawData}{{4.1}{19}{Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref {Tab:DescripStatsRawDataDetail} in the appendix for more details.\relax }{table.caption.14}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Future Work}{19}{section.4.2}}
+\citation{smote}
 \citation{jesse}
-\newlabel{occ}{{\caption@xref {occ}{ on input line 29}}{20}{Maximal Representative Subsample}{figure.caption.15}{}}
+\newlabel{occ}{{\caption@xref {occ}{ on input line 30}}{20}{Maximal Representative Subsample}{figure.caption.15}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Using the One-Class SVM and its ability to capture the fraction of positive. Tuning parameter \(nu\) that controls the trade-off between the fraction of non-representative samples and the number of support vectors in one-class SVM. More than 0.73 of GBS (right) are classified as representative with high confidence (low sdt) for the optimal value \(nu = 10^{-5}\).\relax }}{20}{figure.caption.15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces ROC and puROC Evaluation. An AUROC of approximately \(\frac  {1}{2}\) implies that there is no more evidence for covariate shift.\relax }}{21}{figure.caption.16}}
-\newlabel{fig:Ng1}{{4.2}{21}{ROC and puROC Evaluation. An AUROC of approximately \(\frac {1}{2}\) implies that there is no more evidence for covariate shift.\relax }{figure.caption.16}{}}
-\newlabel{fig:Ng1}{{\caption@xref {fig:Ng1}{ on input line 45}}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Future Work}{20}{section.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces ROC and puROC evaluation. An AUROC of approximately \(\frac  {1}{2}\) implies that there is no more evidence for covariate shift.\relax }}{21}{figure.caption.16}}
+\newlabel{fig:Ng1}{{4.2}{21}{ROC and puROC evaluation. An AUROC of approximately \(\frac {1}{2}\) implies that there is no more evidence for covariate shift.\relax }{figure.caption.16}{}}
+\newlabel{fig:Ng1}{{\caption@xref {fig:Ng1}{ on input line 46}}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
 \newlabel{sub@fig:Ng1}{{}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
-\newlabel{fig:Ng2}{{\caption@xref {fig:Ng2}{ on input line 50}}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
+\newlabel{fig:Ng2}{{\caption@xref {fig:Ng2}{ on input line 51}}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
 \newlabel{sub@fig:Ng2}{{}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Feature importance in GBS (n=579) and GBS MRS (n=280) for classification of political participation "Wahlteilnahme". In modelling a political participation process, algorithms approximate the likelihood of a person going to vote on election day. Ideally, for every instance with unknown political interest and willingness to participate, there is enough data of people of similiar demographics, socioeconomics and psychological traits to generalize from.\relax }}{22}{figure.caption.17}}
-\newlabel{std}{{\caption@xref {std}{ on input line 68}}{23}{Future Work}{figure.caption.18}{}}
+\newlabel{std}{{\caption@xref {std}{ on input line 69}}{23}{Future Work}{figure.caption.18}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Artificial data synthesis to overrepresent subgroups of GESIS. True negatives are removed from the MRS with positive classes GESIS (left) and GESIS-1 (right). Oversampled instances can easily be marked as such for result set comparisons.\relax }}{23}{figure.caption.18}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -128,19 +129,21 @@
 \bibcite{likert4}{8}
 \bibcite{roc}{9}
 \bibcite{denis}{10}
-\bibcite{jain}{11}
-\bibcite{bickel}{12}
-\bibcite{tom}{13}
-\bibcite{Sechidis}{14}
-\bibcite{elkan}{15}
-\bibcite{claesen}{16}
-\bibcite{brick}{17}
-\bibcite{shimodaira}{18}
-\bibcite{bagging}{19}
-\bibcite{trevor}{20}
-\bibcite{ian}{21}
-\bibcite{yaser}{22}
-\bibcite{jesse}{23}
-\bibcite{tianqi}{24}
-\bibcite{walker}{25}
-\bibcite{smote}{26}
+\bibcite{claesen}{11}
+\bibcite{claesen2}{12}
+\bibcite{jain}{13}
+\bibcite{jain2}{14}
+\bibcite{bickel}{15}
+\bibcite{tom}{16}
+\bibcite{Sechidis}{17}
+\bibcite{elkan}{18}
+\bibcite{brick}{19}
+\bibcite{shimodaira}{20}
+\bibcite{leo}{21}
+\bibcite{trevor}{22}
+\bibcite{ian}{23}
+\bibcite{yaser}{24}
+\bibcite{jesse}{25}
+\bibcite{tianqi}{26}
+\bibcite{walker}{27}
+\bibcite{smote}{28}
