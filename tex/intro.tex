@@ -26,9 +26,9 @@ To evaluate the research questions to a certain required level of significance, 
 	\end{center}
 \end{figure}
 
-In the MRS procedure, discriminative learners will look for decision boundaries to distinguish the negative class GBS from the positive class GESIS. First, both data sets are combined by adding an attribute indicating the source of origin. This label is predicted so that instances can be ranked according to their predicted probability. GBS participants that can be distinguished are removed from the result set. The remaining instances in GBS define the MRS and are expected to be more closely aligned with the target probability distribution.  The area under the receiver operating characteristic curve (AUROC) is used as single number evaluation metric to measure the degree of sampling bias. The MRS is characterized by an AUROC of roughly 0.5.
+In the MRS procedure, discriminative learners will look for decision boundaries to distinguish the negative class GBS from the positive class GESIS. First, both data sets are combined by adding an attribute indicating the source of origin. This label is predicted so that instances can be ranked according to their predicted probability. GBS participants that can be distinguished are removed from the result set. The remaining instances in GBS define the MRS and are expected to be more closely aligned with the target probability distribution.  The area under the receiver operating characteristic curve (AUROC) is used as single number evaluation metric to measure the degree of sampling bias. The MRS is characterized by an AUROC of roughly \(\frac{1}{2}\).
 
-The fraction of misclassified GBS instances is kept as proxy measure for the subsequent method positive-unlabeled learning \cite{denis, elkan, claesen}. Positive-unlabeled learning is a semi-supervised technique that does not make the simplifying assumption of GBS being positive or negative.
+The fraction of misclassified GBS instances is kept as proxy measure for the subsequent method positive-unlabeled learning \cite{denis, claesen}. Positive-unlabeled learning is a semi-supervised technique that does not make the simplifying assumption of GBS being positive or negative.
 
 \section{Related Work}
 
