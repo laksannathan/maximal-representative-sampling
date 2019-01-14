@@ -1,7 +1,15 @@
 
 TODO:
 
-4. Results.
+1. Disc Learning Implement 
+- (Logistic Regression)
+- (XGBoost)
+
+2. Results.
+
+3. Review
+
+4. Send Mail.
 
 5. Conclusion.
 

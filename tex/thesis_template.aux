@@ -31,6 +31,8 @@
 \newlabel{project}{{\caption@xref {project}{ on input line 25}}{2}{Introduction}{figure.caption.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Multivariate auxiliary information GESIS linked to GBS so that expected bias can be detected and corrected for. In addition, GBS contains an attribute for positive or negative treatment of survey participants for further analysis.\relax }}{2}{figure.caption.4}}
 \citation{brick}
+\citation{shimodaira}
+\citation{jean}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Related Work}{3}{section.1.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Outline}{3}{section.1.2}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Initial Data Analysis}{5}{chapter.2}}
@@ -90,29 +92,30 @@
 \citation{claesen2,jain,jain2}
 \citation{jain}
 \citation{jain}
-\citation{hastie}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{19}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{Sec:Results}{{4}{19}{Results}{chapter.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Maximal Representative Subsample}{19}{section.4.1}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref  {Tab:DescripStatsRawDataDetail} in the appendix for more details.\relax }}{19}{table.caption.14}}
-\newlabel{Tab:DescripStatsRawData}{{4.1}{19}{Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref {Tab:DescripStatsRawDataDetail} in the appendix for more details.\relax }{table.caption.14}{}}
-\citation{smote}
-\newlabel{occ}{{\caption@xref {occ}{ on input line 34}}{20}{Maximal Representative Subsample}{figure.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Using the One-Class SVM and its ability to capture the fraction of positive. Tuning parameter \(nu\) that controls the trade-off between the fraction of non-representative samples and the number of support vectors in one-class SVM. More than 0.73 of GBS (right) are classified as representative with high confidence (low sdt) for the optimal value \(nu = 10^{-5}\).\relax }}{20}{figure.caption.15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces ROC and puROC evaluation. An AUROC of approximately \(\frac  {1}{2}\) implies that there is no more evidence for covariate shift.\relax }}{19}{figure.caption.14}}
+\newlabel{fig:Ng1}{{4.1}{19}{ROC and puROC evaluation. An AUROC of approximately \(\frac {1}{2}\) implies that there is no more evidence for covariate shift.\relax }{figure.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref  {Tab:DescripStatsRawDataDetail} in the appendix for more details.\relax }}{20}{table.caption.15}}
+\newlabel{Tab:DescripStatsRawData}{{4.1}{20}{Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref {Tab:DescripStatsRawDataDetail} in the appendix for more details.\relax }{table.caption.15}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}Future Work}{20}{section.4.2}}
+\citation{smote}
 \citation{jesse}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces ROC and puROC evaluation. An AUROC of approximately \(\frac  {1}{2}\) implies that there is no more evidence for covariate shift.\relax }}{21}{figure.caption.16}}
-\newlabel{fig:Ng1}{{4.2}{21}{ROC and puROC evaluation. An AUROC of approximately \(\frac {1}{2}\) implies that there is no more evidence for covariate shift.\relax }{figure.caption.16}{}}
-\newlabel{fig:Ng1}{{\caption@xref {fig:Ng1}{ on input line 51}}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
-\newlabel{sub@fig:Ng1}{{}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
-\newlabel{fig:Ng2}{{\caption@xref {fig:Ng2}{ on input line 56}}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
-\newlabel{sub@fig:Ng2}{{}{22}{Maximal Representative Subsample}{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Feature importance in GBS (n=579) and GBS MRS (n=280) for classification of political participation "Wahlteilnahme". In modelling a political participation process, algorithms approximate the likelihood of a person going to vote on election day. Ideally, for every instance with unknown political interest and willingness to participate, there is enough data of people of similiar demographics, socioeconomics and psychological traits to generalize from.\relax }}{22}{figure.caption.17}}
-\newlabel{std}{{\caption@xref {std}{ on input line 75}}{23}{Future Work}{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Artificial data synthesis to overrepresent subgroups of GESIS. True negatives are removed from the MRS with positive classes GESIS (left) and GESIS-1 (right). Oversampled instances can easily be marked as such for result set comparisons.\relax }}{23}{figure.caption.18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces GridSearchCV: Gridsearch using repeated 10-fold stratified cross-validation on \(\frac  {1}{2}\) of the data to evaluate multiple scorers simultaneously. The baselines are 0.89 for accuracy, 0.82 for AUC/AUROC and 0.29 for logarithmic loss. The baselines of a OneRule classifier would outperform the trained models, due to the high imbalance in the data.\relax }}{21}{figure.caption.16}}
+\newlabel{fig:Ng1}{{4.2}{21}{GridSearchCV: Gridsearch using repeated 10-fold stratified cross-validation on \(\frac {1}{2}\) of the data to evaluate multiple scorers simultaneously. The baselines are 0.89 for accuracy, 0.82 for AUC/AUROC and 0.29 for logarithmic loss. The baselines of a OneRule classifier would outperform the trained models, due to the high imbalance in the data.\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces ROC and puROC evaluation. An AUROC of approximately \(\frac  {1}{2}\) implies that there is no more evidence for covariate shift.\relax }}{22}{figure.caption.17}}
+\newlabel{fig:Ng1}{{4.3}{22}{ROC and puROC evaluation. An AUROC of approximately \(\frac {1}{2}\) implies that there is no more evidence for covariate shift.\relax }{figure.caption.17}{}}
+\newlabel{fig:Ng1}{{\caption@xref {fig:Ng1}{ on input line 63}}{23}{Maximal Representative Subsample}{figure.caption.18}{}}
+\newlabel{sub@fig:Ng1}{{}{23}{Maximal Representative Subsample}{figure.caption.18}{}}
+\newlabel{fig:Ng2}{{\caption@xref {fig:Ng2}{ on input line 68}}{23}{Maximal Representative Subsample}{figure.caption.18}{}}
+\newlabel{sub@fig:Ng2}{{}{23}{Maximal Representative Subsample}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Feature importance in GBS (n=579) and GBS MRS (n=280) for classification of political participation "Wahlteilnahme". In modelling a political participation process, algorithms approximate the likelihood of a person going to vote on election day. Ideally, for every instance with unknown political interest and willingness to participate, there is enough data of people of similiar demographics, socioeconomics and psychological traits to generalize from.\relax }}{23}{figure.caption.18}}
+\newlabel{std}{{\caption@xref {std}{ on input line 87}}{24}{Future Work}{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Artificial data synthesis to overrepresent subgroups of GESIS. True negatives are removed from the MRS with positive classes GESIS (left) and GESIS-1 (right). Oversampled instances can easily be marked as such for result set comparisons.\relax }}{24}{figure.caption.19}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -128,22 +131,26 @@
 \bibcite{likert3}{7}
 \bibcite{likert4}{8}
 \bibcite{roc}{9}
-\bibcite{denis}{10}
-\bibcite{claesen}{11}
-\bibcite{claesen2}{12}
-\bibcite{jain}{13}
-\bibcite{jain2}{14}
-\bibcite{bickel}{15}
-\bibcite{tom}{16}
-\bibcite{Sechidis}{17}
-\bibcite{elkan}{18}
-\bibcite{brick}{19}
-\bibcite{shimodaira}{20}
-\bibcite{leo}{21}
-\bibcite{trevor}{22}
-\bibcite{ian}{23}
-\bibcite{yaser}{24}
-\bibcite{jesse}{25}
-\bibcite{tianqi}{26}
-\bibcite{walker}{27}
-\bibcite{smote}{28}
+\bibcite{jean}{10}
+\bibcite{shimodaira}{11}
+\bibcite{denis}{12}
+\bibcite{claesen}{13}
+\bibcite{claesen2}{14}
+\bibcite{jain}{15}
+\bibcite{jain2}{16}
+\bibcite{bickel}{17}
+\bibcite{tom}{18}
+\bibcite{Sechidis}{19}
+\bibcite{elkan}{20}
+\bibcite{brick}{21}
+\bibcite{shimodaira}{22}
+\bibcite{leo}{23}
+\bibcite{trevor}{24}
+\bibcite{ian}{25}
+\bibcite{yaser}{26}
+\bibcite{jesse}{27}
+\bibcite{walker}{28}
+\bibcite{tianqi}{29}
+\bibcite{cox}{30}
+\bibcite{breiman2}{31}
+\bibcite{smote}{32}
