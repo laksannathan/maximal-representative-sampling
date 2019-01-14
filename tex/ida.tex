@@ -4,6 +4,7 @@ In order to diagnose to what extent an algorithm suffers from sampling bias, it 
 
 \begin{figure}[ht]
 	\begin{center}
+		\captionsetup{width= 425pt}
 		\includegraphics[scale=0.52,angle=0]{fig/values_compare}
 		\label{std}
 		\caption{GBS - GESIS attribute and value comparison. Not all attributes are used in every learning task. See GitHub documentation for more information.}
@@ -18,6 +19,7 @@ Fig. A.2 lends itself to first thoughts about whether missing data elements depe
 
 \begin{figure}[h]
 	\begin{center}
+		\captionsetup{width= 400pt}
 		\includegraphics[scale=0.50,angle=0]{fig/gesis_missing}
 		\label{gesis_miss}
 		\caption{Missing values in GESIS. The attribute values of a participant are always known for "Geschlecht", "Geburtsland", "Geburtsjahr", "Nationalitaet", "Familienstand", "Personen im Haushalt". In contrast, the last three columns "Druck", "Optimismus Zukunft", "Zufriedenheit Wahlergebnisse" and "Resilienz" are almost always missing and are therefore removed from the analysis. Participants with missing BFI-10 elements are removed. Sample size will only be reduced slightly as missing values often occur for the same instance. These dependencies form a line pattern in the graph. "Berufsgruppe" was surveyed as a text field so that the column clearly suffers from ambiguous value mismatch. To include "Berufsgruppe" mappings need to be redefined first. For now, "Berufsgruppe" is removed. }
@@ -26,6 +28,7 @@ Fig. A.2 lends itself to first thoughts about whether missing data elements depe
 
 \begin{figure}[ht]
 	\begin{center}
+		\captionsetup{width= 400pt}
 		\includegraphics[scale=0.50,angle=0]{fig/gbs_missing}
 		\label{gbs_miss}
 		\caption{Missing values in GBS. There is one more attribute in "Gruppe". Not every participant received a positive a negative psychological treatment. Therefore, "Gruppe" is more likely to be missing than not. However, the absence of a value indicates no treatment rather than a missing positive or negative. "Gruppe" is not properly represented yet. "Desinteresse Politiker" is given by multiple data sources from different excel files. Some of them being the inverse of the attribute itself. The surey design regarding this issue is unclear to me. To incorporate "Desinteresse Politiker" the attribute(s) need to be imported correctly, if possible. Another import issue is given by "Personen im Haushalt". If the actual value is greater than one, the cell will be empty. To correct this, the corresponding csv-file needs to be fixed. The text field "Berufsgruppe" suffers on both ends, GBS and GESIS, due to current oversimplification of value and potential data mismatch.}
@@ -34,6 +37,7 @@ Fig. A.2 lends itself to first thoughts about whether missing data elements depe
 
 \begin{figure}[ht]
 	\begin{center}
+		\captionsetup{width= 400pt}
 		\includegraphics[scale=0.73,angle=0]{fig/correl}
 		\label{corr}
 		\caption{The upper right triangular matrix shows GESIS correlations while GBS correlations are shown in the lower left. The main diagonal should not be confused with white squares. These trivial combinations are simply excluded and not colored black. As can be seen "Personen im Haushalt" in GBS can not be calculated, since there is only one possible value. "Nettoeinkommen Selbst" and "Nettoeinkommen Haushalt" are highly correlated but not removed or handled at all. I will keep this in mind, when facing the naive bayes assumption in the learning process. Entropy-based mutual information in "Wahlteilnahme" and "Wahlabsicht" have led to almost perfect classification performances in predicting political participation. "Wahlabsicht" is therefore removed.}
@@ -52,6 +56,7 @@ Likert scales are the most frequently used instruments in GBS and GESIS. They co
 
 \begin{figure}[H]
 	\begin{center}
+		\captionsetup{width= 380pt}
 		\includegraphics[scale=0.48,angle=0]{fig/Conscientiousness_figure}
 		\label{Conscientiousness}
 		\caption{Conscientiousness is the degree of organization, self-regulation, and responsibility one exhibits. \textit{"I see myself as someone who tends to be lazy."}(left). \textit{"I see myself as someone who does a thorough job."}(right). The graphs are almost identical for the Likert item "Gruendlich". Respondents specify their level of disagreement for "Faulheit" stronger in GBS.}
@@ -64,6 +69,7 @@ There are still discussions about whether to use a Likert scale element as a cat
 
 \begin{table}[ht]
     \begin{center}
+	\captionsetup{width= 400pt}
             {\footnotesize
             \begin{tabular}{l|c|ccccccccc}
                 \hline \hline
@@ -80,11 +86,12 @@ There are still discussions about whether to use a Likert scale element as a cat
 \end{center}
 \end{table}
 
-It can be assumed that different numbers of rating bars in a subjective rating scale can have significant effects on the subjective measurement \cite{heeringa}. Table 2.1 gives an example for two different scales of the same attribute while trying to find a proper representation in Table 2.2. GESIS often contains textual values, which often cannot be clearly assigned to numeric scales, so that the value counts have to be used to support the decision making. Figure 2.7 shows what happens when attributes are partially transformed using cut-off mappings. Depending on the discriminative algorithm, values ​​that only appear in one of the two surveys are enough to perfectly classify instances: "\textit{If value equals 1.7  \(\rightarrow\) Instance of class GESIS}". Decision-tree based learning algorithms will likely suffer from erroneous mappings, while logistic regression with a proper scoring rule might be the most suitable algorithm to limit the effects of measurement discrepancy.
+It can be assumed that different numbers of rating bars in a subjective rating scale can have significant effects on the subjective measurement \cite{heeringa}. Table 2.1 gives an example for two different scales of the same attribute while trying to find a proper representation in Table 2.2. GESIS often contains textual values, which often cannot be clearly assigned to numeric scales, so that the value counts have to be used to support the decision making. Figure 2.7 shows what happens when attributes are partially transformed using cut-off mappings. MAYBE PUT ANOTHER SENTENCE HERE JUST SO THAT IT LOOKS BETTER. A SECOND SENTENCE WOULD LOOK EVEN BETTER OKAY??
 
 \vspace{0.48cm}
 \begin{table}[ht]
     \begin{center}
+	\captionsetup{width= 400pt}
             {\footnotesize
             \begin{tabular}{l|c|ccccccccc}
                 \hline \hline
@@ -110,7 +117,7 @@ It can be assumed that different numbers of rating bars in a subjective rating s
 	\begin{center}
 		\includegraphics[scale=0.62,angle=0]{fig/histo}
 		\label{std}
-		\caption{Overview of attributes that can not be used for further analysis due to data mismatch. GESIS histograms (right) are show differently scaled values, some of which have been transformed already. Taking the inverse of "Aengstlich", "Alles anstrengend" and perhaps "Veraergert" for either the left or right side is likely to match the values properly. The remaining attributes do not seem to be reliable and will not be included for the time being.}
+		\caption{Overview of attributes that can not be used for further analysis due to data mismatch. GESIS histograms (right) are show differently scaled values, some of which have been transformed already. Taking the inverse of "Aengstlich", "Alles anstrengend" and perhaps "Veraergert" for either the left or right side is likely to match the values properly. The remaining attributes do not seem to be reliable and will not be included for the time being. Depending on the discriminative algorithm, values ​​that only appear in one of the two surveys are enough to perfectly classify instances: "\textit{If value equals 1.7  \(\rightarrow\) Instance of class GESIS}". Decision-tree based learning algorithms will likely suffer from erroneous mappings, while logistic regression with a proper scoring rule might be the most suitable algorithm to limit the effects of measurement discrepancy.}
 	\end{center}
 \end{figure}
 

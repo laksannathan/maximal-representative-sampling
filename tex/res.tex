@@ -5,8 +5,11 @@
 Although model learning and performance evaluation in a supervised setting are well understood \cite{hastie}, the availability of unlabeled data gives additional optionsand also presents new challenges.
 for relating training samples to test data. To further reduce the variance of the error estimate, each class is sampled with approximately equal proportions in both datasets, a technique called stratiﬁcation. 
 
+The two-stage model is conceptually simpler than the integrated model, and may in some cases have the greatest practical utility. The main advantage compared to the integrated model is that regularization parameters can be tuned without prior knowledge by cross-validation. Another advantage of the two-stage model is that in the second stage, after the example-speciﬁc weights have been derived, virtually any learning mechanism can be employed to produce the ﬁnal classiﬁer from the weighted training sample. This comes at the cost of only a marginal loss of performance compared to the integrated model. The integrated and two-step logistic regression and exponential models and kernel mean matching perform similarly well.
+
 \begin{table}[ht]
     \begin{center}
+		\captionsetup{width= 430pt}
             {\footnotesize
             \begin{tabular}{l|cccccccccc}
                 \hline \hline
@@ -26,6 +29,7 @@ Estimating positive class prior with One-Class SVMs. trying to estimate a functi
 
 \begin{figure}[ht]
 	\begin{center}
+		\captionsetup{width= 400pt}
 		\includegraphics[scale=0.50,angle=0]{fig/occfigure}
 		\label{occ}
 		\caption{Using the One-Class SVM and its ability to capture the fraction of positive. Tuning parameter \(nu\) that controls the trade-off between the fraction of non-representative samples and the number of support vectors in one-class SVM. More than 0.73 of GBS (right) are classified as representative with high confidence (low sdt) for the optimal value \(nu = 10^{-5}\).}
@@ -34,6 +38,7 @@ Estimating positive class prior with One-Class SVMs. trying to estimate a functi
 
 \begin{figure}[ht]
 \centering
+		\captionsetup{width= 400pt}
    \includegraphics[scale=0.48,angle=0]{fig/res1}
 \caption{ROC and puROC evaluation. An AUROC of approximately \(\frac{1}{2}\) implies that there is no more evidence for covariate shift.}
    \label{fig:Ng1} 
@@ -51,6 +56,7 @@ Estimating positive class prior with One-Class SVMs. trying to estimate a functi
    \label{fig:Ng2}
 \end{subfigure}
 \vspace{0.35cm}
+\captionsetup{width= 400pt}
 \caption{Feature importance in GBS (n=579) and GBS MRS (n=280) for classification of political participation "Wahlteilnahme". In modelling a political participation process, algorithms approximate the likelihood of a person going to vote on election day. Ideally, for every instance with unknown political interest and willingness to participate, there is enough data of people of similiar demographics, socioeconomics and psychological traits to generalize from.}
 \end{figure}
 
