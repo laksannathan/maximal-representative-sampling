@@ -30,9 +30,7 @@
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{project}{{\caption@xref {project}{ on input line 25}}{2}{Introduction}{figure.caption.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Multivariate auxiliary information GESIS linked to GBS so that expected bias can be detected and corrected for. In addition, GBS contains an attribute for positive or negative treatment of survey participants for further analysis.\relax }}{2}{figure.caption.4}}
-\citation{brick}
-\citation{shimodaira}
-\citation{jean}
+\citation{jean,shimodaira,brick}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Related Work}{3}{section.1.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Outline}{3}{section.1.2}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Initial Data Analysis}{5}{chapter.2}}
@@ -85,7 +83,7 @@
 \@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces PU training procedure\relax }}{15}{algocf.1}}
 \newlabel{alg:alg}{{1}{15}{Learning from Positive and Unlabeled Data}{algocf.1}{}}
 \citation{roc}
-\newlabel{project}{{\caption@xref {project}{ on input line 44}}{16}{Learning from Positive and Unlabeled Data}{figure.caption.13}{}}
+\newlabel{project}{{\caption@xref {project}{ on input line 43}}{16}{Learning from Positive and Unlabeled Data}{figure.caption.13}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Tree-based algorithm as discriminative learner. Increasing model complexity results in a better separation of GBS and GESIS and an improvement of the AUROC on the training data. Predicted probabilities are based on the proportions of positives and negatives in subspaces. Test set instances of GBS in leaf nodes are removed if correctly classified. The terms over-represented and under-represented can be translated to four distinct leaf node possibilities. If we excluded all misclassified instances, then we are also changing GESIS distribution, of which we know it is representative. Subsampling means adapting GBS distributions only.\relax }}{16}{figure.caption.13}}
 \citation{leo}
 \citation{claesen2,jain2}
@@ -98,30 +96,32 @@
 \@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{Sec:Results}{{4}{19}{Results}{chapter.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Maximal Representative Subsample}{19}{section.4.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces ROC and puROC evaluation. An AUROC of approximately \(\frac  {1}{2}\) implies that there is no more evidence for covariate shift.\relax }}{19}{figure.caption.14}}
-\newlabel{fig:Ng1}{{4.1}{19}{ROC and puROC evaluation. An AUROC of approximately \(\frac {1}{2}\) implies that there is no more evidence for covariate shift.\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Trees were trained using either sci-kit learn or WEKA explorer to identify preprocessing mistakes. The outer right path of the decision-tree demonstrates the desired behavior of the constructed model. "Resilienz" and "Zufriedenheit Wahlergebnis" have been used to classify the majority of instances as GESIS. Both attributes have been measured on the same scale or mapped properly. Technically, this means that there was no better way to split the data at that specific node. Either the algorithm did not see any gain in continuing to split or the tree was further grown first and then pruned back using an out-of sample estimations.\relax }}{19}{figure.caption.14}}
+\citation{claesen2}
 \@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref  {Tab:DescripStatsRawDataDetail} in the appendix for more details.\relax }}{20}{table.caption.15}}
 \newlabel{Tab:DescripStatsRawData}{{4.1}{20}{Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref {Tab:DescripStatsRawDataDetail} in the appendix for more details.\relax }{table.caption.15}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Future Work}{20}{section.4.2}}
 \citation{smote}
 \citation{jesse}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces GridSearchCV: Gridsearch using repeated 10-fold stratified cross-validation on \(\frac  {1}{2}\) of the data to evaluate multiple scorers simultaneously. The baselines are 0.89 for accuracy, 0.82 for AUC/AUROC and 0.29 for logarithmic loss. The baselines of a OneRule classifier would outperform the trained models, due to the high imbalance in the data.\relax }}{21}{figure.caption.16}}
-\newlabel{fig:Ng1}{{4.2}{21}{GridSearchCV: Gridsearch using repeated 10-fold stratified cross-validation on \(\frac {1}{2}\) of the data to evaluate multiple scorers simultaneously. The baselines are 0.89 for accuracy, 0.82 for AUC/AUROC and 0.29 for logarithmic loss. The baselines of a OneRule classifier would outperform the trained models, due to the high imbalance in the data.\relax }{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces ROC and puROC evaluation. An AUROC of approximately \(\frac  {1}{2}\) implies that there is no more evidence for covariate shift.\relax }}{22}{figure.caption.17}}
-\newlabel{fig:Ng1}{{4.3}{22}{ROC and puROC evaluation. An AUROC of approximately \(\frac {1}{2}\) implies that there is no more evidence for covariate shift.\relax }{figure.caption.17}{}}
-\newlabel{fig:Ng1}{{\caption@xref {fig:Ng1}{ on input line 63}}{23}{Maximal Representative Subsample}{figure.caption.18}{}}
-\newlabel{sub@fig:Ng1}{{}{23}{Maximal Representative Subsample}{figure.caption.18}{}}
-\newlabel{fig:Ng2}{{\caption@xref {fig:Ng2}{ on input line 68}}{23}{Maximal Representative Subsample}{figure.caption.18}{}}
-\newlabel{sub@fig:Ng2}{{}{23}{Maximal Representative Subsample}{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Feature importance in GBS (n=579) and GBS MRS (n=280) for classification of political participation "Wahlteilnahme". In modelling a political participation process, algorithms approximate the likelihood of a person going to vote on election day. Ideally, for every instance with unknown political interest and willingness to participate, there is enough data of people of similiar demographics, socioeconomics and psychological traits to generalize from.\relax }}{23}{figure.caption.18}}
-\newlabel{std}{{\caption@xref {std}{ on input line 87}}{24}{Future Work}{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Artificial data synthesis to overrepresent subgroups of GESIS. True negatives are removed from the MRS with positive classes GESIS (left) and GESIS-1 (right). Oversampled instances can easily be marked as such for result set comparisons.\relax }}{24}{figure.caption.19}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Tuning parameter nu that controls the trade-oﬀ between the fraction of non-representative samples and the number of support vectors in one-class SVM. More than 0.73 of GBS (right) are classiﬁed as representative with low conﬁdence (high sdt.) for the optimal value \( \nu = 10^5\).\relax }}{21}{figure.caption.16}}
+\newlabel{fig:Ng1}{{4.2}{21}{Tuning parameter nu that controls the trade-oﬀ between the fraction of non-representative samples and the number of support vectors in one-class SVM. More than 0.73 of GBS (right) are classiﬁed as representative with low conﬁdence (high sdt.) for the optimal value \( \nu = 10^5\).\relax }{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Future Work}{21}{section.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces GridSearchCV: Gridsearch using repeated 10-fold stratified cross-validation on \(\frac  {1}{2}\) of the data to evaluate multiple scorers simultaneously. The baselines are 0.89 for accuracy, 0.82 for AUC/AUROC and 0.29 for logarithmic loss. The baselines of a OneRule classifier would outperform the trained models, due to the high imbalance in the data.\relax }}{22}{figure.caption.17}}
+\newlabel{fig:Ng1}{{4.3}{22}{GridSearchCV: Gridsearch using repeated 10-fold stratified cross-validation on \(\frac {1}{2}\) of the data to evaluate multiple scorers simultaneously. The baselines are 0.89 for accuracy, 0.82 for AUC/AUROC and 0.29 for logarithmic loss. The baselines of a OneRule classifier would outperform the trained models, due to the high imbalance in the data.\relax }{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces ROC and puROC evaluation. An AUROC of approximately \(\frac  {1}{2}\) implies that there is no more evidence for covariate shift.\relax }}{23}{figure.caption.18}}
+\newlabel{fig:Ng1}{{4.4}{23}{ROC and puROC evaluation. An AUROC of approximately \(\frac {1}{2}\) implies that there is no more evidence for covariate shift.\relax }{figure.caption.18}{}}
+\newlabel{fig:Ng1}{{\caption@xref {fig:Ng1}{ on input line 73}}{24}{Maximal Representative Subsample}{figure.caption.19}{}}
+\newlabel{sub@fig:Ng1}{{}{24}{Maximal Representative Subsample}{figure.caption.19}{}}
+\newlabel{fig:Ng2}{{\caption@xref {fig:Ng2}{ on input line 78}}{24}{Maximal Representative Subsample}{figure.caption.19}{}}
+\newlabel{sub@fig:Ng2}{{}{24}{Maximal Representative Subsample}{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Feature importance in GBS (n=579) and GBS MRS (n=280) for classification of political participation "Wahlteilnahme". In modelling a political participation process, algorithms approximate the likelihood of a person going to vote on election day. Ideally, for every instance with unknown political interest and willingness to participate, there is enough data of people of similiar demographics, socioeconomics and psychological traits to generalize from.\relax }}{24}{figure.caption.19}}
+\newlabel{std}{{\caption@xref {std}{ on input line 97}}{25}{Future Work}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Artificial data synthesis to overrepresent subgroups of GESIS. True negatives are removed from the MRS with positive classes GESIS (left) and GESIS-1 (right). Oversampled instances can easily be marked as such for result set comparisons.\relax }}{25}{figure.caption.20}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{27}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{Sec:Conclusion}{{5}{25}{Conclusion}{chapter.5}{}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{25}{chapter.5}}
+\newlabel{Sec:Conclusion}{{5}{27}{Conclusion}{chapter.5}{}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{27}{chapter.5}}
 \bibcite{tuscher}{1}
 \bibcite{rammstedt}{2}
 \bibcite{candela}{3}
@@ -150,7 +150,6 @@
 \bibcite{yaser}{26}
 \bibcite{jesse}{27}
 \bibcite{walker}{28}
-\bibcite{tianqi}{29}
-\bibcite{cox}{30}
-\bibcite{breiman2}{31}
-\bibcite{smote}{32}
+\bibcite{cox}{29}
+\bibcite{breiman2}{30}
+\bibcite{smote}{31}

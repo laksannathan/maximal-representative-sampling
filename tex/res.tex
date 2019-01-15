@@ -1,21 +1,21 @@
 \chapter{Results}\label{Sec:Results}
 
-This chapter presents the results of the two positive-unlabeled learning approaches for maximal representative subsampling. It is described in how far the algorithms described in Section 3 have been adapted for time and technical reasons. In addition, the difficulties in mapping survey data from different sources are discussed and how they have been handled.
+This chapter presents the results of the two positive-unlabeled learning approaches for maximal representative subsampling. Algorithm 1 has again been slightly modified, while the idea to improve the assessment of classifiers in a non-traditional setting was preserved. Discriminative algorithms includes logistic regression and support vector machines. The discussions begin with the difficulties of working and dealing with data from two different sources.
 
 \section{Maximal Representative Subsample}
 
-Preparing the data took a particularly long time. Attributes could only be added when it was certain that they had been read and mapped accordingly. Since errors and inaccuracies slipped in quickly, various decision trees were trained right from the start. For the reasons mentioned in Chapter 2, tree-based algorithms are particularly suitable for quickly capturing incorrectly handled data. Trees were trained using either sci-kit learn or WEKA explorer. This was particularly fast and helped out quickly.
-
-for relating training samples to test data. 
+Since errors and inaccuracies slipped in quickly, preparing the data took a particularly long time. To ensure that the data has been read and mapped accordingly, various decision-trees have been trained right from the start to detect for mismatch. 
 
 \begin{figure}[ht]
 \centering
-   \includegraphics[scale=0.30,angle=0]{fig/j48}
+   \includegraphics[scale=0.28,angle=0]{fig/j48}
 \captionsetup{width= 400pt}
-\caption{ROC and puROC evaluation. An AUROC of approximately \(\frac{1}{2}\) implies that there is no more evidence for covariate shift.}
-   \label{fig:Ng1} 
+\caption{Trees were trained using either sci-kit learn or WEKA explorer to identify preprocessing mistakes. The outer right path of the decision-tree demonstrates the desired behavior of the constructed model. "Resilienz"  and "Zufriedenheit Wahlergebnis" have been used to classify the majority of instances as GESIS. Both attributes have been measured on the same scale or mapped properly. Technically, this means that there was no better way to split the data at that specific node. Either the algorithm did not see any gain in continuing to split or the tree was further grown first and then pruned back using an out-of sample estimations.}
 \end{figure}
 
+Figure 4.1 visualizes an exemplary J48 tree. For the reasons mentioned in Chapter 2, tree-based algorithms are particularly suitable for quickly capturing incorrectly handled data. A subgroup of all participants is said to be representative of the target population, regarding the particular complexity of the trained model. Model complexity, with respect to the right-most leaf node, gives high confidence to include the subgroup of 249 GBS instances in the MRS.
+
+These trees, of course, only served as indicators during development. Th
 The two-stage model is conceptually simpler than the integrated model, and may in some cases have the greatest practical utility. The main advantage compared to the integrated model is that regularization parameters can be tuned without prior knowledge by cross-validation. Another advantage of the two-stage model is that in the second stage, after the example-speciﬁc weights have been derived, virtually any learning mechanism can be employed to produce the ﬁnal classiﬁer from the weighted training sample. This comes at the cost of only a marginal loss of performance compared to the integrated model. The integrated and two-step logistic regression and exponential models and kernel mean matching perform similarly well.
 
 \begin{table}[ht]
@@ -26,17 +26,27 @@ The two-stage model is conceptually simpler than the integrated model, and may i
                 \hline \hline
                            &  TP Rate & FP Rate & Precision & Recall & F-Measure & ROC Area & PRC Area & Class \\
                 \hline
-                      & 0.000 & 0.000 & ? & 0.000 & ? & 0.500 & 0.130 & GBS &\\
+                      Log.Reg. & 0.000 & 0.000 & ? & 0.000 & ? & 0.500 & 0.130 & GBS &\\
                       & 1.000 & 1.000 & 0.870 & 1.000 & 0.931 & 0.500 & 0.870 & GESIS &\\
                 \hline \hline
-		 W. Avg. & 0.870 & 0.870 & ? & 0.870 & ? & ? & 0.500 & 0.774 &
-            \end{tabular}}
+     Lin.SVM & 0.000 & 0.000 & ? & 0.000 & ? & 0.500 & 0.130 & GBS &\\
+                      & 1.000 & 1.000 & 0.870 & 1.000 & 0.931 & 0.500 & 0.870 & GESIS &\\
+                		
+\end{tabular}}
         \caption{Some descriptive statistics of location and dispersion for 2100 observed swap rates for the period from February 15, 1999 to March 2, 2007. Swap rates measured as 3.12 (instead of 0.0312). See Table \ref{Tab:DescripStatsRawDataDetail} in the appendix for more details.}
 \label{Tab:DescripStatsRawData}
 \end{center}
 \end{table}
 
-Estimating positive class prior with One-Class SVMs. trying to estimate a function f which is positive on S and negative on the complement. The dataset that you use for training can contain all or mostly normal cases. Typically, the SVM algorithm is given a set of training examples labeled as belonging to one of two classes. An SVM model is based on dividing the training sample points into separate categories by as wide a gap as possible, while penalizing training samples that fall on the wrong side of the gap. The SVM model then makes predictions by assigning points to one side of the gap or the other. Therefore, in one-class SVM, the support vector model is trained on data that has only one class, which is the “normal” class. It infers the properties of normal cases and from these properties can predict which examples are unlike the normal examples.  Predictions from the One-Class SVM are uncalibrated scores that may be possibly unbounded. be sure to normalize scores if you are comparing models based on different algorithms.
+In \cite{claesen2}, Claesen et al. emphasize the relative importance of known negatives compared to known positives. This was reason enough, to train a one-class classifier that estimates the GBS class prior with One-Class SVMs. That is, trying to estimate a function which is positive on GESIS and negative on the complement. The dataset that was used for training contains only all positve instances. In one-class SVM, the support vector model is trained on data that has only one class, which is GESIS. It infered the properties of representative cases and from these properties can predict which GBS participants are unlike the normal examples. Predictions from the One-Class SVM are uncalibrated scores that have not been normalized and therefore can not be compared to models based on different algorithms.
+
+\begin{figure}[ht]
+\centering
+   \includegraphics[scale=0.38,angle=0]{fig/occfigure}
+\captionsetup{width= 380pt}
+\caption{Tuning parameter nu that controls the trade-oﬀ between the fraction of non-representative samples and the number of support vectors in one-class SVM. More than 0.73 of GBS (right) are classiﬁed as representative with low conﬁdence (high sdt.) for the optimal value \( \nu = 10^5\).}
+   \label{fig:Ng1} 
+\end{figure}
 
 A final model is trained with the optimized parameters on the entire data to predict instances of the remaining \(\frac{1}{2}\).
 
