@@ -3,15 +3,11 @@ TODO:
 
 1. Disc Learning Implement 
 - (Logistic Regression)
-- (XGBoost)
+- SVM
 
 2. Results.
 
-3. Review
-
-4. Send Mail.
-
-5. Conclusion.
+3. Conclusion.
 
 Literature
 

@@ -11,7 +11,9 @@
 \BOOKMARK [1][-]{section.3.2}{The Problem of Overfitting}{chapter.3}% 11
 \BOOKMARK [1][-]{section.3.3}{Learning from Positive and Unlabeled Data}{chapter.3}% 12
 \BOOKMARK [0][-]{chapter.4}{Results}{}% 13
-\BOOKMARK [1][-]{section.4.1}{Maximal Representative Subsample}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.2}{Future Work}{chapter.4}% 15
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 16
-\BOOKMARK [0][-]{chapter.5}{Bibliography}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Processing Data with Decision-Trees}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.2}{Estimating the Fraction of Representatives}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.3}{Maximal Representative Subsample}{chapter.4}% 16
+\BOOKMARK [0][-]{chapter.5}{Future Work}{}% 17
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 18
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 19
