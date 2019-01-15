@@ -2,7 +2,7 @@
 
 This chapter presents the results of the two positive-unlabeled learning approaches for maximal representative subsampling. The proposed techniques have again been slightly modified, while the idea to improve the assessment of classifiers in a non-traditional setting was preserved. Discriminative algorithms includes logistic regression and support vector machines. The discussions begin with the difficulties of working and dealing with data from two different sources.
 
-\section{Processing Data with Decision-Trees}
+\section{Decision-Trees for Data Processing}
 
 Since errors and inaccuracies slipped in quickly, preparing the data took a particularly long time. To ensure that the data has been read and mapped accordingly, various decision-trees have been trained right from the start to detect for mismatch. In fact, this is already an application of the discriminative learning procedure.
 
@@ -71,20 +71,4 @@ A final model is trained with the optimized parameters on the entire data to pre
 \captionsetup{width= 360pt}
 \caption{ROC and puROC evaluation for PU learning with Random Forests as base models \cite{breiman2}. An AUROC of approximately \(\frac{1}{2}\) implies that there is no more evidence for covariate shift.}
    \label{fig:Ng1} 
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\begin{subfigure}[b]{0.8\textwidth}
-   \includegraphics[scale=0.55,angle=0]{fig/weka_gbs}
-   \label{fig:Ng1} 
-\end{subfigure}
-\begin{subfigure}[b]{0.8\textwidth}
-\vspace{0.55cm}
-   \includegraphics[scale=0.55,angle=0]{fig/weka_gesis}
-   \label{fig:Ng2}
-\end{subfigure}
-\vspace{0.35cm}
-\captionsetup{width= 400pt}
-\caption{Feature importance in GBS (n=579) and GBS MRS (n=280) for classification of political participation "Wahlteilnahme". In modelling a political participation process, algorithms approximate the likelihood of a person going to vote on election day. Ideally, for every instance with unknown political interest and willingness to participate, there is enough data of people of similiar demographics, socioeconomics and psychological traits to generalize from.}
 \end{figure}

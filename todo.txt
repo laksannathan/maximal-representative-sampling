@@ -1,12 +1,15 @@
 
 TODO:
 
-1. Disc Learning Implement 
-- (Logistic Regression)
-- SVM
+Implement 
+Logistic Regression
+SVM
+RANKING.
 
+EXPORT RANKING and Calc Pre and Post Inf. Gain.
+
+1. Future.
 2. Results.
-
 3. Conclusion.
 
 Literature

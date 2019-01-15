@@ -15,6 +15,6 @@
 \contentsline {section}{\numberline {4.1}Processing Data with Decision-Trees}{19}{section.4.1}
 \contentsline {section}{\numberline {4.2}Estimating the Fraction of Representatives}{20}{section.4.2}
 \contentsline {section}{\numberline {4.3}Maximal Representative Subsample}{21}{section.4.3}
-\contentsline {chapter}{\numberline {5}Future Work}{25}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{27}{chapter.6}
-\contentsline {chapter}{Bibliography}{27}{chapter.6}
+\contentsline {chapter}{\numberline {5}Future Work}{23}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{25}{chapter.6}
+\contentsline {chapter}{Bibliography}{25}{chapter.6}
