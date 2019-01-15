@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {3.2}The Problem of Overfitting}{13}{section.3.2}
 \contentsline {section}{\numberline {3.3}Learning from Positive and Unlabeled Data}{15}{section.3.3}
 \contentsline {chapter}{\numberline {4}Results}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Processing Data with Decision-Trees}{19}{section.4.1}
+\contentsline {section}{\numberline {4.1}Decision-Trees for Data Processing}{19}{section.4.1}
 \contentsline {section}{\numberline {4.2}Estimating the Fraction of Representatives}{20}{section.4.2}
 \contentsline {section}{\numberline {4.3}Maximal Representative Subsample}{21}{section.4.3}
 \contentsline {chapter}{\numberline {5}Future Work}{23}{chapter.5}
