@@ -1,0 +1,92 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     gbs_processed-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.NumericToNominal-R18-18-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.Remove-R19
+Instances:    579
+Attributes:   39
+              Gruppe
+              Geschlecht
+              Geburtsjahr
+              Geburtsland
+              Nationalitaet
+              Familienstand
+              Hoechster Bildungsabschluss
+              Berufliche Ausbildung
+              Erwerbstaetigkeit
+              Berufsgruppe
+              Personen im Haushalt
+              Nettoeinkommen Selbst
+              Nettoeinkommen Haushalt
+              Schlechter Schlaf
+              Leben genießen
+              Zu Nichts aufraffen
+              Alles anstrengend
+              Wahlteilnahme
+              Desinteresse Politiker
+              Zufriedenheit Leben
+              Aktiv
+              Verärgert
+              Wach
+              Nervös
+              Ängstlich
+              Zurueckhaltend
+              leicht Vertrauen
+              Faulheit
+              Entspannt
+              wenig kuenstlerisches Interesse
+              Gesellig
+              Andere kritisieren
+              Gruendlich
+              Nervoes
+              Phantasievoll
+              Druck
+              Optimismus Zukunft
+              Zufriedenheit Wahlergebnis
+              Resilienz
+Evaluation mode:    10-fold cross-validation
+
+
+
+=== Attribute selection 10 fold cross-validation (stratified), seed: 1 ===
+
+average merit      average rank  attribute
+ 0.037 +- 0.005      1   +- 0        4 Geburtsland
+ 0.013 +- 0          2.6 +- 0.92     8 Berufliche Ausbildung
+ 0.002 +- 0.001      4.1 +- 1.04     1 Gruppe
+ 0     +- 0          5.8 +- 1.83    14 Schlechter Schlaf
+ 0     +- 0          6.9 +- 0.83    15 Leben genießen
+ 0     +- 0          8.1 +- 3.27    13 Nettoeinkommen Haushalt
+ 0     +- 0          8.6 +- 0.92    16 Zu Nichts aufraffen
+ 0     +- 0         10.1 +- 3.27    11 Personen im Haushalt
+ 0.006 +- 0.007     10.1 +- 6.7     38 Zufriedenheit Wahlergebnis
+ 0     +- 0         10.9 +- 2.88    17 Alles anstrengend
+ 0     +- 0         11.1 +- 1.58    12 Nettoeinkommen Selbst
+ 0.001 +- 0.004     12.5 +- 3.35    10 Berufsgruppe
+ 0.002 +- 0.005     13.3 +- 5.08     3 Geburtsjahr
+ 0     +- 0         13.6 +- 3.95     5 Nationalitaet
+ 0.004 +- 0.006     14.2 +- 7.12    19 Desinteresse Politiker
+ 0     +- 0         14.3 +- 3.72     9 Erwerbstaetigkeit
+ 0     +- 0         14.4 +- 3.69     6 Familienstand
+ 0     +- 0         15.4 +- 1.69     2 Geschlecht
+ 0     +- 0         16.4 +- 2.2      7 Hoechster Bildungsabschluss
+ 0     +- 0         20.1 +- 0.3     39 Resilienz
+ 0     +- 0         21.6 +- 1.5     21 Aktiv
+ 0     +- 0         22.3 +- 0.9     34 Nervoes
+ 0     +- 0         23.6 +- 1.8     32 Andere kritisieren
+ 0.003 +- 0.005     23.9 +-10.2     31 Gesellig
+ 0     +- 0         24   +- 0       33 Gruendlich
+ 0     +- 0         25.1 +- 0.3     35 Phantasievoll
+ 0     +- 0         27   +- 0       36 Druck
+ 0     +- 0         27.2 +- 2.44    22 Verärgert
+ 0     +- 0         28   +- 0       37 Optimismus Zukunft
+ 0     +- 0         29.2 +- 2.09    30 wenig kuenstlerisches Interesse
+ 0     +- 0         30.8 +- 0.4     29 Entspannt
+ 0     +- 0         31.9 +- 0.3     28 Faulheit
+ 0     +- 0         33.1 +- 0.3     23 Wach
+ 0     +- 0         34.1 +- 0.3     24 Nervös
+ 0     +- 0         35.1 +- 0.3     25 Ängstlich
+ 0     +- 0         36.1 +- 0.3     26 Zurueckhaltend
+ 0     +- 0         36.5 +- 1.5     27 leicht Vertrauen
+ 0     +- 0         38   +- 0       20 Zufriedenheit Leben
+

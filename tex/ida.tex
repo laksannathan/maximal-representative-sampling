@@ -1,6 +1,6 @@
 \chapter{Initial Data Analysis}\label{Sec:Initial Data Analysis}
 
-In order to diagnose to what extent an algorithm suffers from sampling bias, it will be useful to have another dataset. Initial data analysis is conducted independently of the problem statements to understand what properties of the data differ between GBS and GESIS for matching attributes. A brief characterization of the data currently employed in the studies is given in this chapter. The GitHub repository further specifies the list of transformations that are sequentially applied to each group of features in order to prepare the inputs for survey comparisons. Preprocessing steps and methods used to evaluate outcomes are documented as well. Scaling methods that apply to both data sets, e.g: centering and scaling of skewed continuous features for SVMs, are not mentioned but can be deduced from code easily. If an attribute is removed at some point, it will only be mentioned in the relevant section.
+In order to diagnose to what extent an algorithm suffers from sampling bias, it will be useful to have another dataset. Initial data analysis is conducted independently of the problem statements to understand what properties of the data differ between GBS and GESIS for matching attributes. A brief characterization of the data currently employed in the studies is given in this chapter. The GitHub \footnote{\url{https://github.com/laksannathan/mrs-thesis}} repository further specifies the list of transformations that are sequentially applied to each group of features in order to prepare the inputs for survey comparisons. Preprocessing steps and methods used to evaluate outcomes are documented as well. Scaling methods that apply to both data sets, e.g: centering and scaling of skewed continuous features for SVMs, are not mentioned but can be deduced from code easily. If an attribute is removed at some point, it will only be mentioned in the relevant section.
 
 \begin{figure}[ht]
 	\begin{center}
@@ -15,7 +15,7 @@ In order to diagnose to what extent an algorithm suffers from sampling bias, it 
 
 If not stated differently, deletion of rows is applied to every instance with missing values in GESIS to reduce the class imbalance in the later described classification problem. Missing values are sparse in GBS and can be imputed, e.g: with median substitution, with negligible effects. Mean substitution can not be used as this might lead to previously unseen values. Discriminative algorithms will then use these new values to distinguish GBS and GESIS that have been created by ill-considered data imputation. Note that the following figures represent the data after attribute and value matching described in Sec. 2.2.
 
-Fig. A.2 lends itself to first thoughts about whether missing data elements depend on observable attributes or occur entirely at random and is also able to detect functional dependencies in GESIS. Fig. A.3 summarizes the main observations from GBS. The correlation matrix with ratio -1 to +1 in Fig. A.4 is used as another way to visualize differences in GESIS and GBS and to further simplify preprocessing decisions. Potential bugs and issues can also be detected with this graph. 
+Fig. 2.2 lends itself to first thoughts about whether missing data elements depend on observable attributes or occur entirely at random. The graph is also able to detect functional dependencies in GESIS. Fig. 2.3 summarizes the main observations from GBS. The correlation matrix with ratio -1 to +1 in Fig. 2.4 is used as another way to visualize differences in GESIS and GBS and to further simplify preprocessing decisions. Potential bugs and issues can also be detected with this graph. 
 
 \begin{figure}[h]
 	\begin{center}
@@ -40,7 +40,7 @@ Fig. A.2 lends itself to first thoughts about whether missing data elements depe
 		\captionsetup{width= 400pt}
 		\includegraphics[scale=0.73,angle=0]{fig/correl}
 		\label{corr}
-		\caption{The upper right triangular matrix shows GESIS correlations while GBS correlations are shown in the lower left. The main diagonal should not be confused with white squares. These trivial combinations are simply excluded and not colored black. As can be seen "Personen im Haushalt" in GBS can not be calculated, since there is only one possible value. "Nettoeinkommen Selbst" and "Nettoeinkommen Haushalt" are highly correlated but not removed or handled at all. I will keep this in mind, when facing the naive bayes assumption in the learning process. Entropy-based mutual information in "Wahlteilnahme" and "Wahlabsicht" have led to almost perfect classification performances in predicting political participation. "Wahlabsicht" is therefore removed.}
+		\caption{The upper right triangular matrix shows GESIS correlations while GBS correlations are shown in the lower left. The main diagonal should not be confused with white squares. These trivial combinations are simply excluded and not colored black. As can be seen "Personen im Haushalt" in GBS can not be calculated, since there is only one possible value. "Nettoeinkommen Selbst" and "Nettoeinkommen Haushalt" are highly correlated but not removed or handled at all. Entropy-based mutual information in "Wahlteilnahme" and "Wahlabsicht" have led to almost perfect classification performances in predicting political participation. "Wahlabsicht" is therefore removed.}
 	\end{center}
 \end{figure}
 
@@ -50,7 +50,7 @@ In survey analysis, scales measuring attributes need to be reliable and valid. T
 
 \subsection{Likert-Type Scale}
 
-The Big Five is an empirically-derived model of human personality and psyche. When factor analysis is applied to personality survey data, five clusters of traits consistently emerge. The BFI-10 is a 10-item scale measuring the Big Five personality traits. Figures 2.5 visualizes the response distribution of two BFI items for the "Conscientiousness" dimension, representing both the high and low pole. "Agreeableness", "Extraversion", "Neuroticism" and "Openness" can be compared in the output folder of the project repository \cite{rammstedt}. 
+The Big Five is an empirically-derived model of human personality and psyche. When factor analysis is applied to personality survey data, five clusters of traits consistently emerge. The BFI-10 is a 10-item scale measuring the Big Five personality traits. Fig. 2.5 visualizes the response distribution of two BFI items for the "Conscientiousness" dimension, representing both the high and low pole. "Agreeableness", "Extraversion", "Neuroticism" and "Openness" can be compared in the output folder of the project repository \cite{rammstedt}. 
 
 Likert scales are the most frequently used instruments in GBS and GESIS. They consist of statements which measure the intensity of one's estimation towards the preceding statement. Respondents are asked to rate the BFI-10 items on a level of agreement on a consistent rating scale ranging from "Strongly Agree (5)" to Strongly Disagree (1)" for all items in both surveys \cite{likert}. 
 
@@ -67,6 +67,8 @@ There are still discussions about whether to use a Likert scale element as a cat
 
 \subsection{Data Mismatch}
 
+It can be assumed that different numbers of rating bars in a subjective rating scale can have significant effects on the subjective measurement \cite{heeringa}. Table 2.1 gives an example for two different scales of the same attribute while trying to find a proper representation in Table 2.2. GESIS often contains textual values, which often cannot be clearly assigned to numeric scales, so that the value counts have to be used to support the decision making. Table 2.2 shows what happens when attributes are partially transformed using cut-off mappings.
+\vspace{0.33cm}
 \begin{table}[ht]
     \begin{center}
 	\captionsetup{width= 400pt}
@@ -82,20 +84,17 @@ There are still discussions about whether to use a Likert scale element as a cat
 		& -1 & 1 & Gar nicht & 184 \\		
 	     \hline \hline
             \end{tabular}}
-        \caption{"Wach" as an example of a Likert item discrepancy. GESIS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GBS encouraging participants to voice a positive or negative opinion. In some cases, an additional "opt-out" option is provided for those respondents who truly cannot respond. The respondent may not respond because some questions are too sensitive. This type of nonresponse would also be considered missing values indicated by "-1" \cite{likert4}.}
+        \caption{"Wach" as an example of a Likert item discrepancy. GESIS uses an odd number of responses with a "neutral" option, such as "no opinion", "neither agree nor disagree" or some phrase to that effect. In contrast, there is an even number of responses for this item in GBS encouraging participants to voice a positive or negative opinion. In some cases, an additional "opt-out" option is provided for those respondents who truly cannot respond. The respondent may not respond and that type of nonresponse would also be considered missing values indicated by "-1" \cite{likert4}.}
 \end{center}
 \end{table}
 
-It can be assumed that different numbers of rating bars in a subjective rating scale can have significant effects on the subjective measurement \cite{heeringa}. Table 2.1 gives an example for two different scales of the same attribute while trying to find a proper representation in Table 2.2. GESIS often contains textual values, which often cannot be clearly assigned to numeric scales, so that the value counts have to be used to support the decision making. Figure 2.7 shows what happens when attributes are partially transformed using cut-off mappings.
-
-\vspace{0.48cm}
 \begin{table}[ht]
     \begin{center}
 	\captionsetup{width= 400pt}
             {\footnotesize
             \begin{tabular}{l|c|ccccccccc}
                 \hline \hline
-		Raw Data & GESIS & 1 & 2 & 3 & 4 & 5 & 6 \\
+		Raw Data & GESIS & 1 & 2 & 3 & 4 & 5 & 6 \\3
                      & GBS & 1 & 2 & 3 & 4 & 5 & \\
                 \hline
 		Max Scaler & GESIS & 0.83 & 1.7 & 2.5 & 3.3 & 4.2 & 5.0 \\
@@ -117,7 +116,7 @@ It can be assumed that different numbers of rating bars in a subjective rating s
 	\begin{center}
 		\includegraphics[scale=0.62,angle=0]{fig/histo}
 		\label{std}
-		\caption{Overview of attributes that can not be used for further analysis due to data mismatch. GESIS histograms (right) are show differently scaled values, some of which have been transformed already. Taking the inverse of "Aengstlich", "Alles anstrengend" and perhaps "Veraergert" for either the left or right side is likely to match the values properly. The remaining attributes do not seem to be reliable and will not be included for the time being. Depending on the discriminative algorithm, values ​​that only appear in one of the two surveys are enough to perfectly classify instances: "\textit{If value equals 1.7  \(\rightarrow\) Instance of class GESIS}". Decision-tree based learning algorithms will likely suffer from erroneous mappings, while logistic regression with a proper scoring rule might be the most suitable algorithm to limit the effects of measurement discrepancy.}
+		\caption{Overview of attributes that can not be used for further analysis due to data mismatch. GESIS histograms (right) show differently scaled values, some of which have been transformed already. Taking the inverse of "Aengstlich", "Alles anstrengend" and perhaps "Veraergert" for either the left or right side is likely to match the values properly. The remaining attributes do not seem to be reliable and will not be included for the time being. Depending on the discriminative algorithm, values ​​that only appear in one of the two surveys are enough to perfectly classify instances. Decision-tree based learning algorithms will likely suffer from erroneous mappings, while logistic regression with a proper scoring rule might be the most suitable algorithm to limit the effects of measurement discrepancy.}
 	\end{center}
 \end{figure}
 

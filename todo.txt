@@ -9,11 +9,3 @@ TODO:
 4. Conclusion. (3h)
 
 --> 8h left.
-
-Literature
-
-https://arxiv.org/pdf/1402.3144.pdf
-
-https://arxiv.org/pdf/1504.06837.pdf
-
-https://arxiv.org/pdf/1010.0772.pdf
