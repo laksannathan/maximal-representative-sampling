@@ -1,11 +1,6 @@
 
 TODO:
 
-1. Implement Logistic Regression and SVM
-- RANKING.
-- EXPORT MRS and Calc Pre and Post Inf. Gain. (1h30min)
-2. Future. (30min)
-3. Results. (3h)
 4. Conclusion. (3h)
 
 --> 8h left.

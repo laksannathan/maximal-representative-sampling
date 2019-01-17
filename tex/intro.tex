@@ -1,21 +1,19 @@
 \chapter{Introduction}
 
-Psychological resilience is generally regarded as positive adaptation to past and ongoing exposure to potential negative effects of stressors. Accordingly, adaptation to stressful or adverse situation is a dynamic process with predictors that can differ between population groups. Within the discipline of developmental psychology, Tuescher and colleagues have provided prospective studies investigating the concept of resilience and its complex underlying mechanisms \cite{tuscher}. As part of a doctoral dissertation, their studies aimed to validate the following research questions:
+Psychological resilience is generally regarded as positive adaptation to past and ongoing exposure to potential negative effects of stressors. Accordingly, adaptation to stressful or adverse situations is a dynamic process with predictors that can differ between population groups. Within the discipline of developmental psychology, Tuescher and colleagues have provided prospective studies investigating the concept of resilience and its complex underlying mechanisms \cite{tuscher}. As part of a doctoral dissertation, their studies aimed to validate the following research questions:
 
 \begin{itemize}
     \item Does resilience have a positive effect on the willingness to participate in politics, specifically in election?
     \item  Does the confrontation with positive or negative statements on politics for people with lower resilience have stronger effects on the willingness to participate in politics?
 \end{itemize}
 
-The research group conducted its survey by selecting people from Mainz, while trying to generalize to the entire German population. The survey data (GBS, n=587) tends to over-represent groups of higher income and higher education, since participants are primarily selected from an academic environment.
+The research group conducted its survey by selecting people from Mainz, while trying to generalize to the entire German population. The survey data (GBS, n=579) tends to over-represent groups of higher income and higher education, since participants are primarily selected from an academic environment.
 
 Therefore, the validity of assertions about the population beyond the original observation range is affected, even if statements are made conditional upon the available data. The basic premise for standard statistical conclusions, that the training and test set are drawn independently and identically (i.i.d.) from the same probability distribution, does not hold any more. This setting is also known as covariate-shift \cite{candela}. Datasets are rarely generated under ideal conditions with bias pervasive in almost all empirical studies. The oftentimes underestimated analytic errors produce misleading descriptions of populations and ultimately yield false inferences \cite{west}.
 
-To get a complete picture of the subject, the research group consulted the department Data Archives for the Social Sciences. Their data archive service (GESIS) holds representative data of comparable studies in politics and psychology. The acquired sample (GESIS, n=4000) encompasses the German speaking population with permanent residence in Germany. 
+To get a complete picture of the subject, the research group consulted the department Data Archives for the Social Sciences. Their data archive service (GESIS) holds representative data of comparable studies in politics and psychology. The acquired sample (GESIS, n=4249) encompasses the German speaking population with permanent residence in Germany. 
 
-This thesis is a practical application to reduce the sampling bias by selecting a maximal representative subsample (MRS) of GBS survey respondents with reference probability distributions from GESIS. The effects of positive and negative treatments on political participation are then analysed in the resulting MRS and compared to the initial GBS data [Fig. 1.1].
-
-To evaluate the research questions to a certain required level of significance, it is inevitable to keep the exclusion of instances at a minimum. Pruning the GBS data in any way, narrows the data variance and thus the reach of subsequent studies. This is especially harmful since the initial GBS survey data is already small.
+This thesis is a practical application to reduce the sampling bias by selecting a maximal representative subsample (MRS) of GBS survey respondents with reference probability distributions from GESIS. The effects of positive and negative treatments on political participation are then analysed in the resulting MRS and compared to the initial GBS data. To evaluate the research questions to a certain required level of significance, it is inevitable to keep the exclusion of instances at a minimum. Pruning the GBS data in any way, narrows the data variance and thus the reach of subsequent studies. This is especially harmful since the initial GBS survey data is already small.
 
 \vspace{20pt}
 \begin{figure}[ht]
@@ -31,7 +29,7 @@ In the MRS procedure, discriminative learners will look for decision boundaries 
 
 \section{Related Work}
 
-Both theoretical and practical results show that the out-of sample error increases proportionally to the distribution shift. To compensate for the degradation in performance, many techniques have been designed to reduce the effects of covariate shift. The influence of sampling bias could be alleviated by weighting the instances according to their importance. Statistical adjustment might also be reached by developing survey weights for calibration estimators. However, these techniques require density estimation which is known to be a hard problem especially in high-dimensional cases \cite{jean, shimodaira, brick}. This thesis proposes a technique that does not use sample weights to compensate for noncoverage and total nonresponse. Instead, discriminative learners characterizes the importance without estimating the density ratios.
+Both theoretical and practical results show that the out-of sample error increases proportionally to the distribution shift. To compensate for the degradation in performance, many techniques have been designed to reduce the effects of covariate shift. The influence of sampling bias could be alleviated by weighting the instances according to their importance. Statistical adjustment might also be reached by developing survey weights for calibration estimators. However, these techniques require density estimation which is known to be a hard problem especially in high-dimensional cases \cite{jean, shimodaira, brick}. In this work, discriminative learners characterize the importance without explicitly estimating the density ratios.
 
 \section{Outline}
 

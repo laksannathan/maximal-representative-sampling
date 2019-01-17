@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  16 JAN 2019 10:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.30)  17 JAN 2019 08:17
 entering extended mode
 **./thesis_template.tex
 (thesis_template.tex
@@ -629,13 +629,16 @@ l.17
 <fig/overview.png, id=132, 602.25pt x 346.29375pt>
 File: fig/overview.png Graphic file (type png)
 <use fig/overview.png>
-Package pdftex.def Info: fig/overview.png  used on input line 24.
+Package pdftex.def Info: fig/overview.png  used on input line 22.
 (pdftex.def)             Requested size: 361.35278pt x 207.77785pt.
+
+Underfull \vbox (badness 1796) has occurred while \output is active []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 
+l.29 
       [2 <./fig/overview.png>])pdfTeX warning (ext4): destination with the same
  identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
@@ -714,9 +717,6 @@ Chapter 3.
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
 [13
 
 ] (algorithm.tex) [14] [15]
@@ -750,11 +750,11 @@ File: fig/gridfigure.png Graphic file (type png)
 <use fig/gridfigure.png>
 Package pdftex.def Info: fig/gridfigure.png  used on input line 53.
 (pdftex.def)             Requested size: 439.40617pt x 219.70308pt.
-<fig/res.png, id=310, 826.58812pt x 450.9347pt>
+<fig/res.png, id=310, 753.5653pt x 424.58624pt>
 File: fig/res.png Graphic file (type png)
 <use fig/res.png>
 Package pdftex.def Info: fig/res.png  used on input line 63.
-(pdftex.def)             Requested size: 380.23514pt x 207.43248pt.
+(pdftex.def)             Requested size: 346.64424pt x 195.31204pt.
 ) [21 <./fig/occfigure.png>] (future.tex [22 <./fig/gridfigure.png> <./fig/res.
 png>]
 Chapter 5.
@@ -767,7 +767,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no â in font cmr10!
-<fig/procedure2.png, id=328, 943.27406pt x 286.06876pt>
+<fig/procedure2.png, id=329, 943.27406pt x 286.06876pt>
 File: fig/procedure2.png Graphic file (type png)
 <use fig/procedure2.png>
 Package pdftex.def Info: fig/procedure2.png  used on input line 13.
@@ -779,37 +779,11 @@ Underfull \vbox (badness 2781) has occurred while \output is active []
 
  <./fig/procedure2.png>]) [24] (conc.tex
 Chapter 6.
-Missing character: There is no √ in font cmr10!
-Missing character: There is no º in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no § in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ∂ in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no º in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no § in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no º in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no º in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no § in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no º in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no º in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no § in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ∂ in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no § in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ∂ in font cmr10!
-[25
+) (bib.tex [25
 
-]) (bib.tex [26]
+] [26
+
+]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
@@ -828,12 +802,10 @@ Missing character: There is no ì in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
-[27
-
-]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
+[27]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
@@ -847,7 +819,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-Underfull \hbox (badness 6110) in paragraph at lines 65--66
+Underfull \hbox (badness 6110) in paragraph at lines 64--65
 []\OT1/cmr/m/n/10.95 JM Brick, G. Kalton. \OT1/cmr/m/it/10.95 Han-dling miss-in
 g data in sur-vey re-search \OT1/cmr/m/n/10.95 , 1996,
  []
@@ -856,7 +828,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.shimodai
 ra}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 \bibitem{shimodaira}
+l.66 \bibitem{shimodaira}
                          
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -875,10 +847,9 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-Underfull \hbox (badness 5726) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 []\OT1/cmr/m/n/10.95 Leo Breiman (2001). \OT1/cmr/m/it/10.95 Ran-dom Forests\OT
-1/cmr/m/n/10.95 . \OT1/cmr/bx/n/10.95 Ma-chine Learn-ing\OT1/cmr/m/n/10.95 . 45
- (1): 532.
+1/cmr/m/n/10.95 . Ma-chine Learn-ing. 45 (1): 532.
  []
 
 Missing character: There is no ‚ in font cmr10!
@@ -928,9 +899,9 @@ fb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmti10.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt9.pfb><C:/Users/laksa/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis_template.pdf (36 pages, 1347810 bytes).
+Output written on thesis_template.pdf (36 pages, 1289866 bytes).
 PDF statistics:
- 453 PDF objects out of 1000 (max. 8388607)
+ 454 PDF objects out of 1000 (max. 8388607)
  106 named destinations out of 1000 (max. 500000)
  215 words of extra memory for PDF output out of 10000 (max. 10000000)
 
