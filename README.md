@@ -1,8 +1,8 @@
 ## Discriminative Machine Learning for Maximal Representative Subsampling
 This project deals with selection bias in social sciences. Discriminative learners are trained and combined to reduce the effects of bias in psychological and political studies. With positive-unlabeled learning and artificial data synthesis, performance estimation becomes more accurate in a non-traditional setting.
 
-## Motivation
-Apply machine learning to the fields of survey analytics.
+## Abstract
+To allow statistical inference in social sciences, survey participants must be selected at random from the target population. When samples are drawn from parts of the population that are close to hand, subgroups might be over-represented. This leads to statistical analyses under sampling bias, which in turn may produce similarly biased outcomes. The present thesis uses machine learning to reduce this selection bias in a psychological survey using auxiliary information from comparable studies that are known to be representative. Discriminative algorithms are trained to directly characterize the divergence between representative and non-representative samples. The concept of positive-unlabeled learning is then applied to further improve results.
 
 ## Installation
 Python 3.6+ with Jupyter notebook and WEKA are necessary to get a development env running. If random_state is not provided, any init will come close to analysed results.
