@@ -1,7 +1,0 @@
-renamed:
-
-data_merged -> gbs1
-gbs_bfi_lev -> gbs2
-
-there are two "Nervös" attributes:
-Both are included. "Nervös" that is not from BFI-10 was renamed "Nervoes".

@@ -1,0 +1,140 @@
+	 
+\documentclass[a4paper,11pt]{book}
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm}    % Typical maths resource packages
+\newcommand{\e}[1]{{\mathbb E}\left[ #1 \right]}
+
+\DeclareRobustCommand{\bbone}{\text{\usefont{U}{bbold}{m}{n}1}}
+
+\DeclareMathOperator{\EX}{\mathbb{E}}% expected value
+
+\usepackage{graphicx}                           % Packages to allow inclusion of graphics
+\usepackage{hyperref}                           % For creating hyperlinks in cross references
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{cite}
+
+\usepackage[ruled,longend]{algorithm2e}
+
+\usepackage[labelfont=bf]{caption}
+
+\usepackage[]{algorithm2e}
+\newlength\mylen
+\newcommand\myinput[1]{%
+  \settowidth\mylen{\KwIn{}}%
+  \setlength\hangindent{\mylen}%
+  \hspace*{\mylen}#1\\}
+  
+\usepackage[toc]{appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PYTHON CODE
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+\usepackage{listings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PYTHON CODE
+
+\usepackage{verbatim}
+\usepackage{titlesec}
+\usepackage{floatrow}
+\usepackage{float}
+% -------------------------------
+% --- some layout definitions ---
+% -------------------------------
+% define topline 	
+\usepackage[automark]{scrpage2}
+\pagestyle{scrheadings}
+\automark{section}
+\clearscrheadings
+\ohead{\headmark}
+
+% define citation style
+\bibliographystyle{plain}
+
+% define page size, margin size
+\setlength{\headheight}{1.1\baselineskip}
+\voffset=-2cm
+\hoffset=-3cm
+\textheight24cm
+\textwidth15.5cm
+\topmargin1cm
+\oddsidemargin3cm
+\evensidemargin3cm
+
+% define line line spacing = 1.5
+\renewcommand{\baselinestretch}{1.5}
+
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}
+  {\thechapter}
+  {.5em}
+  {\MakeUppercase}
+  [\vspace{.5ex}\titlerule]
+
+\titlespacing*{\chapter}
+  {0pt}
+  {0pt}
+  {20pt}
+
+% define second level for `itemizing'
+\renewcommand{\labelitemii}{-}
+
+\begin{document}
+
+% -------------------------------
+% --- frontmatter: Title page ---
+% -------------------------------
+
+\thispagestyle{empty}
+\input{titlepage}
+
+
+% -----------------------------
+% --- frontmatter: Abstract ---
+% ----------%-------------------
+\newpage
+\thispagestyle{empty}
+\input{abstract}
+
+% -----------------------------
+% --- frontmatter: Contents ---
+% -----------------------------
+\newpage
+\tableofcontents
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\pagenumbering{gobble}
+\clearpage
+
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+
+\newpage
+\pagestyle{headings}
+\pagenumbering{arabic}
+
+\input{intro}
+\newpage
+\input{ida}
+\newpage
+\input{feas}
+\newpage
+\input{res}
+\newpage
+\input{future}
+\newpage
+\input{conc}
+
+% literature
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\input{bib}
+
+\newpage
+\thispagestyle{empty}
+\input{authorship}
+
+\end{document}
