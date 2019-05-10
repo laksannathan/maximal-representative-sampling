@@ -19,5 +19,12 @@ Python 3.6+ with Jupyter notebook and WEKA are necessary to get a development en
         ├── paper               # MRS thesis
         └── fig                 # figures, tables and plots
 
+## ToDo
+
+- Temperature sampling (https://en.wikipedia.org/wiki/Softmax_function
+)
+
+- KS-test instead of ROC-curve (https://www.sciencedirect.com/science/article/abs/pii/S0167865513000020)
+
 ## License
 MIT © [Laksan Nathan]
