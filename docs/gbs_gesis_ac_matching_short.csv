@@ -1,0 +1,15 @@
+INHALT;GBS-VARIABLE;GBS-DATENBANK;GESIS-BEFRAGUNG;GESIS-VARIABLE;;;;;;Allensbach-Variable;Achtung
+Geschlecht;AM01;;ZA5665_a1_a11-a12_v22-0-0.dta (1).csv;a11d054a;;;;;;S01;
+Geburtsjahr;AM02_01;;ZA5665_a1_a11-a12_v22-0-0.dta (1).csv;a11d056b;;;;;;S02;Alter in Jahren
+Hîchster Bildungsabschluss;AM14;;ZA5665_a1_a11-a12_v22-0-0.dta (1).csv;a11d082b;;;;;;S03_rec;
+ErwerbstÑtigkeit;AM17;;ZA5665_a1_a11-a12_v22-0-0.dta (1).csv;a11d089c;;;;;;S05;
+Berufsgruppe;AM22;;ZA5665_a1_a11-a12_v22-0-0.dta (1).csv;a11d092a;;;;;;S04_rec;unterschiedliche Codierung
+Desinteresse Politiker ;PT01_02. Dazu invers: PT02_02;;ZA5665_a1_aa-ac_v22-0-0 (1).dta.csv;acae044a;acae048a;;;;;;
+Optimismus Zukunft ;LO01_04;;ZA5665_a1_aa-ac_v22-0-0 (1).dta.csv;acae051a;;;;;;SOP_final;Codierung?
+Resilienz;BR01_06;;ZA5665_a1_aa-ac_v22-0-0 (1).dta.csv;acae058a;acae062a;;;;;BRS_final;Codierung?
+Umgang mit Problemen;SW02_01 - _10;;ZA5665_a1_aa-ac_v22-0-0 (1).dta.csv;acae079a;acae089a;acae099a;;;;ASKU_final;Codierung?
+soziale UnterstÅtzung;OS03;;ZA5665_a1_aa-ac_v22-0-0 (1).dta.csv;acae085a;acae095a;acae105a;;;;V17, V18, V19;Codierung beachten, 999= missing
+Bundesland ;;;ZA56664_v22-0-0_a11-a12;a12d021a;;;;;;BL_rec;
+Wohnortgrˆﬂe;;;ZA56664_v22-0-0_a11-a12;a12d024a;;;;;;EINW;
+Schichtzugehˆrigkeit;;;ZA56664_v22-0-0_a11-a12;bdao099a;;;;;;SCHI;
+Arbeitszeit;AM20;;ZA56664_v22-0-0_a11-a12;dezg083a;cezg083a;;;;;S06b_rec;

@@ -15,7 +15,7 @@ def roc(y_test, preds, alpha, name):
     alpha = alpha
     fpr, tpr, threshold = metrics.roc_curve(y_test, preds)
     roc_auc = metrics.auc(fpr, tpr)
-    plt.figure(figsize=(12,8))
+    plt.figure(figsize=(3,2))
     label = 'AUC = %0.2f' % roc_auc
     plt.plot(fpr, tpr, 'black', label = label, alpha=alpha)
     plt.legend(loc = 'lower right')
@@ -24,7 +24,7 @@ def roc(y_test, preds, alpha, name):
     plt.ylim([0, 1])
     plt.ylabel('TPR')
     plt.xlabel('FPR')
-    plt.savefig(os.path.join(path, 'fig/roc/'+str(name)+'.png'))
+    #plt.savefig(os.path.join(path, 'fig/roc/'+str(name)+'.png'))
     plt.show()
     return roc_auc
 
