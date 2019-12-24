@@ -1,0 +1,33 @@
+
+
+MRS ALGORITHM:
+
+Input:	
+- NonRep N
+- Rep R
+- Temperature t
+- n_drop //number of instances to drop per iteration
+- limit // stopping criterion - samples left in N
+- ensemble_size e
+- model_complexity C
+- bootstrap_size_factor k
+
+Algorithm:
+
+while N.size > limit (or AUC = 0.5):
+
+    split data in k fold (stratified) in every iteration:
+
+	    n = min(N.size, R.size)
+	    N* = draw bootstraps of size n from a subset of N
+            R* = draw bootstraps of size n from a subset of R
+
+            classify all instances in remaining test set
+    	    combine predictions (e predictions for each instance)
+
+    remove correctly classified instances from N using softmax sampling(t)
+
+return instances of N that are left (couldnt be distinguished from R)
+
+
+Termin nächster: November 28. 18Uhr
