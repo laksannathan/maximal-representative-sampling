@@ -28,6 +28,3 @@ while N.size > limit (or AUC = 0.5):
     remove correctly classified instances from N using softmax sampling(t)
 
 return instances of N that are left (couldnt be distinguished from R)
-
-
-Termin nächster: November 28. 18Uhr
