@@ -4,3 +4,4 @@ data/Allensbach
 data/
 data
 src/results/*
+src/.ipynb_checkpoints/*
