@@ -3,5 +3,5 @@ data/GBS
 data/Allensbach
 data/
 data
-src/results/*/
+src/results/*
 src/.ipynb_checkpoints/*
