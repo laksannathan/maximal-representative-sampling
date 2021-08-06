@@ -44,7 +44,7 @@ Each row is labelled as either having a salary greater than ">50K" or "<=50K".
 
 Note: This Dataset was obtained from the UCI repository, it can be found on
 
-https://archive.ics.uci.edu/ml/datasets/census+income, http://mlr.cs.umass.edu/ml/machine-learning-databases/adult/
+https://archive.ics.uci.edu/ml/datasets/census+income
 
 ## License
 MIT © [Laksan Nathan]
