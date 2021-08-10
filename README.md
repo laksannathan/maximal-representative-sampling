@@ -1,11 +1,11 @@
 ## Discriminative Machine Learning for Maximal Representative Subsampling
-This project deals with selection bias in social sciences. Discriminative learners are trained and combined to reduce the effects of bias in psychological and political studies. With positive-unlabeled learning and artificial data synthesis, performance estimation becomes more accurate in a non-traditional setting.
+This project deals with selection bias in social sciences. Discriminative learners are trained and combined to reduce the effects of bias in psychological and political studies. With positive-unlabeled learning and removing samples, which are labelled as non-representative, performance estimation becomes more accurate in a non-traditional setting.
 
 ## Abstract
 To allow statistical inference in social sciences, survey participants must be selected at random from the target population. When samples are drawn from parts of the population that are close to hand, subgroups might be over-represented. This leads to statistical analyses under sampling bias, which in turn may produce similarly biased outcomes. The present thesis uses machine learning to reduce this selection bias in a psychological survey using auxiliary information from comparable studies that are known to be representative. Discriminative algorithms are trained to directly characterize the divergence between representative and non-representative samples. The concept of positive-unlabeled learning is then applied to further improve results.
 
 ## Installation
-Python 3.6+ with Jupyter notebook and WEKA are necessary to get a development env running. If random_state is not provided, any init will come close to analysed results.
+Python 3.6+ with Jupyter notebook is necessary to get a development environment running. If random_state is not provided, any init will come close to analysed results.
 
 ## Project Structure
     .
@@ -44,7 +44,7 @@ Each row is labelled as either having a salary greater than ">50K" or "<=50K".
 
 Note: This Dataset was obtained from the UCI repository, it can be found on
 
-https://archive.ics.uci.edu/ml/datasets/census+income, http://mlr.cs.umass.edu/ml/machine-learning-databases/adult/
+https://archive.ics.uci.edu/ml/datasets/census+income
 
 ## License
 MIT © [Laksan Nathan]
