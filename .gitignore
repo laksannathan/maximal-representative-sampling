@@ -3,7 +3,6 @@ data/GBS
 data/Allensbach
 data/
 data
-src/results/*
 src/.ipynb_checkpoints/*
 *crop*.pdf
 *crop*.odg
