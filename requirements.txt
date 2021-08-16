@@ -4,3 +4,4 @@ matplotlib
 tqdm
 scikit-learn
 jupyter
+statsmodels
