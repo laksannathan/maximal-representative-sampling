@@ -1,9 +1,0 @@
-\chapter{Conclusion}\label{Sec:Conclusion}
-
-This paper dealt with the reduction of sampling bias in survey data for a psychological study. The availability of multivariate auxiliary information provided additional options and also presented new challenges.
-
-Two PU learning variants were presented to reduce sampling bias in GBS. The first approach is consistent with the established practice that has evolved in machine learning of relating training and test distribution. Models are trained to detect for covariate-shift by predicting the origin of each instance. The second procedure can be best described as iterative reduction of AUROC for maximal representative subsampling. The fraction of positives from the previous method allowed for a better assessment of the actual AUROC. The difficulty in either of them consisted in not forcing value comparisons that would essentially introduce non-existent patterns.
-
-Discriminative learners have not been able to distinguish 350 out of 579 GBS survey participants from GESIS participants. The subsequent method reduced the puAUC by 0.11, while the estimated AUC dropped from 0.75 to 0.64. The result set reflects the unbiased distribution of the target population more closely.
-
-And yet subsampling always comes with a loss of information. Depending on the type of following research, it might be more appropriate to calibrate the GBS dataset using weights based on the calculated probabilities. An upcoming discussion with the responsible researchers from the chair of psychology will decide on further proceedings.
