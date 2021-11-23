@@ -1,0 +1,206 @@
+[I 16:58:59.176 NotebookApp] Serving notebooks from local directory: /home/thauptmann/projects/maximal-representative-sampling/src
+[I 16:58:59.177 NotebookApp] Jupyter Notebook 6.4.0 is running at:
+[I 16:58:59.177 NotebookApp] http://localhost:8888/?token=bfdd8fb21cf30999cfff6fa64cdd1f2dcc0f5c0be3ede96a
+[I 16:58:59.177 NotebookApp]  or http://127.0.0.1:8888/?token=bfdd8fb21cf30999cfff6fa64cdd1f2dcc0f5c0be3ede96a
+[I 16:58:59.177 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 16:58:59.179 NotebookApp] No web browser found: could not locate runnable browser.
+[C 16:58:59.179 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/thauptmann/.local/share/jupyter/runtime/nbserver-4385-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=bfdd8fb21cf30999cfff6fa64cdd1f2dcc0f5c0be3ede96a
+     or http://127.0.0.1:8888/?token=bfdd8fb21cf30999cfff6fa64cdd1f2dcc0f5c0be3ede96a
+[I 16:59:03.709 NotebookApp] 302 GET / (::1) 0.350000ms
+[W 16:59:10.385 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 16:59:15.833 NotebookApp] Kernel started: 40c06b52-510c-4dbb-8225-d2c9e220482f, name: python3
+[I 16:59:15.949 NotebookApp] 302 GET /notebooks/overview.PNG (::1) 0.880000ms
+[I 17:01:21.092 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 17:01:21.094 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 17:11:19.148 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 17:11:19.150 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[W 17:22:16.167 NotebookApp] WebSocket ping timeout after 119961 ms.
+[I 17:22:21.171 NotebookApp] Starting buffering for 40c06b52-510c-4dbb-8225-d2c9e220482f:e880f4476ab444068756844b5cd2fa5d
+[I 17:24:42.581 NotebookApp] Restoring connection for 40c06b52-510c-4dbb-8225-d2c9e220482f:e880f4476ab444068756844b5cd2fa5d
+[I 17:24:42.581 NotebookApp] Replaying 3 buffered messages
+[I 18:14:07.894 NotebookApp] Starting buffering for 40c06b52-510c-4dbb-8225-d2c9e220482f:e880f4476ab444068756844b5cd2fa5d
+[I 11:50:55.584 NotebookApp] 302 GET / (::1) 0.480000ms
+[W 11:50:59.695 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 11:51:03.975 NotebookApp] 302 GET /notebooks/overview.PNG (::1) 0.960000ms
+[I 11:51:04.182 NotebookApp] Discarding 4560 buffered messages for 40c06b52-510c-4dbb-8225-d2c9e220482f:e880f4476ab444068756844b5cd2fa5d
+[I 11:51:10.099 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 11:51:10.101 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 11:53:05.737 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 11:53:05.739 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 11:55:05.058 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 11:55:05.060 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 11:57:05.166 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 11:57:05.168 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:03:05.855 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:03:05.856 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:05:06.032 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:05:06.034 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:07:07.662 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:07:07.664 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:09:11.262 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:09:11.263 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:09:45.995 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:09:45.996 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:11:05.018 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:11:05.019 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:13:05.289 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:13:05.290 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:14:46.639 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:14:46.657 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:14:51.464 NotebookApp] Starting buffering for 40c06b52-510c-4dbb-8225-d2c9e220482f:25cf67dbf1a44c658bce0b6613b0496b
+[I 17:54:53.106 NotebookApp] 302 GET / (::1) 0.520000ms
+[I 17:54:53.143 NotebookApp] 302 GET /tree? (::1) 0.640000ms
+[I 17:57:58.679 NotebookApp] 302 GET / (::1) 0.470000ms
+[I 17:57:58.714 NotebookApp] 302 GET /tree? (::1) 0.430000ms
+[I 17:58:23.454 NotebookApp] 302 GET /?token=bfdd8fb21cf30999cfff6fa64cdd1f2dcc0f5c0be3ede96a (::1) 0.450000ms
+[W 17:58:28.665 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 17:58:37.081 NotebookApp] 302 GET /notebooks/overview.PNG (::1) 0.680000ms
+[I 17:58:37.424 NotebookApp] Discarding 23983 buffered messages for 40c06b52-510c-4dbb-8225-d2c9e220482f:25cf67dbf1a44c658bce0b6613b0496b
+[I 18:00:42.272 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:00:42.273 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:02:41.029 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:02:41.031 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:06:46.820 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:06:46.821 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:08:38.879 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:08:38.881 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:10:38.085 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:10:38.086 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:12:37.960 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:12:37.962 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:14:38.017 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:14:38.019 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:16:38.077 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:16:38.079 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:18:37.912 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:18:37.914 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:20:37.915 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:20:37.917 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:22:39.220 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:22:39.221 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:28:42.796 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:28:42.797 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:30:39.962 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:30:39.964 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:32:46.490 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:32:46.491 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:34:40.358 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:34:40.359 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:36:39.929 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:36:39.930 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:38:38.472 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:38:38.474 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:40:43.440 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:40:43.441 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:42:44.070 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:42:44.072 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:44:41.675 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:44:41.676 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:50:42.616 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:50:42.617 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:52:38.755 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:52:38.757 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:54:43.753 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:54:43.754 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 18:56:38.908 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 18:56:38.909 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 19:04:40.206 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 19:04:40.207 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 19:50:37.953 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 19:50:37.954 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 19:52:41.633 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 19:52:41.635 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 19:54:39.566 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 19:54:39.568 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 19:56:41.521 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 19:56:41.522 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 19:58:42.039 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 19:58:42.041 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 20:00:45.092 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 20:00:45.093 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 20:02:39.819 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 20:02:39.820 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 20:04:41.300 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 20:04:41.301 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 20:06:46.294 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 20:06:46.295 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 20:08:47.137 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 20:08:47.138 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 20:10:39.085 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 20:10:39.086 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 20:12:42.911 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 20:12:42.912 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 20:32:38.833 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 20:32:38.835 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 20:33:21.310 NotebookApp] Starting buffering for 40c06b52-510c-4dbb-8225-d2c9e220482f:2b5890f46c464fc985c6d481b8a8e4b6
+[I 09:46:23.702 NotebookApp] 302 GET / (::1) 0.500000ms
+[W 09:46:28.034 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 09:46:32.385 NotebookApp] 302 GET /notebooks/overview.PNG (::1) 1.070000ms
+[I 09:46:32.590 NotebookApp] Discarding 1113 buffered messages for 40c06b52-510c-4dbb-8225-d2c9e220482f:2b5890f46c464fc985c6d481b8a8e4b6
+[I 11:42:41.012 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 11:42:41.013 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[W 11:53:02.593 NotebookApp] WebSocket ping timeout after 119982 ms.
+[I 11:53:07.595 NotebookApp] Starting buffering for 40c06b52-510c-4dbb-8225-d2c9e220482f:66f0645f71dc486a8ef2468cf2822fb7
+[I 12:17:56.477 NotebookApp] 302 GET / (::1) 0.270000ms
+[W 12:17:59.034 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:18:04.017 NotebookApp] 302 GET /notebooks/overview.PNG (::1) 0.610000ms
+[I 12:18:09.422 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:18:09.424 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:20:03.980 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:20:03.981 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:22:04.000 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:22:04.002 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:24:04.027 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:24:04.028 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:26:03.999 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:26:04.000 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:34:03.998 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:34:03.999 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:36:03.988 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:36:03.990 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:38:03.995 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:38:03.997 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:40:04.010 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:40:04.012 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:42:04.083 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:42:04.084 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:44:03.977 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:44:03.978 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:46:04.014 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:46:04.016 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 12:47:12.972 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 12:47:12.973 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 13:32:04.614 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 13:32:04.615 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 13:32:37.299 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 13:32:37.300 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 13:34:03.998 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 13:34:03.999 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 13:36:04.008 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 13:36:04.009 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 13:38:04.008 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 13:38:04.009 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 13:40:04.003 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 13:40:04.004 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 13:42:04.042 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 13:42:04.043 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 13:43:15.333 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 13:43:15.334 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 13:45:17.937 NotebookApp] Saving file at /Maximal Representative Sampling.ipynb
+[W 13:45:17.938 NotebookApp] Notebook Maximal Representative Sampling.ipynb is not trusted
+[I 13:45:21.497 NotebookApp] Starting buffering for 40c06b52-510c-4dbb-8225-d2c9e220482f:a0b85a51b52c40bd8253f361916ec314
+[I 13:45:21.504 NotebookApp] Kernel shutdown: 40c06b52-510c-4dbb-8225-d2c9e220482f
+/home/thauptmann/.virtualenvs/mrs/lib/python3.9/site-packages/joblib/externals/loky/backend/resource_tracker.py:318: UserWarning: resource_tracker: There appear to be 6 leaked semlock objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+/home/thauptmann/.virtualenvs/mrs/lib/python3.9/site-packages/joblib/externals/loky/backend/resource_tracker.py:318: UserWarning: resource_tracker: There appear to be 244360 leaked folder objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+[I 13:45:26.539 NotebookApp] Shutting down on /api/shutdown request.
+[I 13:45:26.540 NotebookApp] Shutting down 0 kernels
+[I 13:45:26.540 NotebookApp] Shutting down 0 terminals
+/home/thauptmann/.virtualenvs/mrs/lib/python3.9/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /dev/shm/joblib_memmapping_folder_4388_5c5ebd35082342328593d098acbd8b11_48212cdd9f9b4c309a5b39b9eee90a83: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
